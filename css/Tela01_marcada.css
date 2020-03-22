@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'Tahoma';
+    src: url('../fonts/Tahoma.ttf');
+    }
+body{
+    background-color: #eadc83;
+    width: 100%;
+    height: 100%;
+    margin: 0rem;
+    margin-top: 1.5rem;
+    font-family: 'tahoma';
+    color: #f6f9f4;
+}
+body a{
+    text-decoration: none;
+    color: #f6f9f4;
+}
+.voltar a{
+    background-color: #8bd6fe;
+    border-radius: 25px;
+    padding: 1rem;
+    font-size: large;
+    font-weight: 400;
+}
+
+.main{
+    display: flex;
+    flex-wrap: row wrap;
+    flex-direction: column;
+    align-items: center;
+    max-width: 75%;
+    margin: 0 auto;
+}
+.main h1, p, a{   
+    border-radius: 25px;
+    padding: 1rem;
+    font-size: large;
+    font-weight: 400;
+}
+.questao h1{
+    background-color: #4a7434;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.descricao p{
+    background-color: #ffb226;
+    margin-bottom: 5rem;
+}
+.alternativas a{
+    margin-bottom: 1.5rem ;
+
+}
+.alternativas .errada{
+    background-color: #f91222;
+}
+.alternativas .certa{
+   background-color: #416e2b
+}
+footer{
+    border-radius: 25px;
+    padding: 0.1rem;
+    max-width: 30%;
+    font-size: large;
+    font-weight: 400;
+    background-color: #68d430;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
