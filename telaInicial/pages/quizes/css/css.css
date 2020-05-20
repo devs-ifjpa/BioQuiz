@@ -109,6 +109,22 @@ body{
   height: 30px;
   margin: 10px auto;
 }
+#finaltime, #pointtemp{
+  position: absolute;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+#finaltime{
+  top: 8px;
+  right: 8px;
+}
+#pointtemp{
+  opacity: 0;
+  top: 27px;
+  right: 8px;
+  transition: all .5s;
+}
 
 @media screen and (min-height: 320px){
   .voltar{
@@ -148,6 +164,17 @@ body{
     padding: 1.875vh 3.75vh;
     font-size: 4.0625vh;
   }
+  #finaltime, #pointtemp{
+    font-size: 3.75vh;
+  }
+  #finaltime{
+    top: 2.5vh;
+    right: 2.5vh;
+  }
+  #pointtemp{
+    top: 8.4375vh;
+    right: 2.5vh;
+  }  
 }
 @media screen and (min-height: 320px) and (max-aspect-ratio: 208/320){
   .voltar{
@@ -187,4 +214,15 @@ body{
     padding: 2.884615385vw 5.769230769vw;
     font-size: 6.25vw;
   }
+  #finaltime, #pointtemp{
+    font-size: 5vw;
+  }
+  #finaltime{
+    top: 3.333333333vw;
+    right: 3.333333333vw;
+  }
+  #pointtemp{
+    top: 11.25vw;
+    right: 3.333333333vw;
+  }  
 }

@@ -1,7 +1,7 @@
 let questionId = 0;
 let total = 0;
 var count= 0;
-    
+
   function start(){
       if((count + 1) <= 9999999){
           count+=1
@@ -9,22 +9,38 @@ var count= 0;
           setTimeout('start();',1000);
       }
   }
+var url = window.location;
+console.log(url)
+temaselect = url.toString().split("=")[1];
+temas = ["botanica","anatomia","meioAmbiente","zoologia"]
+let filterArray = questions[temaselect].filter(x => questions[temaselect][questionId].Categoria === temas[temaselect])
+console.log(filterArray);
 
-
+var randomics = [];
+while (randomics.length < 30) {
+    var rand = Math.floor(Math.random() * 30);
+    if (randomics.indexOf(rand) == -1)
+        randomics.push(rand);
+}
+console.log(randomics);
 function showQuestion() {
-  document.querySelector('.questio').innerHTML = questions[questionId].Question
-  document.querySelector('.title').innerHTML = questions[questionId].title
-  const alternatives = questions[questionId].alternatives
+  document.querySelector('.questio').innerHTML = filterArray[questionId].Question
+  document.querySelector('.title').innerHTML = filterArray[randomics[questionId]].title
+  const alternatives = filterArray[randomics[questionId]].alternatives;
   const alternativesView = document.querySelector('.alternatives')
-  const answer = questions[questionId].answer
+  const answer = filterArray[randomics[questionId]].answer
 
-  for (alternativeIndex in alternatives) {
+  for (alternativeIndex in alternatives){
     const item = `<div class="alternatives-item" onclick="answerCorrect(${alternativeIndex})" data-index="${alternativeIndex}">${alternatives[alternativeIndex]}</div>`
-    alternativesView.insertAdjacentHTML('beforeend', item)
-  
+    alternativesView.insertAdjacentHTML('beforeend', item);
+
     // click
     const lastItem = alternativesView.querySelector('.alternatives-item:last-child')
     lastItem.addEventListener('click', () => {
+      document.getElementById("pointtemp").style.opacity = 1;
+      if(document.getElementById("finaltime").textContent == ""){
+        document.getElementById("finaltime").textContent = count;
+      }
       const alternativeItems = alternativesView.querySelectorAll('.alternatives-item')
       for (const alternativeItem of alternativeItems) {
         if (answer === Number(alternativeItem.dataset.index)) {
@@ -37,78 +53,91 @@ function showQuestion() {
       }
     })
   }
-
 }
 
-function choose(){
-    document.querySelector('.pla').addEventListener('click', () => {
-    document.getElementById('src').setAttribute('src', 'Meio_Ambiente.js')
-    console.log('adsf')
-  });
-}
-window.addEventListener('load', choose)
+const aAudio = new Audio("./audio/SomDeAcerto.mp3");
+const bAudio = new Audio("./audio/SomDeErro.mp3");
 function answerCorrect(x){
-  const answer = questions[questionId].answer;
+  const answer = filterArray[randomics[questionId]].answer;
   let time = Number(document.getElementById("tempo").textContent)
     if(x == answer){
+      document.getElementById("pointtemp").textContent == "" ? aAudio.play() : false;
       switch (true){
         case time<=5:
-          total += 1000;
+          if(document.getElementById("pointtemp").textContent == ""){
+            total += 1000;
+            document.getElementById("pointtemp").textContent = "+1000";
+          }
           break;
         case time<10:
-          total += 900;
+          if(document.getElementById("pointtemp").textContent == ""){          
+            total += 900;
+            document.getElementById("pointtemp").textContent = "+900";
+          }
           break;
         case time<15:
-          total += 800;
+          if(document.getElementById("pointtemp").textContent == ""){          
+            total += 800;
+            document.getElementById("pointtemp").textContent = "+800";
+          }
           break;
         case time<20:
-          total += 700;
+          if(document.getElementById("pointtemp").textContent == ""){          
+            total += 700;
+            document.getElementById("pointtemp").textContent = "+700";
+          }
           break;
         case time<25:
-          total += 600;
+          if(document.getElementById("pointtemp").textContent == ""){                    
+            total += 600;
+            document.getElementById("pointtemp").textContent = "+600";
+          }
           break;
         case time<30:
-          total += 500;
+          if(document.getElementById("pointtemp").textContent == ""){          
+            total += 500;
+            document.getElementById("pointtemp").textContent = "+500";
+          }
           break;
         case time<35:
-          total += 400;
+          if(document.getElementById("pointtemp").textContent == ""){          
+            total += 400;
+            document.getElementById("pointtemp").textContent = "+400";
+          }
           break;
         case time<40:
-          total += 300;
+          if(document.getElementById("pointtemp").textContent == ""){          
+            total += 300;
+            document.getElementById("pointtemp").textContent = "+300";
+          }
           break;
         default:
-          total += 200;
+          if(document.getElementById("pointtemp").textContent == ""){          
+            total += 200;
+            document.getElementById("pointtemp").textContent = "+200";
+          }
       }
-    //   if (time <= 5) total += 1000
-
-    //   else if (time < 10) total += 900
-      
-    //   else if (time < 15) total += 800
-      
-    //   else if (time < 20) total += 700
-      
-    //   else if (time < 25) total += 600
-      
-    //   else if (time < 30) total += 500
-      
-    //   else if (time < 35) total += 400
-      
-    //   else if (time < 40) total += 300
-      
-    //   else if (time < 45) total += 200
     }
     else{
-      total -= 1;
+      document.getElementById("pointtemp").textContent == "" ? bAudio.play() : false;
+      if(document.getElementById("pointtemp").textContent == ""){
+        total += 0;
+        document.getElementById("pointtemp").textContent = "+0";
+      }
     }
   document.getElementById("total").innerText = total;
 }
 
 
 document.querySelector('button').addEventListener('click', function() {
+  document.getElementById("finaltime").textContent = "";
+  document.getElementById("pointtemp").textContent = "";
+  document.getElementById("pointtemp").style.opacity = 0;
   document.querySelector(".green").setAttribute("class", "hidden");
-  document.querySelector(".red").setAttribute("class", "hidden");
-  document.querySelector(".red").setAttribute("class", "hidden");
-  document.querySelector(".red").setAttribute("class", "hidden");
+  let contred = document.querySelectorAll("div.red");
+  for (var x = 1; x <= contred.length; x++){
+    document.querySelector(".red").setAttribute("class", "hidden");
+  }
   document.querySelector("button").setAttribute("class","hidden");
   questionId++;
   document.getElementById("tempo").textContent = 0;
