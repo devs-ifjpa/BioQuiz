@@ -39,15 +39,25 @@
         </main>
         <footer>
             <div>
-                <a href="#">
-                    Login
-                </a>
+                <button id="authGoogleButton" style="color: #000000;">
+                    Logar com Google
+                </button>
             </div>
             <div>
                 <a href="#">
                     Inscribirse
                 </a>
             </div>
-        </footer>
+            
+        </footer> 
+            <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+            <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+            <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+        
+            <!-- Add Firebase products that you want to use -->
+            <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
+            <script src="js/config.js"></script>
+            <script src="js/authentication.js"></script>
     </body>
 </html>
