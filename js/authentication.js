@@ -9,7 +9,7 @@ function signIn(provider){
         .signInWithPopup(provider)
         .then(function(result){
             console.log(result);
-            var token=result.credential.acessToken;
+            var token = result.credential.acessToken;
             displayName.innerText = 'Bem vindo, '+ result.user.displayName;
         }).catch(function(error){
             console.log(error);
