@@ -8,30 +8,31 @@
         <link rel="shortcut icon" href="img/icon-3.png">
     </head>
     <body>
+        <nav>
+            <a href="#">
+                <img src="img/gear.svg" alt="gear">
+            </a>
+        </nav>
         <main>
-            <nav>
-                <a href="#">
-                    <img src="img/gear.svg" alt="gear">
-                </a>
-            </nav>
             <div class="logo">
+                <img src="img/lacinho1.png" alt="laço" id="lacinho">
                 <img src="img/icon-1.png" alt="img">
             </div>
             <div class="menu">
                 <ul>
                     <li>
-                        <a href="#">
-                            jugar
+                        <a href="pages/temas/temas.html">
+                            JOGAR
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            ACERCA DE
+                            SOBRE
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            REFERENCIAS
+                        <a id="last-menu" href="#">
+                            REFERÊNCIAS
                         </a>
                     </li>
                 </ul>
@@ -39,17 +40,17 @@
         </main>
         <footer>
             <div>
-                <button id="authGoogleButton" style="color: #000000;">
-                    Logar com Google
+                <button id="authGoogleButton">
+                    Login
                 </button>
+                
             </div>
             <div>
                 <a href="#">
-                    Inscribirse
+                    Cadastrar-se
                 </a>
             </div>
-            
-        </footer> 
+        </footer>
             <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
             <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
             <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
