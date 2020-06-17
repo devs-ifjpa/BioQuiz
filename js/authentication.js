@@ -1,4 +1,3 @@
-
 var authGoogleButton= document.getElementById('authGoogleButton');
 
 
@@ -10,7 +9,7 @@ function signIn(provider){
         .then(function(result){
             console.log(result);
             var token = result.credential.acessToken;
-            displayName.innerText = 'Bem vindo, '+ result.user.displayName;
+            alert('Bem vindo, '+ result.user.displayName);
         }).catch(function(error){
             console.log(error);
             alert('Falha na autenticação');
