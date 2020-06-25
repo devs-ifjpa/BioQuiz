@@ -31,23 +31,25 @@ a{
     display: flex;
     flex-direction: row;    
     justify-content: space-between;
+    align-content: center;
     height: 80px;
 }
 
 #thor{
-    
-    left: 25px;
-    top: 43px;
-    z-index: 1;
+    position: relative;
+    left: 13px;
+    bottom: 43px;
+    z-index: -1;
 }
-#loki{    
-    top: 43px;
-    right: 10px;
-    z-index: 1;
+#loki{
+    position: relative;  
+    bottom: 8px;
+    right: 23px;
+    z-index: -1;
 }
-img#medal{   
-    top: 57px;
-    left: 10px;
+img#medal{ 
+    position: relative;
+    top: 10px;   
     height: 37px;
     z-index: 2;
 }
