@@ -53,10 +53,7 @@ img#medal{
     height: 37px;
     z-index: 2;
 }
-img#coin{    
-    top: 52px;
-    right: 65px;
-    z-index: 2;
+img#coin{     
     height: 42px;
 }
 #miscellaneous p{
@@ -70,10 +67,7 @@ img#coin{
     margin-right: 40px;
     display: inherit;
 }
-#bau{    
-    top: 52px;
-    right: 45vw;
-    z-index: 2;
+#bau{  
     height: 52px;
 }
 .tema{
