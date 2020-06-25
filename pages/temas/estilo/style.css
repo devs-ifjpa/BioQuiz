@@ -75,6 +75,13 @@ img#coin{
     margin-right: 40px;
     display: inherit;
 }
+#bau{
+    position: absolute;
+    top: 52px;
+    right: 45vw;
+    z-index: 2;
+    height: 52px;
+}
 .tema{
     background-color: #4a7434;
     text-align: center;
