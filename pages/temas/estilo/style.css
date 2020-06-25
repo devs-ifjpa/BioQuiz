@@ -28,7 +28,53 @@ a{
     text-decoration: none;
     color: #f6f9f4;
 }
-
+#miscellaneous{
+    display: inherit;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 80px;
+}
+#miscellaneous #mer{
+    display: inherit;
+}
+#thor{
+    position: absolute;
+    left: 25px;
+    top: 43px;
+    z-index: 1;
+}
+#loki{
+    position: absolute;
+    top: 43px;
+    right: 10px;
+    z-index: 1;
+}
+img#medal{
+    position: absolute;
+    top: 57px;
+    left: 10px;
+    height: 37px;
+    z-index: 2;
+}
+img#coin{
+    position: absolute;
+    top: 52px;
+    right: 65px;
+    z-index: 2;
+    height: 42px;
+}
+#miscellaneous p{
+    background-color: #8bd6fe;
+    border-radius: 35px;
+    font-weight: bold;
+    padding: 4px 30px 4px 40px;
+    height: fit-content;
+}
+#mar{
+    margin-right: 40px;
+    display: inherit;
+}
 .tema{
     background-color: #4a7434;
     text-align: center;
