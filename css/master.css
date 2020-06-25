@@ -67,17 +67,18 @@ div.menu ul{
 }
 
 div.menu ul li{
-    margin: .6rem auto;
+    margin: .6rem auto;    
 }
 
-ul li a{
+ul li a, div a{
     padding: .4rem 1.2rem;
+    width: 50vw;
     background-color: #8bd6fe;
     border-radius: 25px;
     font-size: 11px;
     text-decoration: none;
-    color: #f6f9f4;
-    font-weight: 400;
+    color:black;
+    font-weight: bolder;
 }
 
 #last-menu{
@@ -93,9 +94,9 @@ footer{
 }
 
 footer div a{
-    text-decoration: none;
-    color: #f6f9f4;
+    text-decoration: none;    
     margin: auto 5px;
+    padding: .4rem 3rem;
 }
 
 @media screen and (min-height: 320px) {

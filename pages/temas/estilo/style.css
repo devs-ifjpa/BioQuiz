@@ -2,6 +2,8 @@ body{
     background-color: #eadc83;
     font-family: Tahoma, sans-serif;
     margin: 0px;
+    display: flex;
+    flex-direction: column;
 }
 .volar{
     height: fit-content;
@@ -15,11 +17,12 @@ body{
     left: 8px;
     background-color: #8bd6fe;
     text-decoration: none;
-    color: #f6f9f4;
+    color: black;
     border-radius: 25px;
     font-size: 1.7rem;
-    padding: 1rem 1.5rem;   
+    padding: .7rem 1.5rem;   
     font-weight: 400;
+    height: 10px;
 }
 a{
     text-decoration: none;
@@ -35,6 +38,20 @@ a{
     margin: 0px;
     border: 0px;
 }
+
+.iconstore{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+img{
+    position: relative;
+    right: 12px;
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
 div.temass{
     display: flex;
     justify-content: space-between;
