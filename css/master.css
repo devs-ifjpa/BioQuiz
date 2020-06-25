@@ -66,16 +66,16 @@ div.menu ul{
     margin-bottom: 8px;
 }
 
-div.menu ul li{
-    margin: .6rem auto;    
-}
-
-ul li a, div a{
-    padding: .4rem 1.2rem;
-    width: 50vw;
+div.menu ul li{    
     background-color: #8bd6fe;
     border-radius: 25px;
-    font-size: 11px;
+    width: 60vw;   
+    padding: .4rem 3rem; 
+}
+
+
+ul li a{      
+    font-size: 15px;
     text-decoration: none;
     color:black;
     font-weight: bolder;
@@ -85,8 +85,7 @@ ul li a, div a{
     padding: .4rem;
 }
 
-footer{
-    font-size: 10px;
+footer{    
     display: flex;
     justify-content: space-between;
     margin-top: 5px;
@@ -94,9 +93,15 @@ footer{
 }
 
 footer div a{
+    font-size: 13px;
     text-decoration: none;    
     margin: auto 5px;
-    padding: .4rem 3rem;
+    padding: .1rem 3rem;
+    color:black;
+    font-weight: bolder;
+    background-color: #8bd6fe;
+    border-radius: 25px;
+    width: 20vw;     
 }
 
 @media screen and (min-height: 320px) {
@@ -131,8 +136,8 @@ footer div a{
         border-radius: 7.8125vh;
     }
     div.menu ul li{
-        margin-top: 3vh;
-        margin-bottom: 3vh;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
     }
     footer{
         margin-top: 1.5625vh;
@@ -140,7 +145,7 @@ footer div a{
         font-size: 3.125vh;
     }
     footer div a{
-        margin: auto 1.5625vh;
+        margin: auto 6.5625vh;
     }
 }
 
@@ -176,8 +181,8 @@ footer div a{
         padding: 2.8125vw;
     }
     div.menu ul li{
-        margin-top: 4.6875vw;
-        margin-bottom: 4.6875vw;
+        margin-top: 1.6875vw;
+        margin-bottom: 1.6875vw;
     }
     footer{
         margin-top: 2.4415625vw;
@@ -185,6 +190,6 @@ footer div a{
         font-size: 4.8828125vw;
     }
     footer div a{
-        margin: auto 2.4415625vw;
+        margin: auto 8.4415625vw;
     }
 }
