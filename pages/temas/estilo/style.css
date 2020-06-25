@@ -39,19 +39,6 @@ a{
     border: 0px;
 }
 
-.iconstore{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-img{
-    position: relative;
-    right: 12px;
-    width: 3.5rem;
-    height: 3.5rem;
-}
-
 div.temass{
     display: flex;
     justify-content: space-between;
