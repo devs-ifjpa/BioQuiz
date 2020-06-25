@@ -11,8 +11,7 @@ body{
 }
 .voltar{
     margin-bottom: 100px;
-    margin: 0px;
-    position: absolute;
+    margin: 0px;    
     top: 8px;
     left: 8px;
     background-color: #8bd6fe;
@@ -28,37 +27,31 @@ a{
     text-decoration: none;
     color: #f6f9f4;
 }
-#miscellaneous{
-    display: inherit;
-    flex-direction: row;
-    flex-wrap: wrap;
+#miscellaneous{    
+    display: flex;
+    flex-direction: row;    
     justify-content: space-between;
     height: 80px;
 }
-#miscellaneous #mer{
-    display: inherit;
-}
+
 #thor{
-    position: absolute;
+    
     left: 25px;
     top: 43px;
     z-index: 1;
 }
-#loki{
-    position: absolute;
+#loki{    
     top: 43px;
     right: 10px;
     z-index: 1;
 }
-img#medal{
-    position: absolute;
+img#medal{   
     top: 57px;
     left: 10px;
     height: 37px;
     z-index: 2;
 }
-img#coin{
-    position: absolute;
+img#coin{    
     top: 52px;
     right: 65px;
     z-index: 2;
@@ -75,8 +68,7 @@ img#coin{
     margin-right: 40px;
     display: inherit;
 }
-#bau{
-    position: absolute;
+#bau{    
     top: 52px;
     right: 45vw;
     z-index: 2;
@@ -95,10 +87,9 @@ img#coin{
 div.temass{
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: column;    
     width: 100vw;
-    height: 100vh;
+    height: 100vh;    
 }
 .questions{
     display: grid;
