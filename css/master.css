@@ -2,62 +2,188 @@
     font-family: 'Tahoma';
     src: url('../fonts/Tahoma.ttf');
 }
+
 body{
     background-color: #eadc83;
     width: 100vw;
     height: 100vh;
     margin: 0px;
     font-family: 'tahoma';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
+
 nav{
     align-self: start;
+    margin-top: 5px;
+    margin-left: 5px;
 }
+
 nav img{
     background-color: white;
     border-radius: 50%;
-    margin: 5px;
-    height: 40px;
-    width: 40px;
+    height: 20px;
+    width: 20px;
 }
+
 nav a{
     text-decoration: none;
 }
-div.logo img{
-    width: 15rem;
-    height: 15rem;
+
+div.logo{
+    display: flex;
 }
+
+div.logo img{
+    position: relative;
+    right: 12px;
+    width: 8rem;
+    height: 8rem;
+}
+
+#lacinho{
+    width: 22px;
+    height: 26px;
+    position: relative;
+    left: 11px;
+    top: 98px;
+}
+
 div.menu ul{
     display: flex;
     flex-direction: column;
     list-style: none;
-    align-items: center;
     padding: 0px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
+
 div.menu ul li{
-    margin: 1.5rem;
+    margin: .6rem auto;
 }
+
 ul li a{
-    padding: 1rem;
+    padding: .4rem 1.2rem;
     background-color: #8bd6fe;
     border-radius: 25px;
-    font-size: large;
+    font-size: 11px;
     text-decoration: none;
     color: #f6f9f4;
     font-weight: 400;
 }
+
+#last-menu{
+    padding: .4rem;
+}
+
 footer{
+    font-size: 10px;
     display: flex;
     justify-content: space-between;
-    align-self: flex-end;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
+
 footer div a{
     text-decoration: none;
     color: #f6f9f4;
-    margin: 10px;
+    margin: auto 5px;
+}
+
+@media screen and (min-height: 320px) {
+    #lacinho{
+        width: 6.875vh;
+        height: 8.125vh;
+        left: 3.4375vh;
+        top: 30.625vh;
+    }
+    div.logo img{
+        right: 3.75vh;
+        width: 40vh;
+        height: 40vh;
+    }
+    nav{
+        margin-top: 1.5625vh;
+        margin-left: 1.5625vh;
+    }
+    nav img{
+        height: 6.25vh;
+        width: 6.25vh;
+    }
+    .menu ul{
+        margin: 2.5vh 0;
+    }
+    #last-menu{
+        padding: 2vh;
+    }
+    .menu ul li a{
+        font-size: 3.4375vh;
+        padding: 2vh 6vh;
+        border-radius: 7.8125vh;
+    }
+    div.menu ul li{
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
+    footer{
+        margin-top: 1.5625vh;
+        margin-bottom: 1.5625vh;
+        font-size: 3.125vh;
+    }
+    footer div a{
+        margin: auto 1.5625vh;
+    }
+}
+
+@media screen and (min-height: 300px) and (max-aspect-ratio: 320/500){
+    #lacinho{
+        width: 10.7421875vw;
+        height: 12.6953125vw;
+        left: 5.37109375vw;
+        top: 47.8515625vw;
+    }
+    div.logo img{
+        right: 5.859375vw;
+        width: 62.5vw;
+        height: 62.5vw;
+    }
+    nav{
+        margin-top: 2.4415625vw;
+        margin-left: 2.4415625vw;
+    }
+    nav img{
+        height: 9.765625vw;
+        width: 9.765625vw;
+    }
+    .menu ul li a{
+        font-size: 5.37109375vw;
+        padding: 3.125vw 9.375vw;
+        border-radius: 12.20703125vw;
+    }
+    .menu ul{
+        margin: 2.8125vw 0;
+    }
+    #last-menu{
+        padding: 2.8125vw;
+    }
+    div.menu ul li{
+        margin-top: 4.6875vw;
+        margin-bottom: 4.6875vw;
+    }
+    footer{
+        margin-top: 2.4415625vw;
+        margin-bottom: 2.4415625vw;
+        font-size: 4.8828125vw;
+    }
+    footer div a{
+        margin: auto 2.4415625vw;
+    }
 }
