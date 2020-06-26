@@ -4,8 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../telaDoMeio/css/master.css">
 </head>
 <body>
-    
+    <main>
+        <nav id="voltar">
+            <a href="#">
+                Voltar
+            </a>
+        </nav>
+        <div class="tema">
+            <p id="tema">
+                Cadastro
+            </p>
+        </div>
+        <div class="campos">
+            <input type="text" id="name" placeholder="Nome" required>
+            <input type="email" name="email" id="email" placeholder="E-mail" required>
+            <input type="password" name="senha" id="senha" placeholder="Senha" required>
+            <input type="password" name="confirm" id="confirm" placeholder="Confirmar Senha" required>
+            <input type="submit" value="Cadastrar" id="cadastro-button">
+            <div class="facebook-cadastro">
+                    <button type="submit" id="facebook-button"><img>Facebook</button>
+            </div>
+            <div class="google-cadastro"> 
+                    <button type="submit" id="google-button"><img>google</button>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
