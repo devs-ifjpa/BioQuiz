@@ -10,17 +10,19 @@ var count= 0;
       }
   }
 var url = window.location;
-console.log(url)
 temaselect = url.toString().split("=")[1];
 temas = ["botanica","anatomia","meioAmbiente","zoologia"]
-let filterArray = questions[temaselect].filter(x => questions[temaselect][questionId].Categoria === temas[temaselect])
+// let filterArray = questions[temaselect].filter(x => questions[temaselect][questionId].Categoria === temas[temaselect])
+let filterArray = questions[temas.indexOf(temaselect)];
 console.log(filterArray);
 
 var randomics = [];
-while (randomics.length < 30) {
-    var rand = Math.floor(Math.random() * 30);
-    if (randomics.indexOf(rand) == -1)
-        randomics.push(rand);
+while (randomics.length < filterArray.length) {
+    var rand = Math.floor(Math.random() * filterArray.length);
+    // if (randomics.indexOf(rand) == -1)
+        // randomics.push(rand);
+    randomics.indexOf(rand) == -1 ? randomics.push(rand) : false;
+
 }
 console.log(randomics);
 function showQuestion() {

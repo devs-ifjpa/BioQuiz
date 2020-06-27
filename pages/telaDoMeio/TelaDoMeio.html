@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/master.css">
+    <script src="../quizes/js/main.js"></script>
 </head>
 <body>
     <nav id="voltar">
@@ -41,5 +42,14 @@
             </a>
         </div>
     </div>
+    <script>
+        var title = "";
+        temas.indexOf(temaselect) == 0 ? title = "Botânica" :
+        temas.indexOf(temaselect) == 1 ? title = "Anatomia" :
+        temas.indexOf(temaselect) == 2 ? title = "Meio Ambiente" :
+        temas.indexOf(temaselect) == 3 ? title = "Zoologia" : false;
+        document.getElementById("tema").innerHTML = title;
+        document.getElementById("aumenta").href = `../quizes/quizz.html?tema=${temaselect}`
+    </script>
 </body>
 </html>
