@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Tahoma';
+    src: url('../fonts/Tahoma.ttf');
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-between;
+    background-color: #eadc83;
+    font-family: Tahoma, sans-serif;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+.tema{
+    width: 100vw;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    position: relative;
+    bottom: 35px;
+
+}
+
+#logo img{
+    margin-bottom: 0px;    
+    height: 200px;
+    position: relative;
+    bottom: 35px;
+}
+
+.temas div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;    
+}
+
+/*.temas div img{
+    width: 6rem;
+    height: 6rem;
+}*/
+
+.temas a, p{
+    text-decoration: none;
+    color: white;
+}
+
+#bau, .temas div img{  
+    height: 52px;
+}
