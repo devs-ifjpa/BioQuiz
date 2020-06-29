@@ -35,6 +35,7 @@ nav#voltar a{
     flex-direction: row;
     margin: 0;
 }
+<<<<<<< HEAD
 #thor{
     position: relative;
     right: 13px;
@@ -48,6 +49,11 @@ nav#voltar a{
     z-index: -1;
 }
 img#medal, .optionStore div img{
+=======
+
+
+img#medal{
+>>>>>>> 0f6e3b15b94ec809dfd95373ec65f43274f76fc3
     height: 37px;    
 }
 img#coin{
@@ -66,24 +72,22 @@ img#coin{
 
 #logo{
     display: flex;     
-    justify-content: center;    
-    position: relative;
-    bottom: 20px;
+    justify-content: center;
+    margin-bottom: 0px;
 }
 
 #logo img{       
-    height: 150px;  
+    height: 200px;
+    margin-bottom: -10px;
 }
 
 .titulo{
-    width: 100vw;       
-    position: relative;
-    bottom: 65px;
-    height: 50px;    
+    width: 100vw;   
     background-color: #2e5d15;
 }
 
 .titulo p{
+    margin-top: 0px;
     font-size: 40px;
     font-weight: bolder;
     text-align: center;
