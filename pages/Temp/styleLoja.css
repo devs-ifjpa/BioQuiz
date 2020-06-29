@@ -51,9 +51,12 @@ img#medal, .optionStore img{
 }
 img#coin{
     height: 42px;
+    margin-top: -5px;
+    margin-right: -5px;
 }
 #chest{
-    height: 57px; 
+    height: 57px;
+    margin-top: -11px;
 }
 #miscellaneous p, .optionStore p{
     background-color: #8bd6fe;
