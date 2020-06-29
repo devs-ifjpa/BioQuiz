@@ -41,13 +41,13 @@ nav#voltar a{
     bottom:10px;
     z-index: -1;
 }
-#loki{
+#loki,{
     position: relative;
     bottom: 10px;
     right: 25px;
     z-index: -1;
 }
-img#medal{
+img#medal, .optionStore div img{
     height: 37px;    
 }
 img#coin{
@@ -56,7 +56,7 @@ img#coin{
 #chest{
     height: 57px; 
 }
-#miscellaneous p{
+#miscellaneous p, .optionStore p{
     background-color: #8bd6fe;
     border-radius: 35px;
     font-weight: bold;
@@ -107,7 +107,7 @@ img#coin{
     color: white;
 }
 
-#bau, .optionStore div img{  
+#bau{  
     height: 120px;
 }
 
