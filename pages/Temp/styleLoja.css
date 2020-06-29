@@ -15,6 +15,7 @@ body{
 }
 main{
     height: 100vh;
+    margin: 0px;
 }
 
 nav#voltar a{
