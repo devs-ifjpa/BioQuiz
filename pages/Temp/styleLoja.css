@@ -12,6 +12,9 @@ body{
     display: flex;
     flex-direction: column;
 }
+main{
+    height: 100vh;
+}
 
 nav#voltar a{
     color: #f6f9f4;
@@ -35,7 +38,10 @@ nav#voltar a{
     flex-direction: row;
     margin: 0;
 }
-
+#thor{
+    margin: 3px 0px 0px -20px;
+    z-index: -1;
+}
 
 img#medal{
     height: 37px;    
