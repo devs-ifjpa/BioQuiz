@@ -121,15 +121,21 @@ img#coin{
     height: 120px;
 }
 #coin-themes-1{
-    margin: 9px 0px 0px 150px;
+    position: absolute;
+    left: -35px;
+    top: 9px;
     z-index: 2;
 }
 #coin-themes-2{
-    margin: 9px 0px 0px 120px;
+    position: absolute;
+    left: -35px;
+    top: 9px;
     z-index: 2;
 }
 #coin-themes-3{
-    margin: 9px 0px 0px 150px;
+    position: absolute;
+    left: -35px;
+    top: 9px;
     z-index: 2;
 }
 #p-store{
@@ -143,6 +149,7 @@ img#coin{
 }
 .coin-value{
     margin-right: 15px;
+    position: relative;
 }
 .coin-value p{
     height: 18px;
