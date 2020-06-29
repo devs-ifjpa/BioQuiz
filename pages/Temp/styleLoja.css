@@ -38,11 +38,11 @@ nav#voltar a{
     flex-direction: row;
     margin: 0;
 }
-#thor{
+#valorMedalha{
     margin: 3px 0px 0px -20px;
     z-index: -1;
 }
-#loki{
+#valorMoeda{
     margin: 3px 0px 0px -20px;
     z-index: -1;
 }
