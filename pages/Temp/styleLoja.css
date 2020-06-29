@@ -11,14 +11,9 @@ body{
     margin: 0px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 main{
     height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: column;
 }
 
 nav#voltar a{
@@ -103,18 +98,13 @@ img#coin{
 .optionStore div{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    height: 9rem;
+    justify-content: space-between;    
 }
 
 .optionStore a, p{
     text-decoration: none;
     font-size: 15px;
     color: white;
-    margin-left: 20px;
-}
-.interiorTemas a{
-    margin-right: 20px;
 }
 
 #bau{  
@@ -141,6 +131,4 @@ img#coin{
 #p-store-2{
     margin-left: -25px;
 }
-.coin-value{
-    margin-right: 20px;
-}
+
