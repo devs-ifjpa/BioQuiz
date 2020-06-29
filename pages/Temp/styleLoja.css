@@ -39,6 +39,9 @@ nav#voltar a{
     flex-direction: row;
     margin: 0;
 }
+#mer p, #mar p{
+    height: 18px;
+}
 #valorMedalha{
     margin: 3px 0px 0px -20px;
     z-index: -1;
@@ -99,7 +102,8 @@ img#coin{
 .optionStore div{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;    
+    justify-content: space-between;
+    height: 15vh;  
 }
 
 .optionStore a, p{
@@ -138,4 +142,7 @@ img#coin{
 }
 .coin-value{
     margin-right: 15px;
+}
+.coin-value p{
+    height: 18px;
 }
