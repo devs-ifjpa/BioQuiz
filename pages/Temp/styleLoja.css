@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Tahoma';
-    src: url('../fonts/Tahoma.ttf');
+    src: url('../../fonts/Tahoma.ttf');
 }
 
 body{
@@ -11,6 +11,7 @@ body{
     margin: 0px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 main{
     height: 100vh;
@@ -105,6 +106,10 @@ img#coin{
     text-decoration: none;
     font-size: 15px;
     color: white;
+    margin-left: 15px;
+}
+.interiorTemas a{
+    margin-right: 15px;
 }
 
 #bau{  
@@ -131,4 +136,6 @@ img#coin{
 #p-store-2{
     margin-left: -25px;
 }
-
+.coin-value{
+    margin-right: 15px;
+}
