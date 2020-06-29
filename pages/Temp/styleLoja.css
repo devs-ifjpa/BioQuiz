@@ -35,25 +35,9 @@ nav#voltar a{
     flex-direction: row;
     margin: 0;
 }
-<<<<<<< HEAD
-#thor{
-    position: relative;
-    right: 13px;
-    bottom:10px;
-    z-index: -1;
-}
-#loki,{
-    position: relative;
-    bottom: 10px;
-    right: 25px;
-    z-index: -1;
-}
-img#medal, .optionStore div img{
-=======
 
 
-img#medal{
->>>>>>> 0f6e3b15b94ec809dfd95373ec65f43274f76fc3
+img#medal, .optionStore img{
     height: 37px;    
 }
 img#coin{
