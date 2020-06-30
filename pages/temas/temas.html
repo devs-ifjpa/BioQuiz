@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <link rel="stylesheet" href="estilo/style.css">
+        <link rel="stylesheet" href="../telaDoMeio/css/master.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div class="temass">
-            <div class="volar"><a class="voltar" href="../../index.html">Voltar</a></div>
+            <!-- <div class="volar"><a class="voltar" href="../../index.html">Voltar</a></div> -->
+            <nav id="voltar">
+                <a href="../../index.html">Voltar</a>
+            </nav>
             <div id="miscellaneous">
                 <div id="mer">
                     <img src="../telaDoMeio/img/jogo-03.png " id="medal">
                     <p id="thor">0</p>
                 </div>
-                <div>
+                <div id="baubox">
                     <img src="../../img/Bau I.png" id="bau">
+                    <p id="baupoint">0</p>
                 </div>
                 <div id="mar">
                     <img src="../telaDoMeio/img/MOEDA-02.png" id="coin">
-                    <p id="loki">
-                        0
-                    </p>
+                    <p id="loki">0</p>
                 </div>
             </div>
             <div class="temas">
-                <div class="tema pla" style="background-color: #2e5d15;">
-                    <a href="../telaDoMeio/TelaDoMeio.html?tema=meioAmbiente"><h1>Meio Ambiente</h1></a>
-                </div>
-                <div class="tema pla" style="background-color: #416e2b;">
-                    <a href="../telaDoMeio/TelaDoMeio.html?tema=botanica"><h1>Botânica</h1></a>
-                </div>
-                <div class="tema" style="background-color: #40682a;">
-                    <a href="../telaDoMeio/TelaDoMeio.html?tema=zoologia"><h1>Zoologia</h1></a>
-                </div>
-                <div class="tema" style="background-color: #3e612b;">
-                    <a href="../telaDoMeio/TelaDoMeio.html?tema=anatomia"><h1>Anatomia humana</h1></a>
-                </div>
+                <a class="tema-link" style="background-color: #2e5d15;" href="../telaDoMeio/TelaDoMeio.html?tema=meioAmbiente">
+                        <h1>Meio Ambiente</h1>
+                </a>
+                <a class="tema-link" style="background-color: #416e2b;" href="../telaDoMeio/TelaDoMeio.html?tema=botanica">
+                    <h1>Botânica</h1>
+                </a>
+                <a class="tema-link" style="background-color: #40682a;" href="../telaDoMeio/TelaDoMeio.html?tema=zoologia">
+                    <h1>Zoologia</h1>
+                </a>
+                
+                <a class="tema-link" style="background-color: #3e612b;" href="../telaDoMeio/TelaDoMeio.html?tema=anatomia">
+                    <h1>Anatomia humana</h1>
+                </a>
             </div>
         </div>
         <script src="../quizes/js/main.js"></script>

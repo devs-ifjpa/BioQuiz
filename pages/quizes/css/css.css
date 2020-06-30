@@ -67,7 +67,7 @@ body{
     margin-bottom: 10px;
 }
 .alternatives-item{
-    background-color: #177db5;
+    background-color: #FFB225;
 }
 .green {
     background-color: #416e2b;
@@ -80,7 +80,7 @@ body{
   cursor: pointer;
 }
   
-.hidden, button{
+.hidden{
   display: none;
 }
 #tempo, #total{
@@ -93,6 +93,7 @@ body{
   display: unset;
 }
 #button{
+  opacity: 0;
   border-radius: 25px;
   padding: 6px 12px;
   font-size: 13px;
