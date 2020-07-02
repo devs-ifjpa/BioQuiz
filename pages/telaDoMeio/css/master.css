@@ -37,7 +37,7 @@ main{
     height: 80px;
 }
 #empty{
-    height: 200px;
+    height: 20px;
     width: 100%;
 }
 #thor{
@@ -47,7 +47,7 @@ main{
 img#medal{
     position: absolute;
     /* margin-left: -10px; */
-    left: calc(50% - (25px + 14px));
+    left: calc(50% - (5px + 14px));
     width: 28px;
     z-index: 2;
 }
@@ -228,6 +228,81 @@ input, #facebook-button, #google-button{
     opacity: 1;
 }
 
+/* ****** $cadastro ****** */
+
+/* QUIZ */
+
+.title, #button{
+    padding: .4rem 1.2rem;   
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 400;
+    margin: auto 9.5px;
+}
+
+.alternatives{
+    width: 100vw;
+}
+
+.alternatives-item, .red, .green{
+    transition: background-color .3s;
+    padding: .4rem .6rem;   
+    border-radius: 25px;
+    font-size: 13px;
+    margin: auto 9.5px;
+}
+.title{
+    width: calc(100vw - 19px - 38.4px);
+    background-color: #ffb226;
+    margin: 12px 9.5px;
+}
+.alternatives-item, .green, .red{
+    margin-bottom: 10px;
+}
+.alternatives-item{
+    background-color: #FFB225;
+}
+.green {
+    background-color: #416e2b;
+}
+.red {
+    background-color: #f91222;
+}
+
+.alternatives-item:hover {
+    cursor: pointer;
+}
+  
+.hidden{
+    display: none;
+}
+#tempo{
+    display: none;
+}
+.show{
+    display: unset;
+}
+#button{
+    opacity: 0;
+    border-radius: 25px;
+    padding: 6px 24px;
+    font-size: 13px;
+    font-weight: 400;
+    background-color: #68d430;
+    color: white;
+    font-weight: bold;
+    font-family: inherit;
+    border: 0;
+    margin: 0;
+}
+#button-box{
+    height: 30px;
+    margin: 10px auto;
+    margin-right: 10px;
+}
+
+/* $QUIZ */
+
 @media screen and (min-height: 480px){
     #voltar a{
         top: 1.666666667vh;
@@ -327,7 +402,7 @@ input, #facebook-button, #google-button{
         left: calc(50% - (5.208333333vh + 4.6875vh));
     }
     #empty{
-        height: 41.666666667vh;
+        height: 4.166666667;
     }
 }
 
@@ -430,6 +505,6 @@ input, #facebook-button, #google-button{
         left: calc(50% - (7.8125vw + 7.03125vw));
     }
     #empty{
-        height: 62.5vw;
+        height: 6.25vw;
     }
 }
