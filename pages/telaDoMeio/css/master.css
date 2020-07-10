@@ -125,7 +125,8 @@ img#coin{
 }
 .tema{
     width: 100vw;
-    margin-top: 50px;
+    /* margin-top: 50px; */
+    margin-top: 25px;
     background-color: #2e5d15;
     color: #f6f9f4;
     text-align: center;
@@ -329,7 +330,8 @@ input, #facebook-button, #google-button{
         font-size: 4.166666667vh;
     }
     .tema{
-        margin-top: 10.416666667vh;
+        /* margin-top: 10.416666667vh; */
+        margin-top: 5.208333333vh;
     }
     #tema{
         font-size: 5.208333333vh;
@@ -389,9 +391,6 @@ input, #facebook-button, #google-button{
         padding: 0.833333333vh 4.166666667vh 0.833333333vh 8.333333333vh;
         font-size: 3.333333333vh;
     }
-    .tema{
-        margin-top: 10.416666667vh;
-    }
     .tema-link h1{
         font-size: 5.833333333vh;
     }
@@ -439,7 +438,8 @@ input, #facebook-button, #google-button{
         font-size: 6.25vw;
     }
     .tema{
-        margin-top: 15.625vw;
+        /* margin-top: 15.625vw; */
+        margin-top: 7.8125vw;
     }
     #tema{
         font-size: 7.8125vw;
@@ -499,9 +499,6 @@ input, #facebook-button, #google-button{
         border-radius: 10.9375vw;
         padding: 1.25vw 6.25vw 1.25vw 12.5vw;
         font-size: 5vw;
-    }
-    .tema{
-        margin-top: 15.625vw;
     }
     .tema-link h1{
         font-size: 8.75vw;
