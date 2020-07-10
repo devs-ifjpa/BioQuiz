@@ -191,13 +191,19 @@ img#coin{
 
 input, #facebook-button, #google-button{
     background-color: #BCEBE4;
-    width: 256px;
     padding: 5px;
     text-align: center;
     align-self: center;
     margin: 10px;
     font-size: 20px;
     border: 0px;
+}
+.facebook-cadastro, .google-cadastro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 256px;
+    align-self: center;
 }
 #cadastro-button{
     width: 118px;
@@ -216,11 +222,21 @@ input, #facebook-button, #google-button{
     background-color: #dd4b39;
     color: #FCF9F9;
 }
-.facebook-cadastro, .google-cadastro{
-    align-self: center;
+.facebook-cadastro{
+    margin-bottom: 15px;
+    background-color: #3b5998;
+}
+.google-cadastro{
+    background-color: #dd4b39;
+}
+.google-cadastro, .facebook-cadastro{
+    height: 35px;
+}
+.google-cadastro img, .facebook-cadastro img{
+    height: 80%;
 }
 #facebook-button, #google-button{
-    margin: 10px;
+    margin: 0;
     font-size: 17px;
 }
 ::placeholder{
@@ -303,7 +319,8 @@ input, #facebook-button, #google-button{
 
 /* $QUIZ */
 
-@media screen and (min-height: 480px){
+/* @media screen and (min-height: 480px){ */
+@media screen{
     #voltar a{
         top: 1.666666667vh;
         left: 1.666666667vh;
@@ -322,10 +339,15 @@ input, #facebook-button, #google-button{
         margin-top: 2.083333333vh;
     }
     input, #facebook-button, #google-button{
-        width: 53.333333333vh;
         padding: 1.041666667vh;
         margin: 2.083333333vh;
         font-size: 4.166666667vh;
+    }
+    .facebook-cadastro, .google-cadastro{
+        width: 53.333333333vh;
+    }
+    .facebook-cadastro{
+        margin-bottom: 3.125vh;
     }
     #cadastro-button{
         width: 24.583333333vh;
@@ -334,10 +356,12 @@ input, #facebook-button, #google-button{
         border-radius: 4.166666667vh;
     }
     #facebook-button, #google-button{
-        margin: 2.083333333vh;
+        margin: 0;
         font-size: 3.541666667vh;
     }
-
+    .google-cadastro, .facebook-cadastro{
+        height: 7.291666667vh;
+    }    
     /* TEMAS */
 
     #miscellaneous{
@@ -406,7 +430,7 @@ input, #facebook-button, #google-button{
     }
 }
 
-@media screen and (min-height: 480px) and (max-aspect-ratio: 320/480){
+@media screen and (max-aspect-ratio: 320/480){
     #voltar a{
         top: 2.5vw;
         left: 2.5vw;
@@ -425,10 +449,15 @@ input, #facebook-button, #google-button{
         margin-top: 3.125vw;
     }
     input, #facebook-button, #google-button{
-        width: 80vw;
         padding: 1.5625vw;
         margin: 3.125vw;
         font-size: 6.25vw;
+    }
+    .facebook-cadastro, .google-cadastro{
+        width: 80vw;
+    }
+    .facebook-cadastro{
+        margin-bottom: 4.6875vw;
     }
     #cadastro-button{
         width: 36.875vw;
@@ -437,8 +466,11 @@ input, #facebook-button, #google-button{
         border-radius: 6.25vw;
     }
     #facebook-button, #google-button{
-        margin: 3.125vw;
+        margin: 0;
         font-size: 5.3125vw;
+    }
+    .google-cadastro, .facebook-cadastro{
+        height: 10.9375vw;
     }
 
     /* TEMAS */

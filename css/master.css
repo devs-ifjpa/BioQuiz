@@ -104,7 +104,8 @@ footer a{
     width: 20vw;     
 }
 
-@media screen and (min-height: 480px) {
+/* @media screen and (min-height: 480px) { */
+@media screen{
     #lacinho{
         width: 6.875vh;
         height: 8.125vh;
@@ -150,7 +151,8 @@ footer a{
     }
 }
 
-@media screen and (min-height: 480px) and (max-aspect-ratio: 320/480){
+/* @media screen and (min-height: 480px) and (max-aspect-ratio: 320/480){ */
+@media screen and (max-aspect-ratio: 320/480){
     #lacinho{
         width: 10vw;
         height: 12.1875vw;
