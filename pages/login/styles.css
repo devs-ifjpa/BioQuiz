@@ -1,0 +1,140 @@
+@font-face{
+    font-family: 'Tahoma';
+    src: url('../../fonts/Tahoma.ttf');
+}
+
+body{
+    background-color: #eadc83;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    font-family: 'tahoma';
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+main{
+    display: inherit;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#voltar a{
+    top: 8px;
+    left: 8px;
+    position: absolute;
+    color: #f6f9f4;
+    background-color: #8bd6fe;
+    padding: 4px 10px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#titulo{
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50px;
+    background-color: #2e5d15;
+    align-self: flex-start;
+    margin-top: 3rem;
+}
+
+#titulo-login{
+    font: bold 30px 'tahoma';
+    box-sizing: border-box;
+    margin: 60px auto;
+    color: #f6f9f4;
+    text-align: center;
+}
+
+#logo{
+    align-self: center;
+    align-items: center;
+}
+
+#logo img{
+    width: 8rem;
+}
+
+#formulario{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #8bd6fe;
+    border: 0px;
+    border-radius: 60px;
+    margin: auto 70px;
+}
+
+input{
+    border: 0px;
+    border-bottom: 1px solid black;
+    background-color: #8bd6fe;
+    margin: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+input::placeholder{
+    font-weight: bold;
+    opacity: 1;
+    color: grey;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 2.5rem;
+    position: relative;
+}
+
+#formulario a{
+    align-self: flex-end;
+    text-decoration: none;
+    color: #f6f9f4;
+    margin-right: 50px;
+    margin-top: -20px;
+    font-size: 12px;
+}
+
+form img{
+    height: 1.5rem;
+    z-index: 999;
+    margin-bottom: -32px;
+    margin-left: -10px;
+}
+
+form button{
+    border: 0px;
+    background-color: lightcoral;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+#imagens{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem 1rem;
+}
+
+#imagens img{
+    height: 50px;
+    margin-top: 10px;
+}
+
+#imagens button{
+    border: 0px;
+    background-color: #8bd6fe;
+}
