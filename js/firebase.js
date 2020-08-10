@@ -1,6 +1,15 @@
-    var database = firebase.database();
+var db = firebase.firestore();
 
 // LOGIN DEFAULT
+
+    if(document.getElementById('DefaultLogin') != undefined){
+        document.getElementById('DefaultLogin').addEventListener('submit', () => {
+            event.preventDefault();
+            let email = document.getElementById('DefaultLoginEmail')
+            let password = document.getElementById('DefaultLoginPassword');
+            Firebase_Login(email,password);
+        });
+    }
 
     function Firebase_Login(userEmail,userPass){
         userEmail = userEmail.value;
@@ -52,15 +61,16 @@
     function Firebase_RegisterEmail(email,password,data){
         if(email != "" && password != ""){
             var errorcont = 0;
-            firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+            firebase.auth().createUserWithEmailAndPassword(email, password).then(() => {
+                data.length > 0 ? Firebase_RegisterDatabase(email,password,data) : false;
+            }).catch(function(error) {
                 errorcont ++;
                 // Handle Errors here.
                 var errorCode = error.code;
                 var errorMessage = error.message;
                 errorMessage == "The email address is already in use by another account." ?
                     alert('O endereço de email já está sendo usado por outra conta.') : false;
-            });
-            errorcont == 0 && data.length > 0 ? Firebase_RegisterDatabase(email,password,data) : false;
+            })
         }
     }
   
@@ -69,10 +79,14 @@
         firebase.auth().onAuthStateChanged(function(user) {
             if (user) {
                 var user = firebase.auth().currentUser;
-                firebase.database().ref('users/' + user.uid).set({
+                // firebase.database().ref('users/' + user.uid).set({
+                    // nome: data[0]
+                // });
+                db.collection('users').doc(user.uid).set({
                     nome: data[0]
-                });        
-                Firebase_Logout();
+                }).then(() => {
+                    Firebase_Logout()
+                });
             }
         });
         alert("Cadastro Realizado com Sucesso");
@@ -84,7 +98,13 @@
 
 firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
-        // User is signed in.
+        console.log('entrou')
+        if(window.location.toString().indexOf('login.html') != -1){
+            window.location = window.location.toString().split('/pages')[0] + '/index.html';
+        }
+        if(document.getElementById('LoginLinkButton') != undefined){
+            document.getElementById('LoginLinkButton').removeAttribute('href');
+        }
     } else{
     }
 });

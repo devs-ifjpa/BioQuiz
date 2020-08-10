@@ -1,40 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
-    <main>
-        <nav id="voltar">
-            <a href="../../index.html">
-                Voltar
-            </a>
-        </nav>
-        <div id="titulo">
-            <p id="titulo-login">
-                Login
-            </p>
-        </div>
-        <div id="logo">
-            <img src="../../img/icon-1.png" alt="Logo">
-        </div>
-        <div id="formulario">
-            <form>
-                <img src="../../img/login-email.png" alt="Login">
-                <input type="email" name="" id="" placeholder="E-mail">
-                <img src="../../img/login-senha.png" alt="Senha">
-                <input type="password" name="" id="" placeholder="Senha">
-                <button type="submit">Login</button>
-            </form>
-            <a href="#">Esqueci a senha</a>
-            <div id="imagens">
-                <button type="submit"><img src="../../img/google-logn.png" alt="Facebook"></button>
-                <button type="submit"><img src="../../img/facebook-login.png" alt="Google"></button>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <main>
+            <nav id="voltar">
+                <a href="../../index.html">
+                    Voltar
+                </a>
+            </nav>
+            <div id="titulo">
+                <p id="titulo-login">
+                    Login
+                </p>
             </div>
-        </div>
-    </main>
-</body>
+            <div id="logo">
+                <img src="../../img/icon-1.png" alt="Logo">
+            </div>
+            <div id="formulario">
+                <form id="DefaultLogin">
+                    <img src="../../img/login-email.png" alt="Login">
+                    <input type="email" name="" id="DefaultLoginEmail" placeholder="E-mail">
+                    <img src="../../img/login-senha.png" alt="Senha">
+                    <input type="password" name="" id="DefaultLoginPassword" placeholder="Senha" minlength='8'>
+                    <button type="submit">Login</button>
+                </form>
+                <a href="#">Esqueci a senha</a>
+                <div id="imagens">
+                    <button type="submit"><img src="../../img/google-logn.png" alt="Facebook"></button>
+                    <button type="submit"><img src="../../img/facebook-login.png" alt="Google"></button>
+                </div>
+            </div>
+        </main>
+        <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>        
+        <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
+        <script>
+            var firebaseConfig = {
+                apiKey: "AIzaSyBDhlHYFCmZSLwkIdknHGC6msRTzxP1fm4",
+                authDomain: "bioquiz-c51b4.firebaseapp.com",
+                databaseURL: "https://bioquiz-c51b4.firebaseio.com",
+                projectId: "bioquiz-c51b4",
+                storageBucket: "bioquiz-c51b4.appspot.com",
+                messagingSenderId: "101098678577",
+                appId: "1:101098678577:web:a291fb17aaed7b5a0a6810",
+                measurementId: "G-3QDV5D6J5K"
+            };
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+        </script>
+        <script src="../../js/firebase.js"></script>
+    </body>
 </html>
