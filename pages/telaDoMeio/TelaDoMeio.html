@@ -37,17 +37,18 @@
         </div>
         <div class="medio">
                 <a href="#" id="aumenta">Quiz</a>
-                <a href="#">Você Sabia?</a>
+                <a href="#" id="consulta">Você Sabia?</a>
         </div>
     </div>
     <script>
         var title = "";
         temas.indexOf(temaselect) == 0 ? title = "Botânica" :
         temas.indexOf(temaselect) == 1 ? title = "Anatomia" :
-        temas.indexOf(temaselect) == 2 ? title = "Meio Ambiente" :
+        temas.indexOf(temaselect) == 2 ? title = "Ecologia" :
         temas.indexOf(temaselect) == 3 ? title = "Zoologia" : false;
         document.getElementById("tema").innerHTML = title;
         document.getElementById("aumenta").href = `../quizes/quizz.html?tema=${temaselect}`
+        document.getElementById("consulta").href = `../voceSabia/${temaselect}.html`
     </script>
 </body>
 </html>

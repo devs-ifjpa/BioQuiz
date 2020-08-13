@@ -14,7 +14,7 @@ let alternativeclick = 0;
 
 var url = window.location;
 temaselect = url.toString().split("=")[1];
-temas = ["botanica","anatomia","meioAmbiente","zoologia"]
+temas = ["botanica","anatomia","ecologia","zoologia"]
 let filterArray = questions[temas.indexOf(temaselect)];
 
 var randomics = [];
