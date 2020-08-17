@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/master.css">
+    <script src="../quizes/js/main.js"></script>
 </head>
 <body>
     <nav id="voltar">
-        <a href="#">
+        <a href="../temas/temas.html">
             Voltar
         </a>
     </nav>
@@ -17,6 +18,10 @@
             <img src="img/jogo-03.png" id="medal">
             <p id="thor">0</p>
         </div>
+        <div id="baubox">
+            <img src="../../img/Bau I.png" id="bau">
+            <p id="baupoint">0</p>
+        </div>
         <div id="mar">
             <img src="img/MOEDA-02.png" id="coin">
             <p id="loki">
@@ -24,22 +29,26 @@
             </p>
         </div>
     </div>
-    <div class="tema">
-        <p id="tema">
-            Anatomia Humana
-        </p>
-    </div>
-    <div class="medio">
-        <div class="choice">
-            <a href="#" id="aumenta">
-                Quiz
-            </a>
+    <div class="content">
+        <div class="tema-link">
+            <p id="tema">
+                Anatomia Humana
+            </p>
         </div>
-        <div class="choice">
-            <a href="#">
-                Você Sabia?
-            </a>
+        <div class="medio">
+                <a href="#" id="aumenta">Quiz</a>
+                <a href="#" id="consulta">Você Sabia?</a>
         </div>
     </div>
+    <script>
+        var title = "";
+        temas.indexOf(temaselect) == 0 ? title = "Botânica" :
+        temas.indexOf(temaselect) == 1 ? title = "Anatomia" :
+        temas.indexOf(temaselect) == 2 ? title = "Ecologia" :
+        temas.indexOf(temaselect) == 3 ? title = "Zoologia" : false;
+        document.getElementById("tema").innerHTML = title;
+        document.getElementById("aumenta").href = `../quizes/quizz.html?tema=${temaselect}`
+        document.getElementById("consulta").href = `../voceSabia/${temaselect}.html`
+    </script>
 </body>
 </html>

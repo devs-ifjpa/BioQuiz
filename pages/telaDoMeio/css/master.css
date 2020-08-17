@@ -11,96 +11,529 @@ body{
     display: flex;
     flex-direction: column;
 }
-nav{
-    height: 50px;
+.content{
+    margin: auto;
 }
-nav#voltar a{
+main{
+    margin: auto;
+}
+#voltar a{
+    top: 8px;
+    left: 8px;
+    position: absolute;
     color: #f6f9f4;
     background-color: #8bd6fe;
-    padding: .5rem;
+    padding: 4px 10px;
     border-radius: 30px;
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
 }
 #miscellaneous{
-    display: inherit;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    width: 100%;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     height: 80px;
 }
-#miscellaneous #mer{
-    display: inherit;
+#empty{
+    height: 20px;
+    width: 100%;
 }
 #thor{
     position: absolute;
-    left: 25px;
-    top: 43px;
-    z-index: 1;
-}
-#loki{
-    position: absolute;
-    top: 43px;
-    right: 10px;
     z-index: 1;
 }
 img#medal{
     position: absolute;
-    top: 57px;
-    left: 10px;
-    height: 37px;
+    /* margin-left: -10px; */
+    left: calc(50% - (5px + 14px));
+    width: 28px;
     z-index: 2;
+}
+#loki{
+    position: absolute;
+    z-index: 1;
 }
 img#coin{
     position: absolute;
-    top: 52px;
-    right: 65px;
+    left: calc(50% - (25px + 21px));
     z-index: 2;
     height: 42px;
 }
+#bau{
+    position: absolute;
+    left: calc(50% - (25px + 26px) );
+    width: 52px;
+    z-index: 2;
+}
+
+#baupoint{
+    position: absolute;
+}
+
+#watchtime{
+    margin-left: -10px;
+    position: absolute;
+    width: 50px;
+    left: calc(50% - (25px + 25px));
+    z-index: 2;
+}
+
+#clock{
+    position: absolute;
+    z-index: 1;
+}
+
+#clockbox{
+    transition: all .5;
+    opacity: 0;
+}
+
+#trophy-icon{
+    position: absolute;
+    width: 45px;
+    margin-left: -10px;
+    left: calc(50% - (25px + 22.5px));
+    z-index: 2;
+}
+
+#trophy{
+    position: absolute;
+    z-index: 1;
+}
+
+#miscellaneous div{
+    position: relative;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 #miscellaneous p{
+    margin: 0;
     background-color: #8bd6fe;
     border-radius: 35px;
     font-weight: bold;
-    padding: 4px 30px 4px 40px;
+    padding: 4px 20px 4px 40px;
     height: fit-content;
 }
-#mar{
-    margin-right: 40px;
-    display: inherit;
+.temas{
+    height: calc(100vh - 105px);
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
 }
 .tema{
+    width: 100vw;
+    /* margin-top: 50px; */
+    margin-top: 25px;
     background-color: #2e5d15;
     color: #f6f9f4;
     text-align: center;
 }
+.tema-link{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f6f9f4;
+    text-align: center;
+    background-color: #2e5d15;
+    text-decoration: none;
+}
+
+.tema-link h1{
+    font-size: 28px;
+    margin: 0px;
+}
 #tema{
-    font-size: 35px;
+    font-size: 25px;
     padding: 10px;
     font-weight: bold;
     margin: 0px;
 }
 .medio{
-    display: inherit;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-self: center;
+    display: grid;
+    grid-template-rows: repeat(2,1fr) ;
     text-align: center;
-    height: 400px;
+    height: 200px;
+    margin: 30px;
 }
-.choice a{
+.medio a{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 200px;
     background-color: #ffb226;
     color: #f6f9f4;
-    padding: 1rem;
-    border-radius: 30px;
+    border-radius: 20px;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
     text-decoration: none;
 }
-.choice{
-    height: 10px;
+
+/* ****** cadastro ****** */
+
+.campos{
+    display: flex;
+    flex-direction: column;
 }
-#aumenta{
-    padding: 1rem 4.3rem;
+
+#Form_Register{
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input, #facebook-button, #google-button{
+    background-color: #BCEBE4;
+    padding: 5px;
+    text-align: center;
+    align-self: center;
+    margin: 10px;
+    font-size: 20px;
+    border: 0px;
+}
+.facebook-cadastro, .google-cadastro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 256px;
+    align-self: center;
+}
+#cadastro-button{
+    width: 118px;
+    background-color: yellowgreen;
+    font-size: 18px;
+    align-self: center;
+    margin-top: 10px;
+    font-weight: 600;
+    border-radius: 20px;
+}
+#facebook-button{
+    background-color: #3b5998;
+    color: #FCF9F9;
+}
+#google-button{
+    background-color: #dd4b39;
+    color: #FCF9F9;
+}
+.facebook-cadastro{
+    margin-bottom: 15px;
+    background-color: #3b5998;
+}
+.google-cadastro{
+    background-color: #dd4b39;
+}
+.google-cadastro, .facebook-cadastro{
+    height: 35px;
+}
+.google-cadastro img, .facebook-cadastro img{
+    height: 80%;
+}
+#facebook-button, #google-button{
+    margin: 0;
+    font-size: 17px;
+}
+::placeholder{
+    font-weight: 900;
+    opacity: 1;
+}
+
+/* ****** $cadastro ****** */
+
+/* QUIZ */
+
+.title, #button{
+    padding: .4rem 1.2rem;   
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 400;
+    margin: auto 9.5px;
+}
+
+.alternatives{
+    width: 100vw;
+}
+
+.alternatives-item, .red, .green{
+    transition: background-color .3s;
+    padding: .4rem .6rem;   
+    border-radius: 25px;
+    font-size: 13px;
+    margin: auto 9.5px;
+}
+.title{
+    width: calc(100vw - 19px - 38.4px);
+    background-color: #ffb226;
+    margin: 12px 9.5px;
+}
+.alternatives-item, .green, .red{
+    margin-bottom: 10px;
+}
+.alternatives-item{
+    background-color: #FFB225;
+}
+.green {
+    background-color: #416e2b;
+}
+.red {
+    background-color: #f91222;
+}
+
+.alternatives-item:hover {
+    cursor: pointer;
+}
+  
+.hidden{
+    display: none;
+}
+#tempo{
+    display: none;
+}
+.show{
+    display: unset;
+}
+#button{
+    opacity: 0;
+    border-radius: 25px;
+    padding: 6px 24px;
+    font-size: 13px;
+    font-weight: 400;
+    background-color: #68d430;
+    color: white;
+    font-weight: bold;
+    font-family: inherit;
+    border: 0;
+    margin: 0;
+}
+#button-box{
+    height: 30px;
+    margin: 10px auto;
+    margin-right: 10px;
+}
+
+/* $QUIZ */
+
+/* @media screen and (min-height: 480px){ */
+@media screen{
+    #voltar a{
+        top: 1.666666667vh;
+        left: 1.666666667vh;
+        padding: 0.833333333vh 2.083333333vh;
+        border-radius: 6.25vh;
+        font-size: 4.166666667vh;
+    }
+    .tema{
+        /* margin-top: 10.416666667vh; */
+        margin-top: 5.208333333vh;
+    }
+    #tema{
+        font-size: 5.208333333vh;
+        padding: 2.083333333vh;
+    }
+    #Form_Register{
+        margin-top: 2.083333333vh;
+    }
+    input, #facebook-button, #google-button{
+        padding: 1.041666667vh;
+        margin: 2.083333333vh;
+        font-size: 4.166666667vh;
+    }
+    .facebook-cadastro, .google-cadastro{
+        width: 53.333333333vh;
+    }
+    .facebook-cadastro{
+        margin-bottom: 3.125vh;
+    }
+    #cadastro-button{
+        width: 24.583333333vh;
+        font-size: 3.75vh;
+        margin-top: 2.083333333vh;
+        border-radius: 4.166666667vh;
+    }
+    #facebook-button, #google-button{
+        margin: 0;
+        font-size: 3.541666667vh;
+    }
+    .google-cadastro, .facebook-cadastro{
+        height: 7.291666667vh;
+    }    
+    /* TEMAS */
+
+    #miscellaneous{
+        margin-top: 5.208333333vh;
+        height: 16.666666667vh;
+    }
+    img#medal{
+        /* margin-left: -2.083333333vh; */
+        left: calc(50% - (5.208333333vh + 2.916666667vh));
+        width: 5.833333333vh;
+    }
+    img#coin{
+        left: calc(50% - (5.208333333vh + 4.375vh));
+        height: 8.75vh;
+    }
+    #bau{
+        left: calc(50% - (5.208333333vh + 5.416666667vh));
+        width: 10.833333333vh;
+    }
+    #miscellaneous div{
+        margin: 2.083333333vh;
+    }
+    #miscellaneous p{
+        border-radius: 7.291666667vh;
+        padding: 0.833333333vh 4.166666667vh 0.833333333vh 8.333333333vh;
+        font-size: 3.333333333vh;
+    }
+    .tema-link h1{
+        font-size: 5.833333333vh;
+    }
+    #tema{
+        font-size: 5.208333333vh;
+        padding: 2.083333333vh;
+    }
+    .temas{
+        height: calc(100vh - (5.208333333vh + 16.666666667vh));
+    }
+
+    /* $TEMAS */
+
+    .medio{
+        height: 41.666666667vh;
+        margin: 6.25vh;
+    }
+    .medio a{
+        height: 8.333333333vh;
+        width: 41.666666667vh;
+        border-radius: 4.166666667vh;
+        font-size: 5.208333333vh;
+    }
+    #watchtime{
+        margin-left: -2.083333333vh;
+        width: 10.416666667vh;
+        left: calc(50% - (5.208333333vh + 5.208333333vh));
+    }
+    #trophy-icon{
+        width: 9.375vh;
+        margin-left: -2.083333333vh;
+        left: calc(50% - (5.208333333vh + 4.6875vh));
+    }
+    #empty{
+        height: 4.166666667;
+    }
+}
+
+@media screen and (max-aspect-ratio: 320/480){
+    #voltar a{
+        top: 2.5vw;
+        left: 2.5vw;
+        padding: 1.25vw 3.125vw;
+        border-radius: 9.375vw;
+        font-size: 6.25vw;
+    }
+    .tema{
+        /* margin-top: 15.625vw; */
+        margin-top: 7.8125vw;
+    }
+    #tema{
+        font-size: 7.8125vw;
+        padding: 3.125vw;
+    }
+    #Form_Register{
+        margin-top: 3.125vw;
+    }
+    input, #facebook-button, #google-button{
+        padding: 1.5625vw;
+        margin: 3.125vw;
+        font-size: 6.25vw;
+    }
+    .facebook-cadastro, .google-cadastro{
+        width: 80vw;
+    }
+    .facebook-cadastro{
+        margin-bottom: 4.6875vw;
+    }
+    #cadastro-button{
+        width: 36.875vw;
+        font-size: 5.625vw;
+        margin-top: 3.125vw;
+        border-radius: 6.25vw;
+    }
+    #facebook-button, #google-button{
+        margin: 0;
+        font-size: 5.3125vw;
+    }
+    .google-cadastro, .facebook-cadastro{
+        height: 10.9375vw;
+    }
+
+    /* TEMAS */
+
+    #miscellaneous{
+        margin-top: 7.8125vw;
+        height: 25vw;
+    }
+    img#medal{
+        /* margin-left: -3.125vw; */
+        left: calc(50% - (7.8125vw + 4.375vw));
+        width: 8.75vw;
+    }
+    img#coin{
+        left: calc(50% - (7.8125vw + 6.5625vw));
+        height: 13.125vw;
+    }
+    #bau{
+        left: calc(50% - (7.8125vw + 8.125vw));
+        width: 16.25vw;
+    }
+    #miscellaneous div{
+        margin: 3.125vw;
+    }
+    #miscellaneous p{
+        border-radius: 10.9375vw;
+        padding: 1.25vw 6.25vw 1.25vw 12.5vw;
+        font-size: 5vw;
+    }
+    .tema-link h1{
+        font-size: 8.75vw;
+    }
+    #tema{
+        font-size: 7.8125vw;
+        padding: 3.125vw;
+    }
+    .temas{
+        height: calc(100vh - (7.8125vw + 25vw));
+    }
+
+    /* $TEMAS */
+
+    .medio{
+        height: 62.5vw;
+        margin: 9.375vw;
+    }
+    .medio a{
+        height: 12.5vw;
+        width: 62.5vw;
+        border-radius: 6.25vw;
+        font-size: 7.8125vw;
+    }
+    #watchtime{
+        margin-left: -3.125vw;
+        width: 15.625vw;
+        left: calc(50% - (7.8125vw + 7.8125vw));
+    }
+    #trophy-icon{
+        width: 14.0625vw;
+        margin-left: -3.125vw;
+        left: calc(50% - (7.8125vw + 7.03125vw));
+    }
+    #empty{
+        height: 6.25vw;
+    }
 }

@@ -1,26 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/css.css">
-</head>
-<body onload="start()">
-  <a class="voltar" href="../temas/temas.html">Voltar</a>
-  <div id="finaltime"></div>
-  <div id="pointtemp"></div>
-  <div id="tempo"></div>
-  <div id="total">0</div>
-  <h1 class="questio"></h1>
-  <div class="content">
-    <h2 class="title"></h2>
-    <div class="alternatives"></div>
-  </div>
-  <div id="button-box">
-    <button id="button">Próximo</button>
-  </div>
-  <script id="src" src="js/quizzes.js"></script>
-  <script src="js/main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="css/css.css"> -->
+    <link rel="stylesheet" href="../telaDoMeio/css/master.css">
+  </head>
+  <body onload="start()">
+    <nav id="voltar">
+      <a href="../temas/temas.html">Voltar</a>
+    </nav>
+    <div id="empty"></div>
+    <div id="miscellaneous">
+      <div id="mer">
+          <img src="../telaDoMeio/img/jogo-03.png " id="medal">
+          <p id="thor">0</p>
+      </div>
+      <div id="clockbox">
+          <img src="../../img/jogo-02.png" id="watchtime">
+          <p id="clock"></p>
+      </div>
+      <div id="mar">
+          <img src="../telaDoMeio/img/MOEDA-02.png" id="coin">
+          <p id="loki">0</p>
+      </div>
+      <div id="baubox">
+        <img src="../../img/Bau I.png" id="bau">
+        <p id="baupoint">0</p>
+      </div>
+      <div>
+        <img src="../../img/Trofeu.png" id="trophy-icon">
+        <p id="trophy">0</p>
+      </div>
+    </div>
+    <div id="tempo"></div>
+    <div class="content">
+      <h2 class="title"></h2>
+      <div class="alternatives"></div>
+    </div>
+    <div id="button-box">
+      <button id="button">AVANÇAR</button>
+    </div>
+    <script id="src" src="./js/quizzes.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>

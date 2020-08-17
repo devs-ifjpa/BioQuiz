@@ -2,129 +2,130 @@
     font-family: 'Tahoma';
     src: url('../fonts/Tahoma.ttf');
     }
-body{
-    background-color: #eadc83;
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-    font-family: 'tahoma';
-    color: #f6f9f4;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: row wrap;
-    flex-direction: column;
-    align-items: center;
-}
+/* body{ */
+    /* background-color: #eadc83; */
+    /* width: 100%; */
+    /* height: 100vh; */
+    /* margin: 0; */
+    /* font-family: 'tahoma'; */
+    /* color: #f6f9f4; */
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* flex-wrap: row wrap; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+/* } */
 
-.title, .alternatives-item, .voltar, .green, .red, .questio, #button{
-    padding: .4rem 1.2rem;   
-    border-radius: 25px;
-    font-size: 9px;
-    font-weight: 400;
-    margin: auto 9.5px;
-}
+/* .title, .alternatives-item, .green, .red, .questio, #button{ */
+    /* padding: .4rem 1.2rem;    */
+    /* border-radius: 25px; */
+    /* font-size: 9px; */
+    /* font-weight: 400; */
+    /* margin: auto 9.5px; */
+/* } */
+/*  */
+/* .alternatives{ */
+  /* width: 100vw; */
+/* } */
+/*  */
+/* .alternatives-item, .red, .green{ */
+  /* transition: background-color .3s; */
+  /* padding: .4rem .6rem;    */
+  /* border-radius: 10px; */
+  /* font-size: 7px; */
+/* } */
 
-.alternatives{
-  width: 100vw;
-}
+/* .voltar{ */
+  /* margin: 0; */
+  /* position: absolute; */
+  /* top: 8px; */
+  /* left: 8px; */
+  /* background-color: #8bd6fe; */
+  /* text-decoration: none; */
+  /* color: #f6f9f4; */
+  /* border-radius: 25px; */
+  /* font-size: 11px; */
+  /* padding: .2rem .6rem;    */
+  /* font-weight: 400; */
+/* } */
 
-.alternatives-item, .red, .green{
-  transition: background-color .3s;
-  padding: .4rem .6rem;   
-  border-radius: 10px;
-  font-size: 7px;
-}
-
-.voltar{
-  margin: 0;
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  background-color: #8bd6fe;
-  text-decoration: none;
-  color: #f6f9f4;
-  border-radius: 25px;
-  font-size: 11px;
-  padding: .2rem .6rem;   
-  font-weight: 400;
-}
-
-.questio{
-    padding: .2rem .6rem;       
-    margin-top: 10vh;
-    margin-bottom: 0px;
-    background-color: #4a7434;
-    font-size: 12px;
-    font-weight: bold;
-    
-}
-.title{
-    width: calc(100vw - 19px - 38.4px);
-    background-color: #ffb226;
-    margin: 12px 9.5px;
-}
-.alternatives-item, .green, .red{
-    margin-bottom: 10px;
-}
-.alternatives-item{
-    background-color: #177db5;
-}
-.green {
-    background-color: #416e2b;
-}
-.red {
-  background-color: #f91222;
-}
-
-.alternatives-item:hover {
-  cursor: pointer;
-}
-  
-.hidden, button{
-  display: none;
-}
-#tempo, #total{
-  display: none;
-  color: black;
-  align-self: flex-end;
-  
-}
-.show{
-  display: unset;
-}
-#button{
-  border-radius: 25px;
-  padding: 6px 12px;
-  font-size: 13px;
-  font-weight: 400;
-  background-color: #68d430;
-  color: white;
-  font-weight: bold;
-  font-family: inherit;
-  border: 0;
-  margin: 0;
-}
-#button-box{
-  width: 78.172px;
-  height: 30px;
-  margin: 10px auto;
-}
-#finaltime, #pointtemp{
-  position: absolute;
-  font-size: 12px;
-  font-weight: bold;
-  color: white;
-}
-#finaltime{
-  top: 8px;
-  right: 8px;
-}
-#pointtemp{
-  opacity: 0;
-  top: 27px;
-  right: 8px;
-  transition: all .5s;
-}
+/* .questio{ */
+    /* padding: .2rem .6rem;        */
+    /* margin-top: 10vh; */
+    /* margin-bottom: 0px; */
+    /* background-color: #4a7434; */
+    /* font-size: 12px; */
+    /* font-weight: bold; */
+    /*  */
+/* } */
+/* .title{ */
+    /* width: calc(100vw - 19px - 38.4px); */
+    /* background-color: #ffb226; */
+    /* margin: 12px 9.5px; */
+/* } */
+/* .alternatives-item, .green, .red{ */
+    /* margin-bottom: 10px; */
+/* } */
+/* .alternatives-item{ */
+    /* background-color: #FFB225; */
+/* } */
+/* .green { */
+    /* background-color: #416e2b; */
+/* } */
+/* .red { */
+  /* background-color: #f91222; */
+/* } */
+/*  */
+/* .alternatives-item:hover { */
+  /* cursor: pointer; */
+/* } */
+  /*  */
+/* .hidden{ */
+  /* display: none; */
+/* } */
+/* #tempo, #total{ */
+  /* display: none; */
+  /* color: black; */
+  /* align-self: flex-end; */
+  /*  */
+/* } */
+/* .show{ */
+  /* display: unset; */
+/* } */
+/* #button{ */
+  /* opacity: 0; */
+  /* border-radius: 25px; */
+  /* padding: 6px 12px; */
+  /* font-size: 13px; */
+  /* font-weight: 400; */
+  /* background-color: #68d430; */
+  /* color: white; */
+  /* font-weight: bold; */
+  /* font-family: inherit; */
+  /* border: 0; */
+  /* margin: 0; */
+/* } */
+/* #button-box{ */
+  /* width: 78.172px; */
+  /* height: 30px; */
+  /* margin: 10px auto; */
+/* } */
+/* #finaltime, #pointtemp{ */
+  /* position: absolute; */
+  /* font-size: 12px; */
+  /* font-weight: bold; */
+  /* color: white; */
+/* } */
+/* #finaltime{ */
+  /* top: 8px; */
+  /* right: 8px; */
+/* } */
+/* #pointtemp{ */
+  /* opacity: 0; */
+  /* top: 27px; */
+  /* right: 8px; */
+  /* transition: all .5s; */
+/* } */
 
 @media screen and (min-height: 320px){
   .voltar{

@@ -2,6 +2,8 @@ body{
     background-color: #eadc83;
     font-family: Tahoma, sans-serif;
     margin: 0px;
+    display: flex;
+    flex-direction: column;
 }
 .volar{
     height: fit-content;
@@ -9,23 +11,65 @@ body{
 }
 .voltar{
     margin-bottom: 100px;
-    margin: 0px;
-    position: absolute;
+    margin: 0px;    
     top: 8px;
     left: 8px;
     background-color: #8bd6fe;
     text-decoration: none;
-    color: #f6f9f4;
+    color: black;
     border-radius: 25px;
     font-size: 1.7rem;
-    padding: 1rem 1.5rem;   
+    padding: .7rem 1.5rem;   
     font-weight: 400;
+    height: 10px;
 }
 a{
     text-decoration: none;
     color: #f6f9f4;
 }
+#miscellaneous{    
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-between;
+    align-content: center;
+    height: 80px;
+}
 
+#thor{
+    position: relative;
+    left: 13px;
+    bottom: 43px;
+    z-index: -1;
+}
+#loki{
+    position: relative;  
+    bottom: 8px;
+    right: 23px;
+    z-index: -1;
+}
+img#medal{ 
+    position: relative;
+    top: 10px;   
+    height: 37px;
+    z-index: 2;
+}
+img#coin{     
+    height: 42px;
+}
+#miscellaneous p{
+    background-color: #8bd6fe;
+    border-radius: 35px;
+    font-weight: bold;
+    padding: 4px 30px 4px 40px;
+    height: fit-content;
+}
+#mar{
+    margin-right: 40px;
+    display: inherit;
+}
+#bau{  
+    height: 52px;
+}
 .tema{
     background-color: #4a7434;
     text-align: center;
@@ -35,13 +79,13 @@ a{
     margin: 0px;
     border: 0px;
 }
+
 div.temass{
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: column;    
     width: 100vw;
-    height: 100vh;
+    height: 100vh;    
 }
 .questions{
     display: grid;
@@ -111,7 +155,7 @@ div.temass{
     .questions .question{
         margin-top: 10px;
     }
-} */
+} 
 .curiosidade{
     background-color: #ffb226;
     background-size: 30px;
@@ -124,3 +168,4 @@ div.temass{
     color: #ffffff;
     font-size: 30px;
 }
+*/

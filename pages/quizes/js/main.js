@@ -1,6 +1,8 @@
 let questionId = 0;
 let total = 0;
+let coin = 0;
 var count= 0;
+let alternativeclick = 0;
 
   function start(){
       if((count + 1) <= 9999999){
@@ -9,22 +11,20 @@ var count= 0;
           setTimeout('start();',1000);
       }
   }
+
 var url = window.location;
-console.log(url)
 temaselect = url.toString().split("=")[1];
-temas = ["botanica","anatomia","meioAmbiente","zoologia"]
-let filterArray = questions[temaselect].filter(x => questions[temaselect][questionId].Categoria === temas[temaselect])
-console.log(filterArray);
+temas = ["botanica","anatomia","ecologia","zoologia"]
+let filterArray = questions[temas.indexOf(temaselect)];
 
 var randomics = [];
-while (randomics.length < 30) {
-    var rand = Math.floor(Math.random() * 30);
-    if (randomics.indexOf(rand) == -1)
-        randomics.push(rand);
+while (randomics.length < filterArray.length) {
+    var rand = Math.floor(Math.random() * filterArray.length);
+    randomics.indexOf(rand) == -1 ? randomics.push(rand) : false;
+
 }
-console.log(randomics);
 function showQuestion() {
-  document.querySelector('.questio').innerHTML = filterArray[questionId].Question
+  document.getElementById("trophy").innerHTML = `${questionId + 1}/${filterArray.length}`;
   document.querySelector('.title').innerHTML = filterArray[randomics[questionId]].title
   const alternatives = filterArray[randomics[questionId]].alternatives;
   const alternativesView = document.querySelector('.alternatives')
@@ -37,9 +37,12 @@ function showQuestion() {
     // click
     const lastItem = alternativesView.querySelector('.alternatives-item:last-child')
     lastItem.addEventListener('click', () => {
-      document.getElementById("pointtemp").style.opacity = 1;
-      if(document.getElementById("finaltime").textContent == ""){
-        document.getElementById("finaltime").textContent = count;
+      document.querySelector("button").style.opacity = 1;
+      document.querySelector('button').setAttribute("onclick",'ButtonClick()');
+      alternativeclick++;
+      if(document.getElementById("clock").textContent == ""){
+        document.getElementById("clock").textContent = hora_bonita(count);
+        document.getElementById("clockbox").style.opacity = 1;
       }
       const alternativeItems = alternativesView.querySelectorAll('.alternatives-item')
       for (const alternativeItem of alternativeItems) {
@@ -55,94 +58,88 @@ function showQuestion() {
   }
 }
 
+function AddMedal(x){
+  total += x;
+  document.getElementById("thor").textContent = total;
+}
+
+function AddCoin(x){
+  coin += x;
+  document.getElementById("loki").textContent = coin;
+}
+
+function hora_bonita(s){
+	function duas_casas(numero){
+		if (numero <= 9){
+			numero = "0" + numero;
+    }
+		return numero;
+  }
+  minuto = duas_casas(Math.trunc((s%3600)/60));
+  segundo = duas_casas((s%3600)%60);
+  formatado = minuto+":"+segundo;            
+  return formatado;
+}
+
 const aAudio = new Audio("./audio/SomDeAcerto.mp3");
 const bAudio = new Audio("./audio/SomDeErro.mp3");
 function answerCorrect(x){
   const answer = filterArray[randomics[questionId]].answer;
   let time = Number(document.getElementById("tempo").textContent)
     if(x == answer){
-      document.getElementById("pointtemp").textContent == "" ? aAudio.play() : false;
+      alternativeclick == 0 ? aAudio.play() : false;
       switch (true){
         case time<=5:
-          if(document.getElementById("pointtemp").textContent == ""){
-            total += 1000;
-            document.getElementById("pointtemp").textContent = "+1000";
-          }
+          alternativeclick == 0 ? (AddMedal(1000),AddCoin(3)) : false;
           break;
         case time<10:
-          if(document.getElementById("pointtemp").textContent == ""){          
-            total += 900;
-            document.getElementById("pointtemp").textContent = "+900";
-          }
+          alternativeclick == 0 ? (AddMedal(900),AddCoin(2)) : false;
           break;
         case time<15:
-          if(document.getElementById("pointtemp").textContent == ""){          
-            total += 800;
-            document.getElementById("pointtemp").textContent = "+800";
-          }
+          alternativeclick == 0 ? (AddMedal(800),AddCoin(1)) : false;
           break;
         case time<20:
-          if(document.getElementById("pointtemp").textContent == ""){          
-            total += 700;
-            document.getElementById("pointtemp").textContent = "+700";
-          }
+          alternativeclick == 0 ? AddMedal(700) : false;
           break;
         case time<25:
-          if(document.getElementById("pointtemp").textContent == ""){                    
-            total += 600;
-            document.getElementById("pointtemp").textContent = "+600";
-          }
+          alternativeclick == 0 ? AddMedal(600) : false;
           break;
         case time<30:
-          if(document.getElementById("pointtemp").textContent == ""){          
-            total += 500;
-            document.getElementById("pointtemp").textContent = "+500";
-          }
+          alternativeclick == 0 ? AddMedal(500) : false;
           break;
         case time<35:
-          if(document.getElementById("pointtemp").textContent == ""){          
-            total += 400;
-            document.getElementById("pointtemp").textContent = "+400";
-          }
+          alternativeclick == 0 ? AddMedal(400) : false;
           break;
         case time<40:
-          if(document.getElementById("pointtemp").textContent == ""){          
-            total += 300;
-            document.getElementById("pointtemp").textContent = "+300";
-          }
+          alternativeclick == 0 ? AddMedal(300) : false;
           break;
         default:
-          if(document.getElementById("pointtemp").textContent == ""){          
-            total += 200;
-            document.getElementById("pointtemp").textContent = "+200";
-          }
+          alternativeclick == 0 ? AddMedal(200) : false;
       }
     }
     else{
-      document.getElementById("pointtemp").textContent == "" ? bAudio.play() : false;
-      if(document.getElementById("pointtemp").textContent == ""){
-        total += 0;
-        document.getElementById("pointtemp").textContent = "+0";
-      }
+      alternativeclick == 0 ? bAudio.play() : false;
     }
-  document.getElementById("total").innerText = total;
 }
 
+function ButtonClick(){
+  // document.querySelector('button').addEventListener('click', function() {
+    document.querySelector('button').removeAttribute("onclick");
+    document.getElementById("clock").textContent = "";
+    document.getElementById("clockbox").style.opacity = 0;
+    document.querySelector(".green").setAttribute("class", "hidden");
+    let contred = document.querySelectorAll("div.red");
+    for (var x = 1; x <= contred.length; x++){
+      document.querySelector(".red").setAttribute("class", "hidden");
+    }
+    document.querySelector("button").style.opacity = 0;
+    questionId++;
+    document.getElementById("tempo").textContent = 0;
+    count = 0;
+    alternativeclick = 0;
+    showQuestion();
+  // })
+}
 
-document.querySelector('button').addEventListener('click', function() {
-  document.getElementById("finaltime").textContent = "";
-  document.getElementById("pointtemp").textContent = "";
-  document.getElementById("pointtemp").style.opacity = 0;
-  document.querySelector(".green").setAttribute("class", "hidden");
-  let contred = document.querySelectorAll("div.red");
-  for (var x = 1; x <= contred.length; x++){
-    document.querySelector(".red").setAttribute("class", "hidden");
-  }
-  document.querySelector("button").setAttribute("class","hidden");
-  questionId++;
-  document.getElementById("tempo").textContent = 0;
-  count = 0;
-  showQuestion();
-})
 
 showQuestion();

@@ -592,7 +592,7 @@ const questions = [
     ],
     [
     {
-      "Categoria": "meioAmbiente",
+      "Categoria": "Ecologia",
       "Question" : "Questão 1",
       "title": "Qual das alternativas abaixo NÃO representa um processo onde o sol participa?",
       "alternatives": [
@@ -605,7 +605,7 @@ const questions = [
 
     },
     {
-      "Categoria": "meioAmbiente",
+      "Categoria": "Ecologia",
       "Question" : "Questão 2",
       "title": "Qual o tipo de vegetação que se e encontrada no Cerrado?",
       "alternatives": [
@@ -617,7 +617,7 @@ const questions = [
       "answer": 0
     },
     {
-      "Categoria": "meioAmbiente",
+      "Categoria": "Ecologia",
       "Question" : "Questão 3",
       "title": "Qual dos animais abaixo é somente encontrado no cerrado?",
       "alternatives": [
@@ -629,7 +629,7 @@ const questions = [
       "answer": 1
     },
     {
-      "Categoria": "meioAmbiente",
+      "Categoria": "Ecologia",
       "Question" : "Questão 4",
       "title": "As queimadas são benéficas para apenas um bioma, qual?",
       "alternatives": [
@@ -641,7 +641,7 @@ const questions = [
       "answer": 3
     },
     {
-      "Categoria": "meioAmbiente",
+      "Categoria": "Ecologia",
       "Question" : "Questão 5",
       "title": "Qual é a planta caracteristica do Cerrado?",
       "alternatives": [
@@ -653,7 +653,7 @@ const questions = [
       "answer": 2
     },
     {
-      "Categoria": "meioAmbiente",
+      "Categoria": "Ecologia",
       "Question" : "Questão 6",
       "title": "Qual é a principal ameaça humana que ocorre no bioma Caatinga?",
       "alternatives": [
@@ -665,7 +665,7 @@ const questions = [
       "answer": 2
     },
     {
-      "Categoria": "meioAmbiente",
+      "Categoria": "Ecologia",
       "Question" : "Questão 7",
       "title": "Qual é a principal ameaça humana que ocorre no bioma Cerrado?",
       "alternatives": [
@@ -677,7 +677,7 @@ const questions = [
       "answer": 0
     },
     {
-      "Categoria": "meioAmbiente",
+      "Categoria": "Ecologia",
       "Question" : "Questão 8",
       "title": "Em qual dos biomas abaixo podemos encontrar o tatu?",
       "alternatives": [
@@ -689,7 +689,7 @@ const questions = [
       "answer": 3
     },
     {
-      "Categoria": "meioAmbiente",
+      "Categoria": "Ecologia",
       "Question" : "Questão 9",
       "title": "Qual dos biomas que é composto pela vegetação de outros biomas?",
       "alternatives": [
@@ -701,7 +701,7 @@ const questions = [
       "answer": 1
     },
     {
-      "Categoria": "meioAmbiente",
+      "Categoria": "Ecologia",
       "Question" : "Questão 10",
       "title": "Qual dos animais abaixo pode ser encontrado no Pantanal?",
       "alternatives": [
@@ -713,7 +713,7 @@ const questions = [
       "answer": 0
     },
     {
-      "Categoria": "meioAmbiente",
+      "Categoria": "Ecologia",
       "Question" : "Questão 11",
       "title": "Qual dos ecossistemas costeiros é considerado o berçário da vida?",
       "alternatives": [
@@ -725,7 +725,7 @@ const questions = [
       "answer": 1
     },
     {
-      "Categoria": "meioAmbiente",
+      "Categoria": "Ecologia",
       "Question" : "Questão 12",
       "title": "Qual é o bioma que fica com sua vegetação esverdeada somente na epóca das chuvas?",
       "alternatives": [
@@ -737,7 +737,7 @@ const questions = [
       "answer": 1
     },
     {
-      "Categoria": "meioAmbiente",
+      "Categoria": "Ecologia",
       "Question" : "Questão 13",
       "title": "No cerrado existem plantas denominadas xerofitas, qual é um exemplo destas plantas?",
       "alternatives": [
@@ -749,7 +749,7 @@ const questions = [
       "answer": 3
     },
     {
-      "Categoria": "meioAmbiente",
+      "Categoria": "Ecologia",
       "Question" : "Questão 14",
       "title": "Existe uma estrutura que reduz a perca d’água em um ambiente extremamente seco. Que estrutra é esta?",
       "alternatives": [
@@ -761,7 +761,7 @@ const questions = [
       "answer": 2
     },
     {
-      "Categoria": "meioAmbiente",
+      "Categoria": "Ecologia",
       "Question" : "Questão 15",
       "title": "A caatinga é um bioma que possui espécies que somente são encontradas lá. Qual destas plantas não é encontrado em nenhum outro bioma?",
       "alternatives": [
@@ -773,7 +773,7 @@ const questions = [
       "answer": 0
     },
     {
-      "Categoria": "meioAmbiente",
+      "Categoria": "Ecologia",
       "Question" : "Questão 16",
       "title": "O pantanal abrage alguns estados brasileiros, assim como dois outros países. Quem são eles?",
       "alternatives": [
@@ -785,7 +785,7 @@ const questions = [
       "answer": 1
     },
     {
-      "Categoria": "meioAmbiente",
+      "Categoria": "Ecologia",
       "Question" : "Questão 17",
       "title": "O pantanal sofre com a interferência humana, causando desmatamento para criação de animais, qual é a outra ameaça enfrentada por este bioma?",
       "alternatives": [
@@ -796,7 +796,7 @@ const questions = [
       "answer": 0
     },
     {
-      "Categoria": "meioAmbiente",
+      "Categoria": "Ecologia",
       "Question" : "Questão 18",
       "title": "Qual dos animais abaixo podem ser encontrados nos manguezais?",
       "alternatives": [
@@ -808,7 +808,7 @@ const questions = [
       "answer": 2
     },
     {
-      "Categoria": "meioAmbiente",
+      "Categoria": "Ecologia",
       "Question" : "Questão 19",
       "title": "A mistura da água doce dos rios e a água salgada do mar é chamada de:",
       "alternatives": [
@@ -820,7 +820,7 @@ const questions = [
       "answer": 1
     },
     {
-      "Categoria": "meioAmbiente",
+      "Categoria": "Ecologia",
       "Question" : "Questão 20",
       "title": "O derramamento de petróleo no mar pode interferir diretamente na vida de outros animais de que forma?",
       "alternatives": [
@@ -832,7 +832,7 @@ const questions = [
       "answer": 3
     },
     {
-      "Categoria": "meioAmbiente",
+      "Categoria": "Ecologia",
       "Question" : "Questão 21",
       "title": "As plantas dos manguezais, possuem estruturas bastante caracteristicas. Como é chamada as raízes dos manguezais?",
       "alternatives": [
@@ -844,7 +844,7 @@ const questions = [
       "answer": 1
     },
     {
-      "Categoria": "meioAmbiente",
+      "Categoria": "Ecologia",
       "Question" : "Questão 22",
       "title": "Uma das maiores ameaçadas dos ambientes aquáticos pode ser considerada:",
       "alternatives": [
@@ -856,7 +856,7 @@ const questions = [
       "answer": 0
     },
     {
-      "Categoria": "meioAmbiente",
+      "Categoria": "Ecologia",
       "Question" : "Questão 23",
       "title": "Qual é o tipo de solo que pode ser encontrado nos mangues?",
       "alternatives": [
@@ -868,7 +868,7 @@ const questions = [
       "answer": 3
     },
     {
-      "Categoria": "meioAmbiente",
+      "Categoria": "Ecologia",
       "Question" : "Questão 24",
       "title": "Vegetação típica de regiões costeiras, sendo uma área de encontro das águas do mar com as águas doces dos rios. Que bioma e este?",
       "alternatives": [
@@ -880,7 +880,7 @@ const questions = [
       "answer": 3
     },
     {
-      "Categoria": "meioAmbiente",
+      "Categoria": "Ecologia",
       "Question" : "Questão 25",
       "title": "Compondo a vegetação dos estados de Mato Grosso e Mato Grosso do Sul é um tipo de bioma que se caracteriza por ser uma das maiores planícies ________ do planeta.",
       "alternatives": [
@@ -892,7 +892,7 @@ const questions = [
       "answer": 1
     },
     {
-      "Categoria": "meioAmbiente",
+      "Categoria": "Ecologia",
       "Question" : "Questão 26",
       "title": "Vegetação típica das regiões costeiras onde ocorre o encontro do mar com orio, nesta veretação é comum a presença de carangueijo, a qual bioma serefere?",
       "alternatives": [
@@ -904,7 +904,7 @@ const questions = [
       "answer": 1
     },
     {
-      "Categoria": "meioAmbiente",
+      "Categoria": "Ecologia",
       "Question" : "Questão 27",
       "title": "Qual o impacto causado na costa brasileira pela presença de petróleo e outroscomponentes descartados incorretamente pelo homem?",
       "alternatives": [
@@ -916,7 +916,7 @@ const questions = [
       "answer": 3
     },
     {
-      "Categoria": "meioAmbiente",
+      "Categoria": "Ecologia",
       "Question" : "Questão 28",
       "title": "Em qual dos biomas abaixo, podemos encontrar a maior volume de água aparente?",
       "alternatives": [
@@ -928,7 +928,7 @@ const questions = [
       "answer": 2
     },
     {
-      "Categoria": "meioAmbiente",
+      "Categoria": "Ecologia",
       "Question" : "Questão 29",
       "title": `De acordo com as afirmativas abaixo, marque (V) para verdadeiro e (F) para falso.
       <br>( ) A Caatinga é o bioma que mais prevalece na região norte.
@@ -945,7 +945,7 @@ const questions = [
       "answer": 0
     },
     {
-      "Categoria": "meioAmbiente",
+      "Categoria": "Ecologia",
       "Question" : "Questão 30",
       "title": "Qual dos biomas abaixo vem sofrendo desmatamento e tendo suas áreas utilizadas para pecuária e produção agrícola, desde a década de 60?",
       "alternatives": [

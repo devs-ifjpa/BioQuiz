@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../telaDoMeio/css/master.css">
+        <!-- <link rel="stylesheet" href="./css/cadastro.css"> -->
+    </head>
+        <body>
+            <main>
+                <nav id="voltar">
+                    <a href="../../index.html">Voltar</a>
+                </nav>
+                <div class="tema">
+                    <p id="tema">Cadastro</p>
+                </div>
+                <div class="campos">
+                    <form id="Form_Register">
+                        <input type="text" id="name" placeholder="Nome" required>
+                        <input type="email" name="email" id="email" placeholder="E-mail" required>
+                        <input type="password" name="password" id="password" placeholder="Senha" minlength="8" required>
+                        <input type="password" name="confirm" id="confirm" placeholder="Confirmar Senha" minlength="8" required>
+                        <input type="submit" value="Cadastrar" id="cadastro-button">
+                    </form>
+                    <label for="facebook-button" class="facebook-cadastro">
+                        <img src="">
+                        <input type="submit" id="facebook-button" value="Login with Facebook"></input>
+                    </label>
+                    <label for="google-button" class="google-cadastro">
+                        <img src="../../img/gear.svg">
+                        <input type="submit" id="google-button" value="Sign in with Google"></input>
+                    </label>
+                </div>
+                <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+                <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+                <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-firestore.js"></script>
+                <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>        
+                <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
+                <script>
+                    var firebaseConfig = {
+                        apiKey: "AIzaSyBDhlHYFCmZSLwkIdknHGC6msRTzxP1fm4",
+                        authDomain: "bioquiz-c51b4.firebaseapp.com",
+                        databaseURL: "https://bioquiz-c51b4.firebaseio.com",
+                        projectId: "bioquiz-c51b4",
+                        storageBucket: "bioquiz-c51b4.appspot.com",
+                        messagingSenderId: "101098678577",
+                        appId: "1:101098678577:web:a291fb17aaed7b5a0a6810",
+                        measurementId: "G-3QDV5D6J5K"
+                    };
+                    firebase.initializeApp(firebaseConfig);
+                    firebase.analytics();
+                </script>
+                <script src="../../js/firebase.js"></script>
+            </main>
+        </body>
+</html>
