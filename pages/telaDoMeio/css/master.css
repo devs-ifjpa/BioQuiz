@@ -17,6 +17,24 @@ body{
 main{
     margin: auto;
 }
+
+.logo img, .para img{
+    width: 62.5vw;
+}
+
+.contentPara{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contentPara p{
+    background-color: #FFB225;
+    color: #FCF9F9;
+    padding: 2.083333333333333vw 7.291666666666667vw;
+    border-radius: 20px;
+}
+
 #voltar a{
     top: 8px;
     left: 8px;
@@ -430,6 +448,17 @@ input, #facebook-button, #google-button{
 }
 
 @media screen and (max-aspect-ratio: 320/480){
+    /* .contentPara p{
+        background-color: #FFB225;
+        color: #FCF9F9;
+        padding: 2.083333333333333vw 7.291666666666667vw;
+        border-radius: 20px;
+    }
+
+    .logo img, .para img{
+        width: 62.5vw;
+    } */
+
     #voltar a{
         top: 2.5vw;
         left: 2.5vw;
