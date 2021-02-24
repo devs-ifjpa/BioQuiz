@@ -641,77 +641,77 @@ const questions = [
     {
     "Categoria": "anatomia",
       "Question" : "Questão 20",
-      "title": "Qual das seguintes estruturas NÃO faz parte das flores?",
+      "title": "A célula animal é constituída fundamentalmente de:",
       "alternatives": [
-        "Estigma.",
-        "Cálice.",
-        "Pólen.",
-        "Coifa."
+        "Material genético, complexo golgiense e membrana plasmática.",
+        "Complexo golgiense, membrana plasmática e ribossomos.",
+        "Material genético, citoplasma e membrana plasmática.",
+        "Mitocôndrias, citoplasma e ribossomos."
       ],
-      "answer": 3,
+      "answer": 2,
       "wrong": "A célula animal é eucariótica e constituída basicamente de membrana celular, citoplasma e núcleo."
     },
     {
     "Categoria": "anatomia",
       "Question" : "Questão 21",
-      "title": "O que é a “dormência” nas sementes?",
+      "title": "Qual das alternativas abaixo representa uma função do centríolo?",
       "alternatives": [
-        "Período que ela aguarda as condições ideias para germinação.",
-        "Período que ela está se maturando para germinação.",
-        "Período que ela ainda será dispersada no ambiente.",
-        "Período que ela está dentro do fruto."
+        "É responsável pela respiração celular.",
+        "É responsável pelo processo de transporte celular.",
+        "É responsável pelos movimentos de flagelos e cílios.",
+        "É responsável pela digestão de substâncias orgânicas da célula."
       ],
-      "answer": 0,
+      "answer": 2,
       "wrong": "Os centríolos organelas responsáveis pela divisão celular possuem a capacidade de duplicação durante seu ciclo, organizando o fuso acromático."
     },
     {
     "Categoria": "anatomia",
       "Question" : "Questão 22",
-      "title": "O que é pseudofruto?",
+      "title": "Qual das seguintes organelas abaixo não fazem parte da célula animal:",
       "alternatives": [
-        "É quando a semente e o fruto se originam na mesma região.",
-        "É quando não ocorre a formação da semente.",
-        "É quando partes da flor além do ovário se desenvolvem.",
-        "É quando ocorre a formação do fruto seco."
+        "Reticulo endoplasmático rugosos.",
+        "Centríolos.",
+        "Ribossomos.",
+        "Vacúolo."
       ],
-      "answer": 2,
+      "answer": 3,
       "wrong": "Os vacúolos são estruturas celulares que podem ser facilmente encontradas nas células vegetais, entretanto não são tão facilmente encontradas nas células animais."
     },
     {
     "Categoria": "anatomia",
       "Question" : "Questão 23",
-      "title": "A semente do mangue é dispersada através:",
+      "title": "O ácido clorídrico somente é encontrado no:",
       "alternatives": [
-        "Vento.",
-        "Dos agentes polinizadores (animais).",
-        "Água.",
-        "Fruto."
+        "Estômago.",
+        "Intestino grosso.",
+        "Intestino delgado.",
+        "Reto."
       ],
-      "answer": 2,
+      "answer": 0,
       "wrong": "O ácido clorídrico ou suco gástrico é responsável pela digestão dos alimentos e diminuição de suas partículas para melhor absorção dos nutrientes."
     },
     {
     "Categoria": "anatomia",
       "Question" : "Questão 24",
-      "title": "As raízes aéreas podem ser encontradas em qual local?",
+      "title": "Qual a função da pepsina dentro no processo digestivo?",
       "alternatives": [
-        "Nos lagos.",
-        "Nos rios.",
-        "No estuário.",
-        "Nos oceanos."
+        "É responsável pelo armazenamento da Bile.",
+        "É responsável pela produção de hormônios.",
+        "É responsável pelo controle de agentes patógenos.",
+        "Auxilia no processo da quebra enzimática das proteínas."
       ],
-      "answer": 2,
+      "answer": 3,
       "wrong": "A pepsina possui a função de mudar a forma física das proteínas as transformando em partículas menores para serem melhores absorvidas pelo intestino."
     },
     {
     "Categoria": "anatomia",
       "Question" : "Questão 25",
-      "title": "Em algumas raízes aquáticas é permitido o armazenamento de um gás, qual?",
+      "title": "Em relação à circulação humana, é incorreto afirmar:",
       "alternatives": [
-        "Carbônico (CO2).",
-        "Oxigênio (O2).",
-        "Nitrato (NO3-).",
-        "Nenhum tipo de gás pode ser armazenado."
+        "O sangue rico em oxigênio é o arterial.",
+        "Todo sangue que chega ao coração é considerado sangue arterial.",
+        "Todo vaso que chega ao coração é veia.",
+        "Todo vaso que sai do coração é artéria."
       ],
       "answer": 1,
       "wrong": "Todo sangue que chega ao coração é sangue venoso. O sangue rico em oxigênio é o arterial. Todo vaso que chega ao coração é veia. Todo vaso que sai do coração é artéria."
@@ -719,38 +719,38 @@ const questions = [
     {
     "Categoria": "anatomia",
       "Question" : "Questão 26",
-      "title": "O espinho presente nos cactos faz parte de qual estrutura modificada das plantas?",
+      "title": "O pâncreas participa de dois sistemas, quais são eles?",
       "alternatives": [
-        "Folha.",
-        "Fruto.",
-        "Caule.",
-        "Semente."
+        "Respiratório e endócrino.",
+        "Digestório e cardíaco.",
+        "Digestório e endócrino.",
+        "Digestório e respiratório."
       ],
-      "answer": 0,
+      "answer": 2,
       "wrong": "O pâncreas é uma importante glândula do corpo humano, sendo responsável pela produção de hormônios e enzimas digestivas."
     },
     {
     "Categoria": "anatomia",
       "Question" : "Questão 27",
-      "title": "Qual das alternativas abaixo representa um produto final da fotossíntese?",
+      "title": "A insulina somente é produzida por um órgão que é o:",
       "alternatives": [
-        "Oxigênio (O2) e nitrito (HNO2).",
-        "Oxigênio (O2) e Gás Carbônico (CO2).",
-        "Gás Carbônico (CO2) e nitrito (HNO2).",
-        "Nitrito (HNO2) e Nitrato (NO3-)."
+        "Coração.",
+        "Pulmão.",
+        "Pâncreas.",
+        "Rim."
       ],
-      "answer": 1,
+      "answer": 2,
       "wrong": "A produção de insulina em humanos e em outros mamíferos ocorre em células betas que se localizam no pâncreas, sendo de suma importância para síntese de açucares."
     },
     {
     "Categoria": "anatomia",
       "Question" : "Questão 28",
-      "title": "Qual etapa da quimiossíntese que não utiliza a água (H2O)?",
+      "title": "A cartilagem é responsável pelo impedimento do:",
       "alternatives": [
-        "Fase I.",
-        "Fase II.",
-        "Fase I e II.",
-        "Fase I, II e na fotossíntese."
+        "Desgaste entre os órgãos e os ossos.",
+        "Desgaste e o atrito entre os ossos.",
+        "Atrito entre os órgãos.",
+        "Atrito entre os ossos."
       ],
       "answer": 1,
       "wrong": "A cartilagem possui função essencial nas articulações ósseas, promovendo lubrificação e amortecimento dos ossos."
@@ -758,25 +758,25 @@ const questions = [
     {
     "Categoria": "anatomia",
       "Question" : "Questão 29",
-      "title": "Qual é o nome do processo que as plantas passam e que não utiliza a luz solar?",
+      "title": "A formação da urina ocorre dentro da bexiga urinária para que ocorra a:",
       "alternatives": [
-        "Fotossíntese.",
-        "Quimiossíntese.",
-        "Gutação.",
-        "Todas as alternativas."
+        "Excreção da água presente no corpo humano.",
+        "Excreção da água presente na corrente sanguínea.",
+        "Excreção somente das substancias tóxicas no corpo humano.",
+        "Excreção de substâncias tóxicas e as que se encontram em excesso."
       ],
-      "answer": 1,
+      "answer": 3,
       "wrong": "Os rins são órgãos responsáveis pela filtração da água do nosso corpo, ou seja, através dele é repassado ao organismo os nutrientes necessários e quando detectado os excesso e componentes que são tóxicos ao corpo humano são excretados."
     },
     {
     "Categoria": "anatomia",
       "Question" : "Questão 30",
-      "title": "Que tipo de estrutura da planta é a gavinha?",
+      "title": "Marque abaixo a alternativa em que contém apenas órgãos do corpo humano:",
       "alternatives": [
-        "Caule.",
-        "Folha.",
-        "Fruto.",
-        "Raiz."
+        "Cérebro, artéria, coração e bexiga.",
+        "Encéfalo, pâncreas, traqueia e língua.",
+        "Sangue, pulmão, alvéolo e rins.",
+        "Intestino grosso, crânio, fígado e esôfago."
       ],
       "answer": 1,
       "wrong": "As demais alternativas não podem ser consideradas órgãos pois são outros componentes do corpo humano como veias, artérias e os ossos."
