@@ -1,25 +1,27 @@
-body{
-    padding: 100px;
-    background-color: rgb(0, 0, 0,  0.15);
-}
-
-.balao{
-    background-color: #8bd6fe;
-    padding: 10px;
+.balao2{
+    margin: 0 auto; 
+    background: #7e57c2;
+    font-family: 'open sans';
+    font-size: 0.85em;
+    line-height: 1.6em;  
+    border-radius: 15px;
+    width: 300px;
+    height: auto;
+    color: #fff;
+    padding: 20px;
     position: relative;
-    width: 0 auto;
-    border-radius: 20px;    
+    margin-top: 30px;
 }
-
-.balao:before{
-    content: '';
+.balao2:after{ /*Triangulo*/
+    content: "";
+    width: 0;
+    height: 0;
     position: absolute;
-    background-color:  #8bd6fe;
-    top: 30px;
-    width: 35px;
-    height: 25px;
-    right: -10px;
-    -webkit-transform: rotate(45deg);
-    border-radius: 5%;
-
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    /*Faz seta "apontar para baixo. Definir o valor como 'top' fará ela "apontar para cima" */
+    /*Aqui entra a cor da "aba" do balão */
+    border-bottom: 20px solid #7e57c2;
+    top: 20%; /*localização. Experimente alterar para 'bottom'*/
+    left: -20px;
 }
