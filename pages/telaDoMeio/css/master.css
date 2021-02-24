@@ -537,3 +537,37 @@ input, #facebook-button, #google-button{
         height: 6.25vw;
     }
 }
+
+/*CSS do balão*/
+.balao{
+    margin: 0 auto; 
+    background: #BCEBE4;
+    font-family: 'Tahoma';
+    font-size: 1em;
+    line-height: 1.6em;  
+    border-radius: 35px;
+    width: 300px;
+    height: auto;
+    color: #000;
+    font-weight: bolder;
+    padding: 20px;
+    position: relative;
+    margin-top: 30px;
+    opacity: 0;
+}
+.balao:after{ /*Triangulo*/
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    /*Faz seta "apontar para baixo. Definir o valor como 'top' fará ela "apontar para cima" */
+    /*Aqui entra a cor da "aba" do balão */
+    border-bottom: 20px solid #BCEBE4;
+    bottom: 10%; /*localização. Experimente alterar para 'bottom'*/
+    right: -20px;
+    
+}
+
+/*Fim CSS do balão*/

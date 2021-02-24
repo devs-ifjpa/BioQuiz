@@ -49,8 +49,9 @@ function showQuestion() {
         if (answer === Number(alternativeItem.dataset.index)) {
           alternativeItem.setAttribute('class', 'green');
           document.querySelector("button").setAttribute("class", "show");
-        } else {
-          alternativeItem.setAttribute('class', 'red');
+        } 
+        else {
+          alternativeItem.setAttribute('class', 'red');          
           document.querySelector("button").setAttribute("class", "show");
         }
       }
@@ -119,11 +120,13 @@ function answerCorrect(x){
     }
     else{
       alternativeclick == 0 ? bAudio.play() : false;
+      document.querySelector(".balao").style.opacity = 1;
+      document.querySelector(".balao:after").style.opacity = 1;      
     }
 }
 
 function ButtonClick(){
-  // document.querySelector('button').addEventListener('click', function() {
+  // document.querySelector('button').addEventListener('click', function() {    
     document.querySelector('button').removeAttribute("onclick");
     document.getElementById("clock").textContent = "";
     document.getElementById("clockbox").style.opacity = 0;
@@ -133,6 +136,7 @@ function ButtonClick(){
       document.querySelector(".red").setAttribute("class", "hidden");
     }
     document.querySelector("button").style.opacity = 0;
+    document.querySelector(".balao").style.opacity = 0;
     questionId++;
     document.getElementById("tempo").textContent = 0;
     count = 0;
@@ -143,3 +147,7 @@ function ButtonClick(){
 
 
 showQuestion();
+
+/*
+document.querySelector(".balao").setAttribute("class", "show");
+document.querySelector(".balao").setAttribute("class", "hidden");*/
