@@ -10,7 +10,8 @@ const questions = [
         "Transporte de nutrientes.",
         "Polinização."
       ],
-      "answer": 0
+      "answer": 0,
+      "wrong": "As principais funções do caule são: sustentação da planta, transporte da seiva e serve como suporte em caso de plantas trepadeiras."
 
     },
     {
@@ -23,7 +24,8 @@ const questions = [
         "Reprodução das plantas.",
         "Polinização."
       ],
-      "answer": 2
+      "answer": 2,
+      "wrong": "As flores são os órgãos reprodutores das plantas angiospermas."
     },
     {
       "Categoria": "botanica",
@@ -35,7 +37,8 @@ const questions = [
         "Polinização.",
         "Atração de polinizadores."
       ],
-      "answer": 1
+      "answer": 1,
+      "wrong": "As folhas são estruturas de suma importância para a maioria das espécies de plantas, dentre suas funções, podemos destacar a fotossíntese, a respiração e a transpiração."
     },
     {
       "Categoria": "botanica",
@@ -47,7 +50,8 @@ const questions = [
         "Polinização.",
         "Fotossíntese."
       ],
-      "answer": 1
+      "answer": 1,
+      "wrong": "A principal função do fruto é de proteger as sementes, assim como também facilitar a sua dispersão."
     },
     {
       "Categoria": "botanica",
@@ -59,7 +63,8 @@ const questions = [
         "Fotossíntese.",
         "Fixação do solo."
       ],
-      "answer": 3
+      "answer": 3,
+      "wrong": "A raiz das plantas é o órgão responsável pela sustentação e fixação no solo ou onde ela esteja inserida."
     },
     {
       "Categoria": "botanica",
@@ -71,7 +76,8 @@ const questions = [
         "Porteger o caule no seu processo de crescimento.",
         "Proteger a flor no seu processo de crescimento."
       ],
-      "answer": 0
+      "answer": 0,
+      "wrong": "A coifa é uma estrutura que serve como uma espécie de capacete natural para as raízes protegendo e permitindo o crescimento e penetração no solo sem danos."
 
     },
     {
@@ -84,7 +90,8 @@ const questions = [
         "É uma solucação aquosa composta por açucares.",
         "É uma solução aquosa composta de sais minerais."
       ],
-      "answer": 3
+      "answer": 3,
+      "wrong": "A seiva bruta é proveniente das raízes e contém água e sais minerais, sendo utilizada posteriormente pelas folhas no processo da fotossíntese, formando assim os açúcares."
     },
     {
       "Categoria": "botanica",
@@ -96,7 +103,8 @@ const questions = [
         "É uma solução formada somente na folha.",
         "É uma solução formada pelas flores."
       ],
-      "answer": 1
+      "answer": 1,
+      "wrong": "A seiva elaborada é proveniente das folhas sendo composta por água, sais minerais e açúcares e transportada pelo floema nas plantas vasculares."
     },
     {
       "Categoria": "botanica",
@@ -108,7 +116,8 @@ const questions = [
         "Transporte das seiva elaborada e bruta.",
         "Transporte de sais minerais."
       ],
-      "answer": 0
+      "answer": 0,
+      "wrong": "A floema é o conjunto de vasos condutores que é responsável pelo transporte da seiva elaborada direcionando-as das folhas para todos os órgãos da planta."
     },
     {
       "Categoria": "botanica",
@@ -120,7 +129,8 @@ const questions = [
         "Transporte da seiva bruta.",
         "Transporte de sais minerais."
       ],
-      "answer": 2
+      "answer": 2,
+      "wrong": "A xilema é o conjunto de vasos condutores que é responsável pelo transporte da seiva bruta que são os sais minerais e a água."
     },
     {
       "Categoria": "botanica",
@@ -132,7 +142,8 @@ const questions = [
         "Fruto seco e fruto carnoso.",
         "Fruto seco, fruto com semente, fruto sem semente e fruto carnoso."
       ],
-      "answer": 3
+      "answer": 3,
+      "wrong": "Existem diversos tipos de frutos de acordo com a grande variedade de espécies de plantas no ambiente, como os frutos secos temos exemplo da vagem do feijão e fruto com semente: a maçã, fruto sem semente a banana e fruto carnoso a uva."
     },
     {
       "Categoria": "botanica",
@@ -144,7 +155,8 @@ const questions = [
         "Somente pelo ar e pela água.",
         "Somente pelos polinizadores."
       ],
-      "answer": 0
+      "answer": 0,
+      "wrong": "A dispersão das sementes pode ser dada de inúmeras maneiras, através do ar, como o dente de leão, da água, como as sementes das árvores do manguezal, e por meio de animais. Quando os animais se alimentam dos frutos alguns engolem as sementes que são liberadas nas fezes que acabam ficando em um ambiente muito rico em nutrientes e germinam."
     },
     {
       "Categoria": "botanica",
@@ -156,7 +168,8 @@ const questions = [
         "Laranja e morango.",
         "Laranja e banana."
       ],
-      "answer": 3
+      "answer": 3,
+      "wrong": "Os frutos sem sementes são aqueles que as flores não foram fecundadas, assim não gerando a semente (embrião), sendo muito comum à banana."
     },
     {
       "Categoria": "botanica",
@@ -168,7 +181,8 @@ const questions = [
         "Uva.",
         "Marácuja."
       ],
-      "answer": 1
+      "answer": 1,
+      "wrong": "Os frutos secos não apresentam polpa, tampouco são macios ou suculentos, são rígidos e não possuem água em seu interior, na sua grande maioria não são comestíveis."
     },
     {
       "Categoria": "botanica",
@@ -180,7 +194,8 @@ const questions = [
         "Proteção da semente.",
         "Nutrir a semente."
       ],
-      "answer": 2
+      "answer": 2,
+      "wrong": "O fruto nada mais é que o desenvolvimento do ovário da planta, este por sua vez possui sementes (embrião fecundado) em seu interior."
     },
     {
       "Categoria": "botanica",
@@ -192,7 +207,8 @@ const questions = [
         "Devolve ao solo água em excesso.",
         "Retira a água e sais minerais do solo."
       ],
-      "answer": 3
+      "answer": 3,
+      "wrong": "Os pelos absorventes presentes nas raízes auxiliam na sucção da água e de nutrientes."
 
     },
     {
@@ -205,7 +221,8 @@ const questions = [
         "Serve de nutrição para semente.",
         "Auxilia na quebra da dormência."
       ],
-      "answer": 0
+      "answer": 0,
+      "wrong": "A principal função do fruto é de proteger as sementes, como também facilitar a sua dispersão, eles são compostos por um acúmulo de substâncias nutritivas e um envoltório rígido externo, como a maçã."
     },
     {
       "Categoria": "botanica",
@@ -217,7 +234,8 @@ const questions = [
         "Flor.",
         "Semente."
       ],
-      "answer": 2
+      "answer": 2,
+      "wrong": "Nas flores estão inseridos os grãos de pólen e a partir destes se formam os gametas masculinos, que após fecundados darão origem aos frutos da planta."
     },
     {
       "Categoria": "botanica",
@@ -229,7 +247,8 @@ const questions = [
         "Pelos absorventes.",
         "Pelos absorventes."
       ],
-      "answer": 3
+      "answer": 3,
+      "wrong": "Após o processo de polinização inicia-se então a fecundação das flores. Os grãos de pólen que alcançam o estigma da mesma espécie se transformam em um tubo que se prolonga do estigma até o ovário. O estigma é uma estrutura receptora em formato de haste podendo ser pegajosos, assim sendo sua principal função a recepção pólen para induzi-lo até o ovário da flor para que ocorra a fecundação."
     },
     {
       "Categoria": "botanica",
@@ -241,7 +260,8 @@ const questions = [
         "Pólen.",
         "Coifa."
       ],
-      "answer": 3
+      "answer": 3,
+      "wrong": "A coifa é uma estrutura que serve como uma espécie de capacete natural para a raízes protegendo e permitindo o crescimento e penetração no solo sem danos."
     },
     {
       "Categoria": "botanica",
@@ -253,7 +273,8 @@ const questions = [
         "Período que ela ainda será dispersada no ambiente.",
         "Período que ela esta dentro do fruto."
       ],
-      "answer": 0
+      "answer": 0,
+      "wrong": "Durante o processo de dormência a semente se mantém estável até que possua o estímulo externo necessário para quebrar o seu adormecimento dando início ao ciclo de germinação originando assim, uma nova planta."
 
     },
     {
@@ -266,7 +287,8 @@ const questions = [
         "É quando partes da flor além do ovário se desenvolvem.",
         "É quando ocorre a formação do fruto seco."
       ],
-      "answer": 2
+      "answer": 2,
+      "wrong": "Em algumas plantas as flores também passam por um processo de desenvolvimento, fazendo com que surjam os frutos falsos, estes por sua vez também possuem função de dispersão das sementes, como o morango ou caju."
     },
     {
       "Categoria": "botanica",
@@ -278,7 +300,8 @@ const questions = [
         "Água.",
         "Fruto."
       ],
-      "answer": 1
+      "answer": 1,
+      "wrong": "As sementes são dispersadas na água da maré, pois estas árvores ficam próximas dos leitos dos estuários ou em áreas um pouco mais distantes, mas que alagam."
     },
     {
       "Categoria": "botanica",
@@ -290,7 +313,8 @@ const questions = [
         "No estuário.",
         "Nos oceanos."
       ],
-      "answer": 2
+      "answer": 2,
+      "wrong": "São consideradas raízes aéreas aquelas que possuem múltiplas funções além de sustentação auxiliar na respiração da planta e na obtenção do gás oxigênio (O2) como as plantas de mangue, consideradas raízes respiratórias."
     },
     {
       "Categoria": "botanica",
@@ -302,7 +326,8 @@ const questions = [
         "Nitrato (NO3-).",
         "Nenhum tipo de gás pode ser armazenado."
       ],
-      "answer": 1
+      "answer": 1,
+      "wrong": "São consideradas raízes aquáticas as que ficam completamente submergidas em baixo d’água, como a vitória-régia. Estas absorvem o oxigênio dissolvido na água."
     },
     {
       "Categoria": "botanica",
@@ -314,7 +339,8 @@ const questions = [
         "Caule.",
         "Semente."
       ],
-      "answer": 0
+      "answer": 0,
+      "wrong": "Os cactos são plantas que habitam regiões áridas, como o deserto e a caatinga e, geralmente, apresentam folhas reduzidas e modificadas em espinhos, assim evitando a perda d’água desnecessária."
 
     },
     {
@@ -327,7 +353,8 @@ const questions = [
         "Gás Carbonico (CO2) e nitrito (HNO2).",
         "Nitrito (HNO2) e Nitrato (NO3-)."
       ],
-      "answer": 1
+      "answer": 1,
+      "wrong": "A fotossíntese ou síntese da luz é o processo que ocorre como obtenção de energia e alimento pelas plantas, sendo necessário para acontecer a água, dióxido de carbono (CO2) e a luz solar, assim como produto final se é liberado outros gases como o oxigênio (O)."
     },
     {
       "Categoria": "botanica",
@@ -339,7 +366,8 @@ const questions = [
         "Fase I e II",
         "Fase I, II e na fotossíntese"
       ],
-      "answer": 1
+      "answer": 1,
+      "wrong": "Fase 2: A segunda etapa pode ser entendida pela seguinte equação: O gás carbônico (CO2) + água H2O + Energia Química resultando em → Compostos Orgânicos + Oxigênio O2."
     },
     {
       "Categoria": "botanica",
@@ -351,7 +379,8 @@ const questions = [
         "Glutação",
         "Todas as alternativas"
       ],
-      "answer": 1
+      "answer": 1,
+      "wrong": "A quimiossíntese é a produção de energia através da oxidação de matéria orgânica geralmente ocasionada por ação bacteriana, sem recorrer à luz solar."
     },
     {
       "Categoria": "botanica",
@@ -363,7 +392,8 @@ const questions = [
         "Fruto",
         "Raíz"
       ],
-      "answer": 1
+      "answer": 1,
+      "wrong": "Gavinha é um órgão presente nas plantas trepadeiras. São estruturas simples ou bifurcadas na extremidade com a função de agarrar ramos, galhos, folhas, ou qualquer outro objeto que sirva de apoio para a planta em crescimento."
     }
     ],
     [
@@ -377,7 +407,8 @@ const questions = [
         "Circulação do sangue",
         "Envio de informações",
       ],
-      "answer": 0
+      "answer": 0,
+      "wrong": "O pulmão é um órgão que compõe o sistema respiratório, sendo responsável pelas trocas gasosas entre o ambiente e o sangue. A sua principal função é oxigenar o sangue e eliminar o dióxido de carbono (CO2)."
     },
       {
       "Categoria": "anatomia",
@@ -389,7 +420,8 @@ const questions = [
         "Sistema nervoso",
         "Sistema respiratório",
       ],
-      "answer": 3
+      "answer": 3,
+      "wrong": "O sistema respiratório é o conjunto de órgãos responsáveis pelas trocas gasosas entre o organismo dos animais e o meio ambiente, ou seja, a hematose pulmonar, possibilitando a respiração celular."
     },
     {
     "Categoria": "anatomia",
@@ -401,7 +433,8 @@ const questions = [
         "Alvéolos",
         "Faringe",
       ],
-      "answer": 1
+      "answer": 1,
+      "wrong": "A pleura é uma membrana fina e transparente composta por duas camadas que revestem os pulmões e o interior da parede torácica."
     },
     {
     "Categoria": "anatomia",
@@ -413,7 +446,8 @@ const questions = [
         "Permite que os nutrientes sigam para a corrente sanguínea",
         "Permite que o alimento siga para o intestino grosso"
       ],
-      "answer": 0
+      "answer": 0,
+      "wrong": "A epiglote, é uma camada cartilaginosa fina e móvel. No processo de deglutição (ato de engolir) ela fecha a entrada da laringe o que impede a passagem de alimentos pelas vias respiratórias."
     },
     {
     "Categoria": "anatomia",
@@ -425,7 +459,8 @@ const questions = [
         "Laringe",
         "Cordas Vocais"
       ],
-      "answer": 3
+      "answer": 3,
+      "wrong": "As pregas vocais é um tecido muscular localizadas no interior da laringe. Ao expulsar do ar por elas é produzida uma vibração cujos os sons cujo os usamos para nos comunicar."
     },
     {
     "Categoria": "anatomia",
@@ -437,7 +472,8 @@ const questions = [
         "Controle da passagem do bolo alimentar",
         "Absorção da gordura"
       ],
-      "answer": 0
+      "answer": 0,
+      "wrong": "O estômago é um órgão participante do sistema digestório, responsável pela pré digestão e esterilização, para que o bolo alimentar siga para o intestino, onde são absorvidos os nutrientes."
     },
     {
     "Categoria": "anatomia",
@@ -449,7 +485,8 @@ const questions = [
         "É o alimento quando chega ao intestino",
         "É o ácido presente no estômago"
       ],
-      "answer": 0
+      "answer": 0,
+      "wrong": "O bolo alimentar é o nome dado ao alimento mastigado e misturado à saliva."
     },
     {
     "Categoria": "anatomia",
@@ -461,7 +498,8 @@ const questions = [
         "Produzir hormônios ligados a digestão",
         "Produzir..."
       ],
-      "answer": 2
+      "answer": 2,
+      "wrong": "O pâncreas é uma glândula participante do sistema digestório e endócrino, responsável pela produção de hormônios de suma importância, dentre elas a insulina, e sua função se baseia na metabolização da glicose."
     },
     {
     "Categoria": "anatomia",
@@ -473,7 +511,8 @@ const questions = [
         "Respiramos e inspiramos",
         "Inspiramos e espiramos"
       ],
-      "answer": 1
+      "answer": 1,
+      "wrong": "A inspiração, ocorre pela contração da musculatura do diafragma e dos músculos intercostais. Já a expiração dá-se pelo relaxamento da musculatura do diafragma e dos músculos intercostais."
     },
     {
     "Categoria": "anatomia",
@@ -485,7 +524,8 @@ const questions = [
         "Traqueia, Faringe",
         "Cavidade nasal, faringe"
       ],
-      "answer": 0
+      "answer": 0,
+      "wrong": "A epiglote está no início da laringe possuindo a função de uma lâmina que se encontra por detrás da língua e serve para fechar a ligação da faringe com a glote durante a deglutição."
     },
     {
     "Categoria": "anatomia",
@@ -497,7 +537,8 @@ const questions = [
         "Alvéolos",
         "Brônquios"
       ],
-      "answer": 1
+      "answer": 1,
+      "wrong": "Os ossos possuem a função de sustentação e proteção dos órgãos, além de serem capazes de armazenar certos tipos de nutrientes e minerais importantes."
     },
     {
     "Categoria": "anatomia",
@@ -509,7 +550,8 @@ const questions = [
         "Hidrogênio(H)",
         "O sangue não possui nenhum tipo de gás"
       ],
-      "answer": 1
+      "answer": 1,
+      "wrong": "Sangue venoso é o sangue pobre em oxigênio e rico em dióxido de carbono."
     },
     {
     "Categoria": "anatomia",
@@ -521,7 +563,8 @@ const questions = [
         "Hidrogênio(H)",
         "O sangue não possui nenhum tipo de gás"
       ],
-      "answer": 0
+      "answer": 0,
+      "wrong": "As artérias são canais de maior espessura, responsáveis pelo deslocamento do sangue do coração para o pulmão, retornando ao coração e seguindo para o corpo inteiro rico em oxigênio."
     },
     {
     "Categoria": "anatomia",
@@ -531,7 +574,8 @@ const questions = [
         "Verdadeiro",
         "Falso",
       ],
-      "answer": 1
+      "answer": 1,
+      "wrong": "As artérias são canais de maior espessura, responsáveis pelo deslocamento do sangue do coração para o pulmão, sendo as veias responsáveis por levarem o sangue de volta ao coração."
     },
     {
     "Categoria": "anatomia",
@@ -543,7 +587,8 @@ const questions = [
         "Repasse de informações",
         "Circulação do sangue"
       ],
-      "answer": 0
+      "answer": 0,
+      "wrong": "O esqueleto humano é formado pelos ossos e tem como função principal a proteção de órgãos vitais para o ser vivo, como o as costelas que protegem alguns órgãos vitais como o coração e os pulmões assim como o crânio que protege o cérebro."
     },
     {
     "Categoria": "anatomia",
@@ -555,7 +600,8 @@ const questions = [
         "Sistema urinário",
         "Sistema nervoso"
       ],
-      "answer": 2
+      "answer": 2,
+      "wrong": "O Sistema urinário é composto por dois rins e pelas vias urinárias, formada por dois ureteres, a bexiga urinária e a uretra. 17. Qual é a articulação presente no corpo humano que é considerada imóvel?"
     },
     {
     "Categoria": "anatomia",
@@ -567,7 +613,8 @@ const questions = [
         "Ossos das vertebras",
         "Ossos do joelho"
       ],
-      "answer": 0
+      "answer": 0,
+      "wrong": "As articulações imóveis são as articulações que que possuem tecido cartilaginoso e/ou fibroso, impedindo quase completamente o movimento."
     },
     {
     "Categoria": "anatomia",
@@ -577,7 +624,8 @@ const questions = [
         "Verdadeiro",
         "Falso"
       ],
-      "answer": 0
+      "answer": 0,
+      "wrong": "O sistema nervoso é responsável por funções voluntárias e involuntárias do ser vivo, como a locomoção, raciocínio, memória e funcionamento de órgãos vitais como o bombeamento do sangue e a respiração."
     },
     {
     "Categoria": "anatomia",
@@ -587,7 +635,151 @@ const questions = [
         "Verdadeiro",
         "Falso"
       ],
-      "answer": 0
+      "answer": 0,
+      "wrong": "O sistema nervoso humano coordena e regula todas as atividades corporais, das mais simples as mais complexas como o bombeamento de sangue até mesmo o bocejar."
+    },
+    {
+    "Categoria": "anatomia",
+      "Question" : "Questão 20",
+      "title": "A célula animal é constituída fundamentalmente de:",
+      "alternatives": [
+        "Material genético, complexo golgiense e membrana plasmática.",
+        "Complexo golgiense, membrana plasmática e ribossomos.",
+        "Material genético, citoplasma e membrana plasmática.",
+        "Mitocôndrias, citoplasma e ribossomos."
+      ],
+      "answer": 2,
+      "wrong": "A célula animal é eucariótica e constituída basicamente de membrana celular, citoplasma e núcleo."
+    },
+    {
+    "Categoria": "anatomia",
+      "Question" : "Questão 21",
+      "title": "Qual das alternativas abaixo representa uma função do centríolo?",
+      "alternatives": [
+        "É responsável pela respiração celular.",
+        "É responsável pelo processo de transporte celular.",
+        "É responsável pelos movimentos de flagelos e cílios.",
+        "É responsável pela digestão de substâncias orgânicas da célula."
+      ],
+      "answer": 2,
+      "wrong": "Os centríolos organelas responsáveis pela divisão celular possuem a capacidade de duplicação durante seu ciclo, organizando o fuso acromático."
+    },
+    {
+    "Categoria": "anatomia",
+      "Question" : "Questão 22",
+      "title": "Qual das seguintes organelas abaixo não fazem parte da célula animal:",
+      "alternatives": [
+        "Reticulo endoplasmático rugosos.",
+        "Centríolos.",
+        "Ribossomos.",
+        "Vacúolo."
+      ],
+      "answer": 3,
+      "wrong": "Os vacúolos são estruturas celulares que podem ser facilmente encontradas nas células vegetais, entretanto não são tão facilmente encontradas nas células animais."
+    },
+    {
+    "Categoria": "anatomia",
+      "Question" : "Questão 23",
+      "title": "O ácido clorídrico somente é encontrado no:",
+      "alternatives": [
+        "Estômago.",
+        "Intestino grosso.",
+        "Intestino delgado.",
+        "Reto."
+      ],
+      "answer": 0,
+      "wrong": "O ácido clorídrico ou suco gástrico é responsável pela digestão dos alimentos e diminuição de suas partículas para melhor absorção dos nutrientes."
+    },
+    {
+    "Categoria": "anatomia",
+      "Question" : "Questão 24",
+      "title": "Qual a função da pepsina dentro no processo digestivo?",
+      "alternatives": [
+        "É responsável pelo armazenamento da Bile.",
+        "É responsável pela produção de hormônios.",
+        "É responsável pelo controle de agentes patógenos.",
+        "Auxilia no processo da quebra enzimática das proteínas."
+      ],
+      "answer": 3,
+      "wrong": "A pepsina possui a função de mudar a forma física das proteínas as transformando em partículas menores para serem melhores absorvidas pelo intestino."
+    },
+    {
+    "Categoria": "anatomia",
+      "Question" : "Questão 25",
+      "title": "Em relação à circulação humana, é incorreto afirmar:",
+      "alternatives": [
+        "O sangue rico em oxigênio é o arterial.",
+        "Todo sangue que chega ao coração é considerado sangue arterial.",
+        "Todo vaso que chega ao coração é veia.",
+        "Todo vaso que sai do coração é artéria."
+      ],
+      "answer": 1,
+      "wrong": "Todo sangue que chega ao coração é sangue venoso. O sangue rico em oxigênio é o arterial. Todo vaso que chega ao coração é veia. Todo vaso que sai do coração é artéria."
+    },
+    {
+    "Categoria": "anatomia",
+      "Question" : "Questão 26",
+      "title": "O pâncreas participa de dois sistemas, quais são eles?",
+      "alternatives": [
+        "Respiratório e endócrino.",
+        "Digestório e cardíaco.",
+        "Digestório e endócrino.",
+        "Digestório e respiratório."
+      ],
+      "answer": 2,
+      "wrong": "O pâncreas é uma importante glândula do corpo humano, sendo responsável pela produção de hormônios e enzimas digestivas."
+    },
+    {
+    "Categoria": "anatomia",
+      "Question" : "Questão 27",
+      "title": "A insulina somente é produzida por um órgão que é o:",
+      "alternatives": [
+        "Coração.",
+        "Pulmão.",
+        "Pâncreas.",
+        "Rim."
+      ],
+      "answer": 2,
+      "wrong": "A produção de insulina em humanos e em outros mamíferos ocorre em células betas que se localizam no pâncreas, sendo de suma importância para síntese de açucares."
+    },
+    {
+    "Categoria": "anatomia",
+      "Question" : "Questão 28",
+      "title": "A cartilagem é responsável pelo impedimento do:",
+      "alternatives": [
+        "Desgaste entre os órgãos e os ossos.",
+        "Desgaste e o atrito entre os ossos.",
+        "Atrito entre os órgãos.",
+        "Atrito entre os ossos."
+      ],
+      "answer": 1,
+      "wrong": "A cartilagem possui função essencial nas articulações ósseas, promovendo lubrificação e amortecimento dos ossos."
+    },
+    {
+    "Categoria": "anatomia",
+      "Question" : "Questão 29",
+      "title": "A formação da urina ocorre dentro da bexiga urinária para que ocorra a:",
+      "alternatives": [
+        "Excreção da água presente no corpo humano.",
+        "Excreção da água presente na corrente sanguínea.",
+        "Excreção somente das substancias tóxicas no corpo humano.",
+        "Excreção de substâncias tóxicas e as que se encontram em excesso."
+      ],
+      "answer": 3,
+      "wrong": "Os rins são órgãos responsáveis pela filtração da água do nosso corpo, ou seja, através dele é repassado ao organismo os nutrientes necessários e quando detectado os excesso e componentes que são tóxicos ao corpo humano são excretados."
+    },
+    {
+    "Categoria": "anatomia",
+      "Question" : "Questão 30",
+      "title": "Marque abaixo a alternativa em que contém apenas órgãos do corpo humano:",
+      "alternatives": [
+        "Cérebro, artéria, coração e bexiga.",
+        "Encéfalo, pâncreas, traqueia e língua.",
+        "Sangue, pulmão, alvéolo e rins.",
+        "Intestino grosso, crânio, fígado e esôfago."
+      ],
+      "answer": 1,
+      "wrong": "As demais alternativas não podem ser consideradas órgãos pois são outros componentes do corpo humano como veias, artérias e os ossos."
     },
     ],
     [
@@ -601,7 +793,8 @@ const questions = [
         "Produção de glicose.",
         "Condução da seiva bruta."
       ],
-      "answer": 3
+      "answer": 3,
+      "wrong": "A seiva bruta é proveniente das raízes e contém água e sais minerais sendo utilizada, posteriormente, pelas folhas no processo da fotossíntese formando assim os açúcares."
 
     },
     {
@@ -614,7 +807,8 @@ const questions = [
         "Plantas áquaticas e de pequeno porte.",
         "Plantas que armazenam água em seu interior."
       ],
-      "answer": 0
+      "answer": 0,
+      "wrong": "A flora típica do cerrado é composta por árvores espaçadas, baixas e retorcidas, além de possuir vegetação rasteira semelhante ao capim."
     },
     {
       "Categoria": "Ecologia",
@@ -626,7 +820,8 @@ const questions = [
         "Onça pintada.",
         "Elefante."
       ],
-      "answer": 1
+      "answer": 1,
+      "wrong": "A fauna deste ambiente pode ser facilmente ilustrada com animais como: lobo-guará, tamanduá-bandeira, veado-campeiro e diversas serpentes."
     },
     {
       "Categoria": "Ecologia",
@@ -638,7 +833,8 @@ const questions = [
         "Cerrado.",
         "Caatinga."
       ],
-      "answer": 3
+      "answer": 3,
+      "wrong": "O cerrado tem um período médio de 6 meses de seca entre abril e agosto em que acontecem as queimadas naturais por conta da vegetação seca e dos raios solares fortes, contudo as queimadas são benéficas ao ambiente, pois permitem o processo de germinação de sementes que estão em dormência."
     },
     {
       "Categoria": "Ecologia",
@@ -650,7 +846,8 @@ const questions = [
         "Cacto.",
         "Ipê."
       ],
-      "answer": 2
+      "answer": 2,
+      "wrong": "As plantas mais abundantes do cerrado podem ser facilmente lembradas pelos cactos, dentre eles podemos destacar: o mandacaru, xiquexique e a palma."
     },
     {
       "Categoria": "Ecologia",
@@ -662,7 +859,8 @@ const questions = [
         "Destamatamento para criação de animais.",
         "Poluição de rios."
       ],
-      "answer": 2
+      "answer": 2,
+      "wrong": "Na caatinga, assim como em diversos outros biomas brasileiros, ocorrem ameaças causadas por humanos como o desmatamento para a criação de bovinos, por exemplo."
     },
     {
       "Categoria": "Ecologia",
@@ -674,7 +872,8 @@ const questions = [
         "Destamatamento para criação de animais.",
         "Poluição de rios."
       ],
-      "answer": 0
+      "answer": 0,
+      "wrong": "O cerrado sofre drasticamente com queimadas criminosas provocadas por humanos, assim causando desequilíbrio na sua fauna e flora."
     },
     {
       "Categoria": "Ecologia",
@@ -686,7 +885,8 @@ const questions = [
         "Pantanal.",
         "Caatinga."
       ],
-      "answer": 3
+      "answer": 3,
+      "wrong": "A fauna do bioma caatinga é constituída por mamíferos, répteis, aves e anfíbios, dentre eles podemos destacar o tatú, a jararaca, o preá, e o carcará."
     },
     {
       "Categoria": "Ecologia",
@@ -698,7 +898,8 @@ const questions = [
         "Cerrado.",
         "Caatinga."
       ],
-      "answer": 1
+      "answer": 1,
+      "wrong": "A vegetação do bioma pantanal é muito variada, principalmente em função da inundação e do solo. A flora do bioma Pantanal é geralmente distribuída em mosaico, sendo composta com características de outros biomas como o Cerrado, Caatinga, Mata Atlântica, e Floresta Amazônica."
     },
     {
       "Categoria": "Ecologia",
@@ -710,7 +911,8 @@ const questions = [
         "Tatu.",
         "Cobra."
       ],
-      "answer": 0
+      "answer": 0,
+      "wrong": "A fauna do bioma pantanal é composta por anfíbios, repteis, aves, mamíferos e peixes. Pode-se destacar dentre estes: sapos, jacarés, tuiuiú, capivara e piranha."
     },
     {
       "Categoria": "Ecologia",
@@ -722,7 +924,8 @@ const questions = [
         "Restinga.",
         "Rios."
       ],
-      "answer": 1
+      "answer": 1,
+      "wrong": "Os manguezais podem ser facilmente considerados como berçários naturais da vida marinha, sendo muito procurados por crustáceos e aves que encontram neste lugar alimento e segurança para os seus filhotes indefesos."
     },
     {
       "Categoria": "Ecologia",
@@ -734,7 +937,8 @@ const questions = [
         "Pantanal.",
         "Mata atlântica."
       ],
-      "answer": 1
+      "answer": 1,
+      "wrong": "Não chove na caatinga em maior parte do ano, o que mantém seu aspecto cinzento por causa das cascas de árvore e alaranjado pela terra seca."
     },
     {
       "Categoria": "Ecologia",
@@ -746,7 +950,8 @@ const questions = [
         "Videiras.",
         "Xique-xique."
       ],
-      "answer": 3
+      "answer": 3,
+      "wrong": "As plantas xerófitas são consideradas plantas adaptadas a ambientes de clima semiárido e desértico, ou seja, com pouca ou quase nenhuma água disponível."
     },
     {
       "Categoria": "Ecologia",
@@ -758,7 +963,8 @@ const questions = [
         "Espinhos.",
         "Fruto seco."
       ],
-      "answer": 2
+      "answer": 2,
+      "wrong": "Os espinhos presentes em algumas espécies de vegetais têm a função de reduzir a superfície de contato e, com isso, impedir que a folha perca água."
     },
     {
       "Categoria": "Ecologia",
@@ -770,7 +976,8 @@ const questions = [
         "Araucária.",
         "Epífitas."
       ],
-      "answer": 0
+      "answer": 0,
+      "wrong": "Por ser uma planta adaptada a ambientes de clima seco e com pouca abundância de água, as cactáceas dentre elas o mandacaru é uma planta nativa da Caatinga."
     },
     {
       "Categoria": "Ecologia",
@@ -782,7 +989,8 @@ const questions = [
         "Amazonas, Pará, Colombia, Venezuela.",
         "Roraima, Amapa, Venezuela, Guiana."
       ],
-      "answer": 1
+      "answer": 1,
+      "wrong": "O Pantanal localiza-se nos estados do Mato Grosso e Mato Grosso do Sul além de se estender entre os países da Bolívia e Paraguai."
     },
     {
       "Categoria": "Ecologia",
@@ -793,7 +1001,8 @@ const questions = [
         "Queimadas clandestinas.",
         "Tráfico ilegal de plantas e animais."
       ],
-      "answer": 0
+      "answer": 0,
+      "wrong": "A principal ameaça que o Pantanal sofre é a pesca predatória, esta por sua vez acaba tirando a fonte de alimento dos jacarés e aves da região além de muitas vezes interferir diretamente na reprodução dos peixes."
     },
     {
       "Categoria": "Ecologia",
@@ -805,7 +1014,8 @@ const questions = [
         "Caranguejo.",
         "Pombo."
       ],
-      "answer": 2
+      "answer": 2,
+      "wrong": "O manguezal é um ecossistema de transição entre o ambiente terrestre e o marinho, localizados entre as margens dos rios e a foz. O solo dos manguezais por sua vez é bastante rico em nutrientes assim favorecendo a instalação de crustáceos como o caranguejo."
     },
     {
       "Categoria": "Ecologia",
@@ -817,7 +1027,8 @@ const questions = [
         "Água translucida.",
         "Água agridoce."
       ],
-      "answer": 1
+      "answer": 1,
+      "wrong": "A água salobra é a união entre as concentrações salinas da água doce dos rios e a água salgada do mar, assim sendo considera mais salgada que a água doce, porém com menos concentração de sais do que na água do mar."
     },
     {
       "Categoria": "Ecologia",
@@ -829,7 +1040,8 @@ const questions = [
         "Causando a morte apenas de aves.",
         "Causando a morte de frutos do mar, peixes e aves que entraram em contato com o petróleo."
       ],
-      "answer": 3
+      "answer": 3,
+      "wrong": "O petróleo é um componente químico tóxico, não fazendo parte da alimentação de nenhum ser vivo e que causa a morte quando ingerido."
     },
     {
       "Categoria": "Ecologia",
@@ -841,7 +1053,8 @@ const questions = [
         "Raízes aquáticas.",
         "Raízes sugadoras."
       ],
-      "answer": 1
+      "answer": 1,
+      "wrong": "São consideradas raízes-suporte aquelas que auxiliam diretamente na sustentação da planta, como ocorre no mangue."
     },
     {
       "Categoria": "Ecologia",
@@ -853,7 +1066,8 @@ const questions = [
         "Descarte correto do lixo.",
         "O ambiente aquático não sofre nenhuma ameaça."
       ],
-      "answer": 0
+      "answer": 0,
+      "wrong": "Podemos obtê-la para beber através dos rios, poços ou lençóis freáticos, porém a maior concentração de água está nos oceanos."
     },
     {
       "Categoria": "Ecologia",
@@ -865,7 +1079,8 @@ const questions = [
         "Arenoso, pobre em nutrientes e bastante úmido.",
         "Úmido, salgado, lodoso, pobre em oxigênio e muito rico em nutrientes."
       ],
-      "answer": 3
+      "answer": 3,
+      "wrong": "O solo dos manguezais possui características como ser úmido, pobre em oxigênio, rico em nutrientes por conta da decomposição de matéria orgânica e salgado."
     },
     {
       "Categoria": "Ecologia",
@@ -877,7 +1092,8 @@ const questions = [
         "Cerrrado.",
         "Mangue."
       ],
-      "answer": 3
+      "answer": 3,
+      "wrong": "O manguezal é um ecossistema de transição entre o ambiente terrestre e marinho, localizados entre as margens dos rios e a foz."
     },
     {
       "Categoria": "Ecologia",
@@ -889,7 +1105,8 @@ const questions = [
         "Áridas.",
         "Secas."
       ],
-      "answer": 1
+      "answer": 1,
+      "wrong": "Durante sete meses corridos ocorrem chuvas constantes neste local, fazendo com que algumas áreas de terra firme se alguém."
     },
     {
       "Categoria": "Ecologia",
@@ -901,7 +1118,8 @@ const questions = [
         "Cerrado.",
         "Caatinga."
       ],
-      "answer": 1
+      "answer": 1,
+      "wrong": "O manguezal é um ecossistema de transição entre o ambiente terrestre e marinho, localizados entre as margens dos rios e a foz."
     },
     {
       "Categoria": "Ecologia",
@@ -913,7 +1131,8 @@ const questions = [
         "O derramamento de óleo que atingiu o litoral brasileiro não impactoudiretamente o meio ambiente, pois o mesmo já foi recolhido.",
         "O derramento de óleo bruto e o descarte de lixo impactam diretamente navida marinha e destóem o equilíbrio do ecossistema."
       ],
-      "answer": 3
+      "answer": 3,
+      "wrong": "O petróleo derramado em alto mar é facilmente fixado nas mais diversas superfícies, podendo causar contaminação por ser um agente tóxico, e interferir na fotossíntese de algumas espécies."
     },
     {
       "Categoria": "Ecologia",
@@ -925,7 +1144,8 @@ const questions = [
         "Pantanal.",
         "Pampas."
       ],
-      "answer": 2
+      "answer": 2,
+      "wrong": "Durante sete meses corridos ocorrem chuvas constantes neste local, fazendo com que oscile o nível das águas, é neste período também que os rios e lagos costumam transbordar, podendo alagar até metade de todo o território do Pantanal."
     },
     {
       "Categoria": "Ecologia",
@@ -942,7 +1162,8 @@ const questions = [
         "F, F, V.",
         "V, V, V."
       ],
-      "answer": 0
+      "answer": 0,
+      "wrong": "O cerrado é o bioma que mais prevalece na região norte do Brasil, assim a afirmativa um está incorreta."
     },
     {
       "Categoria": "Ecologia",
@@ -954,7 +1175,8 @@ const questions = [
         "Pantanal.",
         "Pampas."
       ],
-      "answer": 0
+      "answer": 0,
+      "wrong": "O cerrado vem sofrendo desmatamento com suas áreas utilizadas para pecuária e produção agrícola, destacando a criação de bovinos e plantações de soja."
     }
     ],
     [
@@ -968,7 +1190,8 @@ const questions = [
         "São animais que se alimentam de outros animais e plantas.",
         "São animais que se alimentam apenas de plantas ou de suas partes.",
       ],
-      "answer": 3
+      "answer": 3,
+      "wrong": "Os animais herbívoros alimentam-se apenas de plantas ou algas. Estes possuem uma alimentação que varia de acordo com a espécie. Exemplo: girafa, elefante e hipopótamo."
   
     },
     {
@@ -981,7 +1204,8 @@ const questions = [
         "São animais que se alimentam de outros animais e plantas.",
         "São animais que se alimentam apenas de plantas ou de suas partes."
       ],
-      "answer": 1
+      "answer": 1,
+      "wrong": "Os animais carnívoros são aqueles que se alimentam exclusivamente de outros animais. Exemplo: leão, lobo-guará, cobra e crocodilo."
     },
     {
       "Categoria": "zoologia",
@@ -993,7 +1217,8 @@ const questions = [
         "Abelha.",
         "Hipopótamo."
       ],
-      "answer": 0
+      "answer": 0,
+      "wrong": "Os insetívoros são aqueles animais que se alimentam de insetos. Exemplo: sapo."
     },
   
     
@@ -1007,7 +1232,8 @@ const questions = [
         "Girafa.",
         "Leão."
       ],
-      "answer": 3
+      "answer": 3,
+      "wrong": "Os animais carnívoros são aqueles que se alimentam exclusivamente de outros animais. Exemplo: leão, lobo-guará, cobra e crocodilo."
   
     },
     {
@@ -1020,7 +1246,8 @@ const questions = [
         "Jabuti.",
         "Pinguin."
       ],
-      "answer": 1
+      "answer": 1,
+      "wrong": "A cadeia alimentar é uma representação de uma sequência unilateral onde um ser vivo serve de alimento para outro, através disso é repassada matéria orgânica e energia para todo o ecossistema, além de manter as relações harmônicas populacionais."
     },
     {
       "Categoria": "zoologia",
@@ -1032,7 +1259,8 @@ const questions = [
         "c) Planta carnívora.",
         "d) Não existe uma planta que possa fazer isto."
       ],
-      "answer": 2
+      "answer": 2,
+      "wrong": "As plantas carnívoras são plantas especializadas na captura de presas, assim podendo atrair animais de pequeno porte como insetos, aracnídeos e anfíbios afim de complementar a sua dieta de nutrientes."
     },
     
     
@@ -1046,7 +1274,8 @@ const questions = [
         "Consumidor secundário.",
         "Consumidor terciário."
       ],
-      "answer": 0
+      "answer": 0,
+      "wrong": "Os produtores são os organismos que conseguem produzir seu próprio alimento, ou seja, não dependem de outro ser para se alimentar, ocupando o primeiro nível da cadeira."
   
     },
     {
@@ -1059,7 +1288,8 @@ const questions = [
         "Réptil",
         "Ave."
       ],
-      "answer": 1
+      "answer": 1,
+      "wrong": "Os anfíbios podem ser encontrados em todos os continentes do mundo, exceto na Antártida, sendo majoritariamente encontrados nas zonas de clima mais quente do planeta. Existe uma imensa diversidade de anfíbios. Exemplo: sapos, salamandras e cobra cega."
     },
     {
       "Categoria": "zoologia",
@@ -1071,7 +1301,8 @@ const questions = [
         "Animais que se alimentam apenas de frutas.",
         "Animais que se alimentam de todas as partes da planta."
       ],
-      "answer": 2
+      "answer": 2,
+      "wrong": "Animais frugívoros são aqueles que se alimentam de frutas, tanto exclusivamente quanto parcialmente. Exemplo: esquilo e tucano."
     },
   
     
@@ -1085,7 +1316,8 @@ const questions = [
         "Animais que se alimentam de folhas e sementes.",
         "d) Animais que se alimentam apenas de frutos."
       ],
-      "answer": 0
+      "answer": 0,
+      "wrong": "Os animais granívoros são aqueles que tem como alimento principal ou exclusivo as sementes de plantas ou grãos."
   
     },
     {
@@ -1098,7 +1330,8 @@ const questions = [
         "São animais que se alimentam APENAS de matéria orgânica vegetal em decomposição.",
         "São animais que NÃO se alimentam de matéria orgânica em decomposição."
       ],
-      "answer": 0
+      "answer": 0,
+      "wrong": "Os animais detritívoros, são aqueles que se alimentam de plantas ou animais que estão em estado de decomposição inicial ou avançada. Exemplo: mosca."
     },
     {
       "Categoria": "zoologia",
@@ -1110,7 +1343,8 @@ const questions = [
         "Elefante.",
         "Leão."
       ],
-      "answer": 2
+      "answer": 2,
+      "wrong": "Os animais herbívoros alimentam-se apenas de plantas ou algas, estes possuem uma alimentação que varia de acordo com a espécie. Exemplo: girafa, elefante e hipopótamo."
     },
     
     {
@@ -1123,7 +1357,8 @@ const questions = [
         "A sua velocidade.",
         "Os seus movimentos."
     ],
-    "answer": 0
+    "answer": 0,
+    "wrong": "Os répteis não conseguem produzir calor suficiente para manter uma constância na sua temperatura como os mamíferos, assim são considerados como seres ectodérmicos."
   
     },
     {
@@ -1136,7 +1371,8 @@ const questions = [
         "Uma aerea e outra terreste.",
         "Uma aquática e outra terrestre podendo haver exeções."
       ],
-      "answer": 3
+      "answer": 3,
+      "wrong": "O ciclo de vida de muitos anfíbios inclui uma fase larval aquática e uma fase adulta terrestre. Assim estes animais passam por um processo de metamorfose que consiste em mudanças durante seu desenvolvimento. Exemplo: sapo. Uma exceção seria a cobra cega."
     },
     {
       "Categoria": "zoologia",
@@ -1148,7 +1384,8 @@ const questions = [
         "Aquáticos e terrestres.",
         "Aquáticos e aereos."
       ],
-      "answer": 2
+      "answer": 2,
+      "wrong": "Os mamíferos são animais vertebrados e endotérmicos, ou seja, possuem coluna vertebral e conseguem regular sua temperatura interna, sendo facilmente reconhecidos pelo seu revestimento corporal e glândulas mamárias nas fêmeas."
     },
       
     {
@@ -1161,7 +1398,8 @@ const questions = [
         "Réptil.",
         "Mamífero."
       ],
-      "answer": 3
+      "answer": 3,
+      "wrong": "Alguns mamíferos podem ser encontrados nos mais diferentes ambientes como o aquático, nele temos as baleias; também podemos encontrá-los no ambiente aéreo como os morcegos."
   
     },
     {
@@ -1174,7 +1412,8 @@ const questions = [
         "Todos os filhotes nascem do ventre das suas mães.",
         "Todos os filhotes nascem em ovos liquidos que ficm na água."
       ],
-      "answer": 0
+      "answer": 0,
+      "wrong": "Os répteis representam o grupo que possui uma imensa diversidade de animais, assim ocorrendo uma subclassificação dos grupos sendo estes: quelônios, crocodilianos e escamados. Sendo uma característica comum a todos o nascimento por meio de ovos."
     },
     {
       "Categoria": "zoologia",
@@ -1186,7 +1425,8 @@ const questions = [
         "Água salgada.",
         "Terra."
       ],
-      "answer": 1
+      "answer": 1,
+      "wrong": "A reprodução dos anfíbios é externa, sendo assim são produzidos ovos que são dispersados em locais úmidos, podendo ocorrer também a reprodução interna como nas cecílias que são conhecidas popularmente como cobras cegas."
     },  
     {
       "Categoria": "zoologia",
@@ -1196,7 +1436,8 @@ const questions = [
         "Verdadeiro.",
         "Falso."
     ],
-    "answer": 0
+    "answer": 0,
+    "wrong": "Os anfíbios passam por um processo chamado metamorfose que consiste em mudanças durante seu desenvolvimento, como a perda da calda, das nadadeiras e das brânquias e adquirem características terrestres como as pernas e os pulmões."
   
     },
     {
@@ -1207,7 +1448,8 @@ const questions = [
         "Verdadeiro.",
        "Falso."
     ],
-    "answer": 0
+    "answer": 0,
+    "wrong": "Algumas aves mesmo possuindo asas não podem voar, a exemplo dos pinguins que são excelentes nadadores."
     },
     {
       "Categoria": "zoologia",
@@ -1217,7 +1459,8 @@ const questions = [
         "Verdadeiro.",
        "Falso."
     ],
-    "answer": 1
+    "answer": 1,
+    "wrong": "Os jacarés são considerados répteis formando um subgrupo denominado crocodilianos, que é composto por animais que possuem um focinho alongado, boca repleta de dentes e placas rígidas dispersas por todo o corpo."
     },
       
     {
@@ -1228,7 +1471,8 @@ const questions = [
        "Verdadeiro.",
        "Falso."
     ],
-    "answer": 0
+    "answer": 0,
+    "wrong": "As aves assim como os mamíferos são animais endotérmicos, ou seja, conseguem regular a temperatura do seu corpo internamente e a mantêm constante."
   
     },
     {
@@ -1239,7 +1483,8 @@ const questions = [
        "Verdadeiro.",
         "Falso."
     ],
-    "answer": 1
+    "answer": 1,
+    "wrong": "As aves possuem diferentes formas de locomoção, como a habilidade de voar, nadar e também caminhar sobre a terra, esta variedade se dá pela adaptação das espécies ao ambiente."
     },
     {
       "Categoria": "zoologia",
@@ -1251,7 +1496,8 @@ const questions = [
        "Leão.",
         "Sapo."
     ],
-    "answer": 1
+    "answer": 1,
+    "wrong": "Os consumidores primários ocupam a segunda posição na cadeia alimentar, alimentando-se essencialmente dos produtores. Estes animais não conseguem produzir seu próprio alimento."
     },  
     {
       "Categoria": "zoologia",
@@ -1261,7 +1507,8 @@ const questions = [
        "Ectodérmicos",
         "Endodérmicos"
     ],
-    "answer": 0
+    "answer": 0,
+    "wrong": "Os animais ectodérmicos como as cobras e jacarés não são capazes de regular a temperatura tampouco manter uma constância na sua temperatura assim necessitando fontes externas de calor para ajustar a temperatura corporal."
   
     },
     {
@@ -1274,7 +1521,8 @@ const questions = [
        "Jabuti.",
        "Crocodilo."
     ],
-    "answer": 0
+    "answer": 0,
+    "wrong": "Os escamados são animais que possuem escamas em todo seu corpo. Exemplo: Lagartos e serpentes."
     },
     {
       "Categoria": "zoologia",
@@ -1286,7 +1534,8 @@ const questions = [
         "Serpentes.",
         "Salamandras."
     ],
-    "answer": 0
+    "answer": 0,
+    "wrong": "O ciclo de vida de muitos anfíbios inclui uma fase larval aquática e sua fase adulta terrestre. Assim estes animais passam por um processo de metamorfose que consiste em mudanças durante seu desenvolvimento como a perda da calda, nadadeiras e brânquias."
     },
       
     {
@@ -1299,7 +1548,8 @@ const questions = [
         "Animais que reproduzem-se por meio da placenta apresentam fecundação interna.",
         "Animais que não podem se reproduzir."
     ],
-    "answer": 1
+    "answer": 1,
+    "wrong": "Animais ovíparos são aqueles que possuem o desenvolvimento inicial interno na mãe, porém são depositados em ovos no ambiente externo para a finalização do seu desenvolvimento e nascimento."
   
     },
     {
@@ -1312,7 +1562,8 @@ const questions = [
         "c) Impermeabilizar as penas, facilitando a flutuação e secagema.",
         "d) Fortalece e ajuda no crescimento das penas, além de deixálas mais brilhosas."
     ],
-    "answer": 2
+    "answer": 2,
+    "wrong": "As aves possuem diferentes adaptações aos meios onde vivem, assim as aves aquáticas possuem glândulas de secreção de óleo, que com o auxílio do seu bico impermeabilizam suas penas para facilitar a sua flutuação e secagem."
     },
     {
       "Categoria": "zoologia",
@@ -1324,6 +1575,7 @@ const questions = [
         "Morcego.",
         "Salamandra."
     ],
-    "answer": 3
+    "answer": 3,
+    "wrong": "Salamandra é o nome dado a um subgrupo de anfíbios que possuem características o corpo alongado, cauda, pele lisa, fina e não possuem escamas."
     }
   ]];
