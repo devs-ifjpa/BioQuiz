@@ -144,7 +144,7 @@ function ButtonClick(){
     document.getElementById("tempo").textContent = 0;
     count = 0;
     alternativeclick = 0;
-    if(true){
+    if(questionId > 29){
       let temp = url.href.split("/")
       console.log(temp)
       temp[5] = "telaFinal"
