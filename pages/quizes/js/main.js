@@ -12,6 +12,8 @@ let alternativeclick = 0;
       }
   }
 
+
+
 var url = window.location;
 temaselect = url.toString().split("=")[1];
 temas = ["botanica","anatomia","ecologia","zoologia"]
@@ -30,10 +32,7 @@ function showQuestion() {
   const alternatives = filterArray[randomics[questionId]].alternatives;
   const alternativesView = document.querySelector('.alternatives')
   const answer = filterArray[randomics[questionId]].answer
-  if (questionId>30){
-    window.location.href: ''
-  }
-
+ 
 
   for (alternativeIndex in alternatives){
     const item = `<div class="alternatives-item" onclick="answerCorrect(${alternativeIndex})" data-index="${alternativeIndex}">${alternatives[alternativeIndex]}</div>`
@@ -146,6 +145,12 @@ function ButtonClick(){
     document.getElementById("tempo").textContent = 0;
     count = 0;
     alternativeclick = 0;
+    if(questionId > 29){
+      let temp = url.href.split("/")
+      temp[4] = "telaFinal"
+      temp[5] = "parabens.html"
+      url.href = temp.join("/")
+    }
     showQuestion();
   // })
 }
