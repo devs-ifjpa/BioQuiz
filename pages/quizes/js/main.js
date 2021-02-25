@@ -26,9 +26,14 @@ while (randomics.length < filterArray.length) {
 function showQuestion() {
   document.getElementById("trophy").innerHTML = `${questionId + 1}/${filterArray.length}`;
   document.querySelector('.title').innerHTML = filterArray[randomics[questionId]].title
+  document.querySelector('.balao').innerHTML = filterArray[randomics[questionId]].wrong  
   const alternatives = filterArray[randomics[questionId]].alternatives;
   const alternativesView = document.querySelector('.alternatives')
   const answer = filterArray[randomics[questionId]].answer
+  if (questionId>30){
+    window.location.href: ''
+  }
+
 
   for (alternativeIndex in alternatives){
     const item = `<div class="alternatives-item" onclick="answerCorrect(${alternativeIndex})" data-index="${alternativeIndex}">${alternatives[alternativeIndex]}</div>`
