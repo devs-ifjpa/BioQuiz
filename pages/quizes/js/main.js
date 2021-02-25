@@ -124,8 +124,7 @@ function answerCorrect(x){
     }
     else{
       alternativeclick == 0 ? bAudio.play() : false;
-      document.querySelector(".balao").style.opacity = 1;
-      document.querySelector(".balao:after").style.opacity = 1;      
+      document.querySelector(".balao").style.opacity = 1;     
     }
 }
 
