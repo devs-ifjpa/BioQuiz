@@ -147,8 +147,8 @@ function ButtonClick(){
     alternativeclick = 0;
     if(questionId > 29){
       let temp = url.href.split("/")
-      temp[4] = "telaFinal"
-      temp[5] = "parabens.html"
+      temp[5] = "telaFinal"
+      temp[6] = "parabens.html"
       url.href = temp.join("/")
     }
     showQuestion();
