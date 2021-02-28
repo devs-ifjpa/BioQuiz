@@ -15,7 +15,7 @@
     <div id="miscellaneous">
       <div id="mer">
           <img src="../telaDoMeio/img/jogo-03.png " id="medal">
-          <p id="thor">0</p>
+          <p id="thor"></p>
       </div>
       <div id="clockbox">
           <img src="../../img/jogo-02.png" id="watchtime">
@@ -23,15 +23,15 @@
       </div>
       <div id="mar">
           <img src="../telaDoMeio/img/MOEDA-02.png" id="coin">
-          <p id="loki">0</p>
+          <p id="loki"></p>
       </div>
       <div id="baubox">
         <img src="../../img/Bau I.png" id="bau">
-        <p id="baupoint">0</p>
+        <p id="baupoint"></p>
       </div>
       <div>
         <img src="../../img/Trofeu.png" id="trophy-icon">
-        <p id="trophy">0</p>
+        <p id="trophy"></p>
       </div>
     </div>
     <div id="tempo"></div>
@@ -42,7 +42,27 @@
     <div id="button-box">
       <button id="button">AVANÇAR</button>
     </div>
-    <script id="src" src="./js/quizzes.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>        
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyBDhlHYFCmZSLwkIdknHGC6msRTzxP1fm4",
+            authDomain: "bioquiz-c51b4.firebaseapp.com",
+            databaseURL: "https://bioquiz-c51b4.firebaseio.com",
+            projectId: "bioquiz-c51b4",
+            storageBucket: "bioquiz-c51b4.appspot.com",
+            messagingSenderId: "101098678577",
+            appId: "1:101098678577:web:a291fb17aaed7b5a0a6810",
+            measurementId: "G-3QDV5D6J5K"
+        };
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+    <script src="../../js/firebase.js"></script>
+    <!-- <script id="src" src="./js/quizzes.js"></script> -->
     <script src="./js/main.js"></script>
   </body>
 </html>

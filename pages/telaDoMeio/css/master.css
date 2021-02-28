@@ -145,12 +145,14 @@ img#coin{
 .tema-link h1{
     font-size: 28px;
     margin: 0px;
+    text-transform: capitalize;
 }
 #tema{
     font-size: 25px;
     padding: 10px;
     font-weight: bold;
     margin: 0px;
+    text-transform: capitalize;
 }
 .medio{
     display: grid;

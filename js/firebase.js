@@ -15,7 +15,6 @@ var db = firebase.firestore();
         userEmail = userEmail.value;
         userPass = userPass.value;
         firebase.auth().signInWithEmailAndPassword(userEmail, userPass).catch(function(error) {
-            // Handle Errors here.
             var errorMessage = error.message;
             if(errorMessage == "The password is invalid or the user does not have a password."){
                 window.alert("Senha inválida ou usuário não cadastrado.")
@@ -23,7 +22,9 @@ var db = firebase.firestore();
             else if(errorMessage == "The email address is badly formatted."){
                 window.alert("O endereço de email está mal formatado ou não foi preenchido.")
             }
-            // ...
+            else{
+                window.alert(errorMessage);
+            }
         });
     }
 
@@ -83,9 +84,11 @@ var db = firebase.firestore();
                     // nome: data[0]
                 // });
                 db.collection('users').doc(user.uid).set({
-                    nome: data[0]
+                    nome: data[0],
+                    coin: 0,
+                    medal: 0,
                 }).then(() => {
-                    Firebase_Logout()
+                    // Firebase_Logout()
                 });
             }
         });
@@ -102,10 +105,18 @@ firebase.auth().onAuthStateChanged(function(user) {
         if(window.location.toString().indexOf('login.html') != -1){
             window.location = window.location.toString().split('/pages')[0] + '/index.html';
         }
+        if(document.getElementById('thor') != undefined){
+            firebase.firestore().collection('users').doc(`${user.uid}`).get().then(doc => {
+                document.getElementById('thor').innerText = doc.data().medal;
+                document.getElementById('baupoint').innerText = parseInt(doc.data().coin/15);
+                document.getElementById('loki').innerText = doc.data().coin;
+            });
+        }
         if(document.getElementById('LoginLinkButton') != undefined){
             document.getElementById('LoginLinkButton').removeAttribute('href');
         }
     } else{
+        console.log('não entrou')
     }
 });
 

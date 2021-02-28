@@ -3,60 +3,137 @@ let total = 0;
 let coin = 0;
 var count= 0;
 let alternativeclick = 0;
+let questionsSorted = undefined
 
-  function start(){
-      if((count + 1) <= 9999999){
-          count+=1
-          tempo.textContent=count; 
-          setTimeout('start();',1000);
-      }
+function start(){
+    if((count + 1) <= 9999999){
+        count+=1
+        tempo.textContent=count; 
+        setTimeout('start();',1000);
+    }
+}
+
+function formatTitle(item){
+  itemTitle = ""
+  if(item === "anatomia"){
+    itemTitle = "anatomia humana"
+  }else if(item === "botanica"){
+    itemTitle = "botânica"
+  }else{
+    itemTitle = item;
   }
+  return itemTitle
+}
 
-var url = window.location;
-temaselect = url.toString().split("=")[1];
-temas = ["botanica","anatomia","ecologia","zoologia"]
-let filterArray = questions[temas.indexOf(temaselect)];
+function QuestionIndex(index){
+  document.getElementById('trophy').innerHTML = `${questionId}/${questionsSorted.length}`
+  let question = questionsSorted[index]
+  // questions
+  document.querySelector('.title').innerHTML = question.title;
+  console.log(question);
+  for(alt in question.alternatives){
+    let content = `<div class="alternatives-item" onclick="answerCorrect(${Number(alt) + 1});QuestionClick(${questionId})">${question.alternatives[alt]}</div>`;
+    document.querySelector('.alternatives').insertAdjacentHTML('beforeend',content);
+    questionId++;
+  }
+}
 
-var randomics = [];
-while (randomics.length < filterArray.length) {
-    var rand = Math.floor(Math.random() * filterArray.length);
+function QuestionClick(index){
+  document.querySelector("button").style.opacity = 1;
+  document.querySelector('button').setAttribute("onclick",'ButtonClick()');
+  alternativeclick++;
+  if(document.getElementById("clock").textContent == ""){
+    document.getElementById("clock").textContent = hora_bonita(count);
+    document.getElementById("clockbox").style.opacity = 1;
+  }
+  let countLoop = 0;
+  document.querySelectorAll('.alternatives-item').forEach(alternative => {
+    if (countLoop === Number(questionsSorted[index].answer)){
+      alternative.setAttribute('class', 'green');
+    }else{
+      alternative.setAttribute('class', 'red');
+    }
+    document.querySelector("button").setAttribute("class", "show");
+    countLoop++;
+  });
+}
+
+if(document.querySelector('.alternatives') != undefined){
+  let father = document.querySelector('.alternatives');
+  let title = window.location.href.split("?")[1].split("=")[1];
+  randomics = [];
+  while(randomics.length != 30){
+    var rand = Math.floor(Math.random() * 30 + 1);
     randomics.indexOf(rand) == -1 ? randomics.push(rand) : false;
-
-}
-function showQuestion() {
-  document.getElementById("trophy").innerHTML = `${questionId + 1}/${filterArray.length}`;
-  document.querySelector('.title').innerHTML = filterArray[randomics[questionId]].title
-  const alternatives = filterArray[randomics[questionId]].alternatives;
-  const alternativesView = document.querySelector('.alternatives')
-  const answer = filterArray[randomics[questionId]].answer
-
-  for (alternativeIndex in alternatives){
-    const item = `<div class="alternatives-item" onclick="answerCorrect(${alternativeIndex})" data-index="${alternativeIndex}">${alternatives[alternativeIndex]}</div>`
-    alternativesView.insertAdjacentHTML('beforeend', item);
-
-    // click
-    const lastItem = alternativesView.querySelector('.alternatives-item:last-child')
-    lastItem.addEventListener('click', () => {
-      document.querySelector("button").style.opacity = 1;
-      document.querySelector('button').setAttribute("onclick",'ButtonClick()');
-      alternativeclick++;
-      if(document.getElementById("clock").textContent == ""){
-        document.getElementById("clock").textContent = hora_bonita(count);
-        document.getElementById("clockbox").style.opacity = 1;
-      }
-      const alternativeItems = alternativesView.querySelectorAll('.alternatives-item')
-      for (const alternativeItem of alternativeItems) {
-        if (answer === Number(alternativeItem.dataset.index)) {
-          alternativeItem.setAttribute('class', 'green');
-          document.querySelector("button").setAttribute("class", "show");
-        } else {
-          alternativeItem.setAttribute('class', 'red');
-          document.querySelector("button").setAttribute("class", "show");
-        }
-      }
-    })
   }
+  firebase.auth().onAuthStateChanged(function(user){
+    if (user){
+      firebase.firestore().collection(title).get().then(function(querySnapshot) {
+          questions = []
+          querySnapshot.forEach(function(doc) {
+              let data = doc.data();
+              data.id = doc.id;
+              questions.push(data);
+          });
+          questionsSorted = randomics.map(rand => {
+            return questions.filter(item => {
+              if(Number(item.id) === rand){
+                return item;
+              }
+            })[0];
+          })
+          questionId++;
+          QuestionIndex(1);
+      });
+    }
+  });
 }
+
+// var url = window.location;
+// temaselect = url.toString().split("=")[1];
+// temas = ["botanica","anatomia","ecologia","zoologia"]
+// let filterArray = questions[temas.indexOf(temaselect)];
+// 
+// var randomics = [];
+// while (randomics.length < filterArray.length) {
+    // var rand = Math.floor(Math.random() * filterArray.length);
+    // randomics.indexOf(rand) == -1 ? randomics.push(rand) : false;
+// 
+// }
+// function showQuestion() {
+  // document.getElementById("trophy").innerHTML = `${questionId + 1}/${filterArray.length}`;
+  // document.querySelector('.title').innerHTML = filterArray[randomics[questionId]].title
+  // const alternatives = filterArray[randomics[questionId]].alternatives;
+  // const alternativesView = document.querySelector('.alternatives')
+  // const answer = filterArray[randomics[questionId]].answer
+// 
+  // for (alternativeIndex in alternatives){
+    // const item = `<div class="alternatives-item" onclick="answerCorrect(${alternativeIndex})" data-index="${alternativeIndex}">${alternatives[alternativeIndex]}</div>`
+    // alternativesView.insertAdjacentHTML('beforeend', item);
+// 
+    // click
+    // const lastItem = alternativesView.querySelector('.alternatives-item:last-child')
+    // lastItem.addEventListener('click', () => {
+      // document.querySelector("button").style.opacity = 1;
+      // document.querySelector('button').setAttribute("onclick",'ButtonClick()');
+      // alternativeclick++;
+      // if(document.getElementById("clock").textContent == ""){
+        // document.getElementById("clock").textContent = hora_bonita(count);
+        // document.getElementById("clockbox").style.opacity = 1;
+      // }
+      // const alternativeItems = alternativesView.querySelectorAll('.alternatives-item')
+      // for (const alternativeItem of alternativeItems) {
+        // if (answer === Number(alternativeItem.dataset.index)) {
+          // alternativeItem.setAttribute('class', 'green');
+          // document.querySelector("button").setAttribute("class", "show");
+        // } else {
+          // alternativeItem.setAttribute('class', 'red');
+          // document.querySelector("button").setAttribute("class", "show");
+        // }
+      // }
+    // })
+  // }
+// }
 
 function AddMedal(x){
   total += x;
@@ -84,7 +161,7 @@ function hora_bonita(s){
 const aAudio = new Audio("./audio/SomDeAcerto.mp3");
 const bAudio = new Audio("./audio/SomDeErro.mp3");
 function answerCorrect(x){
-  const answer = filterArray[randomics[questionId]].answer;
+  const answer = questionsSorted[questionId].answer;
   let time = Number(document.getElementById("tempo").textContent)
     if(x == answer){
       alternativeclick == 0 ? aAudio.play() : false;
@@ -128,18 +205,17 @@ function ButtonClick(){
     document.getElementById("clock").textContent = "";
     document.getElementById("clockbox").style.opacity = 0;
     document.querySelector(".green").setAttribute("class", "hidden");
-    let contred = document.querySelectorAll("div.red");
-    for (var x = 1; x <= contred.length; x++){
-      document.querySelector(".red").setAttribute("class", "hidden");
-    }
+    document.querySelectorAll("div.red").forEach(item => {
+      item.setAttribute('class','hidden')
+    });
     document.querySelector("button").style.opacity = 0;
     questionId++;
     document.getElementById("tempo").textContent = 0;
     count = 0;
     alternativeclick = 0;
-    showQuestion();
+    QuestionIndex(questionId);
   // })
 }
 
 
-showQuestion();
+// showQuestion();
