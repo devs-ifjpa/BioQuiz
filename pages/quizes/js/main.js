@@ -20,6 +20,7 @@ temas = ["botanica","anatomia","ecologia","zoologia"]
 let filterArray = questions[temas.indexOf(temaselect)];
 
 var randomics = [];
+
 while (randomics.length < filterArray.length) {
     var rand = Math.floor(Math.random() * filterArray.length);
     randomics.indexOf(rand) == -1 ? randomics.push(rand) : false;
@@ -145,10 +146,10 @@ function ButtonClick(){
     count = 0;
     alternativeclick = 0;
     if(questionId > 29){
-      const temp = url.href.split("pages")[0];
-      url.href = temp + "pages/telaFinal/parabens.html"
+      FirebaseUpdateMedal();
+    }else{
+      showQuestion();
     }
-    showQuestion();
   // })
 }
 

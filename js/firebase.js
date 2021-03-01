@@ -106,15 +106,44 @@ var db = firebase.firestore();
 
 firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
-        console.log('entrou')
         if(window.location.toString().indexOf('login.html') != -1){
             window.location = window.location.toString().split('/pages')[0] + '/index.html';
         }
         if(document.getElementById('LoginLinkButton') != undefined){
             document.getElementById('LoginLinkButton').removeAttribute('href');
         }
+        let user = firebase.auth().currentUser;
+        if(document.getElementById("thor") != undefined){
+            db.collection("users").doc(user.uid).get().then((doc) => {
+                if(typeof total !== "undefined"){
+                    total += parseInt(doc.data().medal);
+                    document.getElementById("thor").textContent = total;
+                }else{
+                    document.getElementById("thor").textContent = parseInt(doc.data().medal)
+                }
+            });
+        }
     } else{
     }
 });
 
 // $SIGNED
+
+// UPDATE
+
+    const FirebaseUpdateMedal = () => {
+        const medalValue = document.getElementById("thor").textContent;
+        firebase.auth().onAuthStateChanged(function(user) {
+            if (user) {
+                var user = firebase.auth().currentUser;
+                db.collection('users').doc(user.uid).set({
+                    medal: medalValue,
+                },{ merge: true }).then(() => {
+                    const temp = url.href.split("pages")[0];
+                    url.href = temp + "pages/telaFinal/parabens.html"    
+                });
+            }
+        });
+    }
+
+// $UPDATE
