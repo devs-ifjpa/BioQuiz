@@ -22,25 +22,25 @@
                 <img src="../../img/icon-1.png" alt="Logo">
             </div>
             <div id="formulario">
-                <form id="DefaultCadastro">
+                <form id="Form_Register">
                     <img src="../../img/login-email.png" alt="nomeCadastro">
-                    <input type="nomeCadastro" name="Nome" id="DefaultCadastroNome" placeholder="Nome">
+                    <input type="text" name="Nome" id="name" placeholder="Nome">
                     <img src="../../img/cadastro-calendario.png" alt="Nascimento">
-                    <input type="Nascimento" name="Nascimento" id="DefaultCadastroNasc" placeholder="Data de nascimento">
+                    <input type="date" name="Nascimento" id="nascimento" placeholder="Data de nascimento">
                     <img src="../../img/cadastro-email.png" alt="emailCadastro">
-                    <input type="email" name="" id="DefaultCadastroEmail" placeholder="E-mail">
+                    <input type="email" name="" id="email" placeholder="E-mail">
                     <img src="../../img/cadastro-email.png" alt="ConfirmeEmailCadastro">
-                    <input type="ConfirmeEmail" name="ConfirmeEmail" id="DefaultConfirmeCadastroEmail" placeholder="Confirme seu E-mail">                    
+                    <input type="email" name="ConfirmeEmail" id="confirm-email" placeholder="Confirme seu E-mail">                    
                     <img src="../../img/login-senha.png" alt="Senha">
-                    <input type="password" name="senha" id="DefaultLoginPassword" placeholder="Senha" minlength='8'>
+                    <input type="password" name="senha" id="password" placeholder="Senha" minlength='8'>
                     <img src="../../img/login-senha.png" alt="ConfirmeSenha">
-                    <input type="password" name="ConfirmeSenha" id="DefaultConfirmeSenha" placeholder="Confirme sua senha" minlength='8'>
+                    <input type="password" name="ConfirmeSenha" id="confirm" placeholder="Confirme sua senha" minlength='8'>
                     <button id="avancar" type="submit">Avançar</button>
                 </form>
                 
-                <div id="imagens">
-                    <button type="submit"><img src="../../img/google-logn.png" alt="Facebook"></button>
-                </div>
+                <form id="Form_Register-Google">
+                    <button type="submit"><img src="../../img/google-logn.png" alt="Google Register"></button>
+                </form>
             </div>
         </main>
         <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
