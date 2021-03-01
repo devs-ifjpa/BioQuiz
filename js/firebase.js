@@ -86,10 +86,12 @@ firebase.firestore().enablePersistence();
             let data = document.getElementById("nascimento").value;
             let password = document.getElementById("password").value;
             let confirm = document.getElementById("confirm").value;
-            if(email === confirmEmail && password == confirm){
-                Firebase_RegisterEmail(email,password,[name,data]);
+            if(email === confirmEmail){
+                password == confirm ?
+                    Firebase_RegisterEmail(email,password,[name,data]):
+                    alert("Erro:" + "\n" + "As senhas não são Iguais");
             }else{
-                alert("Erro:" + "\n" + "As senhas não são Iguais");
+                alert("Erro:" + "\n" + "Os emails não são Iguais");
             }
         })
     }
