@@ -37,18 +37,6 @@ var db = firebase.firestore();
 
 // $LOGOUT
 
-// LOGIN GOOGLE
-
-// $LOGIN GOOGLE
-
-// LOGIN FACEBOOK
-
-    authFacebookButton.addEventListener('click', function () {
-        // Providers
-        var provider = new firebase.auth.FacebookAuthProvider();
-        signIn(provider);
-    });
-
     function signIn(provider) {
         firebase.auth()
             .signInWithPopup(provider)
