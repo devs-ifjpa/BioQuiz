@@ -95,13 +95,13 @@ function answerCorrect(x){
       alternativeclick == 0 ? aAudio.play() : false;
       switch (true){
         case time<=5:
-          alternativeclick == 0 ? (AddMedal(1000),AddCoin(3)) : false;
+          alternativeclick == 0 ? (AddMedal(1000)) : false;
           break;
         case time<10:
-          alternativeclick == 0 ? (AddMedal(900),AddCoin(2)) : false;
+          alternativeclick == 0 ? (AddMedal(900)) : false;
           break;
         case time<15:
-          alternativeclick == 0 ? (AddMedal(800),AddCoin(1)) : false;
+          alternativeclick == 0 ? (AddMedal(800)) : false;
           break;
         case time<20:
           alternativeclick == 0 ? AddMedal(700) : false;
@@ -145,11 +145,8 @@ function ButtonClick(){
     count = 0;
     alternativeclick = 0;
     if(questionId > 29){
-      let temp = url.href.split("/")
-      console.log(temp)
-      temp[5] = "telaFinal"
-      temp[6] = "parabens.html"
-      url.href = temp.join("/")
+      const temp = url.href.split("pages")[0];
+      url.href = temp + "pages/telaFinal/parabens.html"
     }
     showQuestion();
   // })
