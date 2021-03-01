@@ -2,15 +2,3 @@ body{
     text-align: center;
     background-color: #eadc83;
 }
-#voltar a{
-    top: 8px;
-    left: 8px;
-    position: absolute;
-    color: #f6f9f4;
-    background-color: #8bd6fe;
-    padding: 4px 10px;
-    border-radius: 30px;
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-}
