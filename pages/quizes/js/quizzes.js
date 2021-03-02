@@ -3,14 +3,14 @@ const questions = [
     {
       "Categoria": "botanica",
       "Question" : "Questão 1",
-      "title": "Qual a função do caule?",
+      "title": "Qual a função das alternativas abaixo NÃO é uma função do caule?",
       "alternatives": [
         "Sustentação.",
         "Suporte.",
         "Transporte de nutrientes.",
         "Polinização."
       ],
-      "answer": 0,
+      "answer": 3,
       "wrong": "As principais funções do caule são: sustentação da planta, transporte da seiva e serve como suporte em caso de plantas trepadeiras."
 
     },
@@ -135,7 +135,7 @@ const questions = [
     {
       "Categoria": "botanica",
       "Question" : "Questão 11",
-      "title": "Quais são os tipos de fruto?",
+      "title": "Como são classificados os frutos?",
       "alternatives": [
         "Fruto carnoso, fruto seco e fruto com semente.",
         "Fruto sem semente e fruto com semente.",
@@ -163,10 +163,10 @@ const questions = [
       "Question" : "Questão 13",
       "title": "Qual dos frutos abaixo pode NÃO possuir semente",
       "alternatives": [
-        "Maçã e laranja.",
-        "Banana e abacate.",
-        "Laranja e morango.",
-        "Laranja e banana."
+        "Maçã",
+        "Abacate.",
+        "Morango.",
+        "Banana."
       ],
       "answer": 3,
       "wrong": "Os frutos sem sementes são aqueles que as flores não foram fecundadas, assim não gerando a semente (embrião), sendo muito comum à banana."
@@ -245,7 +245,7 @@ const questions = [
         "Coifa.",
         "Ramo principal.",
         "Pelos absorventes.",
-        "Pelos absorventes."
+        "Estigma."
       ],
       "answer": 3,
       "wrong": "Após o processo de polinização inicia-se então a fecundação das flores. Os grãos de pólen que alcançam o estigma da mesma espécie se transformam em um tubo que se prolonga do estigma até o ovário. O estigma é uma estrutura receptora em formato de haste podendo ser pegajosos, assim sendo sua principal função a recepção pólen para induzi-lo até o ovário da flor para que ocorra a fecundação."
@@ -300,7 +300,7 @@ const questions = [
         "Água.",
         "Fruto."
       ],
-      "answer": 1,
+      "answer": 2,
       "wrong": "As sementes são dispersadas na água da maré, pois estas árvores ficam próximas dos leitos dos estuários ou em áreas um pouco mais distantes, mas que alagam."
     },
     {
@@ -332,7 +332,7 @@ const questions = [
     {
       "Categoria": "botanica",
       "Question" : "Questão 26",
-      "title": "Os espinhos presentes nos cactos é qual estrutura modificada das plantas?",
+      "title": "Os espinhos presentes nos cactos faz parte de qual estrutura modificada das plantas?",
       "alternatives": [
         "Folha.",
         "Fruto.",
@@ -346,7 +346,7 @@ const questions = [
     {
       "Categoria": "botanica",
       "Question" : "Questão 27",
-      "title": "Quais são os gases que participam da fotossíntese?",
+      "title": "Qual das alternativas abaixo representa um produto final da fotossíntese?",
       "alternatives": [
         "Oxigênio (O2) e nitrito (HNO2).",
         "Oxigênio (O2) e Gás Carbonico (CO2).",
@@ -372,7 +372,7 @@ const questions = [
     {
       "Categoria": "botanica",
       "Question" : "Questão 29",
-      "title": "Qual é o nome do processo pelas plantas que não ultiliza a luz solar?",
+      "title": "Qual é o nome do processo que as plantas passam e que não utiliza a luz solar?",
       "alternatives": [
         "Fotossíntese",
         "Quimiossíntese",
@@ -400,9 +400,9 @@ const questions = [
     {
       "Categoria": "anatomia",
       "Question" : "Questão 1",
-      "title": "Qual a função do pulmão para o corpo humano?",
+      "title": "Qual a principal função do pulmão para o corpo humano?",
       "alternatives": [
-        "Respiração",
+        "Realizar as trocas gasosas;",
         "Digestão",
         "Circulação do sangue",
         "Envio de informações",
@@ -413,15 +413,15 @@ const questions = [
       {
       "Categoria": "anatomia",
       "Question" : "Questão 2",
-      "title": "O pulmão participa de qual sistema do corpo humano??",
+      "title": "O pulmão participa de qual sistema do corpo humano?",
       "alternatives": [
-        "Sistema cardiaco",
+        "Sistema cardíaco",
         "Sistema digestório",
         "Sistema nervoso",
         "Sistema respiratório",
       ],
       "answer": 3,
-      "wrong": "O sistema respiratório é o conjunto de órgãos responsáveis pelas trocas gasosas entre o organismo dos animais e o meio ambiente, ou seja, a hematose pulmonar, possibilitando a respiração celular."
+      "wrong": "O sistema respiratório é composto dos pulmões e pleura e das passagens aéreas que levam aos pulmões, incluindo as narinas, as cavidades nasais, a faringe, a laringe, a traqueia, os brônquios e os bronquíolos."
     },
     {
     "Categoria": "anatomia",
@@ -430,11 +430,11 @@ const questions = [
       "alternatives": [
         "Neurônios",
         "Pleura",
-        "Alvéolos",
+        "Alvéolo",
         "Faringe",
       ],
       "answer": 1,
-      "wrong": "A pleura é uma membrana fina e transparente composta por duas camadas que revestem os pulmões e o interior da parede torácica."
+      "wrong": "A pleura é uma membrana fina e transparente que reveste o pulmão, cuja principal função é facilitar o movimento dos pulmões durante a respiração e diminuir o atrito entre pulmões, caixa torácica e cavidade torácica."
     },
     {
     "Categoria": "anatomia",
@@ -447,7 +447,7 @@ const questions = [
         "Permite que o alimento siga para o intestino grosso"
       ],
       "answer": 0,
-      "wrong": "A epiglote, é uma camada cartilaginosa fina e móvel. No processo de deglutição (ato de engolir) ela fecha a entrada da laringe o que impede a passagem de alimentos pelas vias respiratórias."
+      "wrong": "A epiglote é uma placa de cartilagem em formato de folha e móvel. No processo de deglutição (ato de engolir) ela fecha a entrada da laringe e impede a passagem do bolo alimentar para a traqueia."
     },
     {
     "Categoria": "anatomia",
@@ -460,33 +460,33 @@ const questions = [
         "Cordas Vocais"
       ],
       "answer": 3,
-      "wrong": "As pregas vocais é um tecido muscular localizadas no interior da laringe. Ao expulsar do ar por elas é produzida uma vibração cujos os sons cujo os usamos para nos comunicar."
+      "wrong": "As cordas vocais são estruturas localizadas na laringe e são as responsáveis pela produção da emissão de sons de acordo com o ar que é expelido pelos pulmões e passam por elas. Com seu fechamento ou abertura e também com as suas vibrações, elas modulam os sons que saem de nossa boca, os quais são moldados pela língua, boca e lábios para formar as letras e sílabas."
     },
     {
     "Categoria": "anatomia",
       "Question" : "Questão 6",
       "title": "Qual a função do estômago no corpo humano?",
       "alternatives": [
-        "Pré digestão e esterlização do alimento",
-        "Digestão do alimento",
-        "Controle da passagem do bolo alimentar",
-        "Absorção da gordura"
+        "Produção do quimo.",
+        "Absorção do bolo alimentar.",
+        "Produção de bile.",
+        "Absorção da gordura."
       ],
       "answer": 0,
-      "wrong": "O estômago é um órgão participante do sistema digestório, responsável pela pré digestão e esterilização, para que o bolo alimentar siga para o intestino, onde são absorvidos os nutrientes."
+      "wrong": "O estômago é um órgão participante do sistema digestório, responsável por transformar o bolo alimentar em quimo (massa pastosa de caráter ácido) e iniciar a digestão das proteínas através da produção de suco gástrico, além de absorver pequenas quantidades de água e as substâncias dissolvidas nela e regular a passagem de alimento para o intestino delgado."
     },
     {
     "Categoria": "anatomia",
       "Question" : "Questão 7",
       "title": "O que é bolo alimentar?",
       "alternatives": [
-        "É o alimento mastigado e misturado à saliva",
+        "É o alimento mastigado e misturado a saliva",
         "É o alimento antes de ser consumido",
         "É o alimento quando chega ao intestino",
         "É o ácido presente no estômago"
       ],
       "answer": 0,
-      "wrong": "O bolo alimentar é o nome dado ao alimento mastigado e misturado à saliva."
+      "wrong": "O bolo alimentar é o nome dado ao alimento mastigado e misturado a saliva."
     },
     {
     "Categoria": "anatomia",
@@ -495,21 +495,21 @@ const questions = [
       "alternatives": [
         "Produzir ácidos para o corpo humano",
         "Produzir bactérias para o estômago",
-        "Produzir hormônios ligados a digestão",
-        "Produzir..."
+        "Produzir enzimas ligados a digestão",
+        "Produzir anticorpos para o corpo humano"
       ],
       "answer": 2,
-      "wrong": "O pâncreas é uma glândula participante do sistema digestório e endócrino, responsável pela produção de hormônios de suma importância, dentre elas a insulina, e sua função se baseia na metabolização da glicose."
+      "wrong": "O pâncreas é uma glândula participante do sistema digestório e endócrino, responsável pela produção e liberação de enzimas digestivas e produção de hormônios de suma importância, como a insulina."
     },
     {
     "Categoria": "anatomia",
       "Question" : "Questão 9",
-      "title": "Quando ____ o ar entra no nosso corpo e quando ____ o ar sai do nosso corpo",
+      "title": "Quando _____ o ar entra no nosso corpo e quando _____ o ar sai do nosso corpo.",
       "alternatives": [
-        "Espiranis e inspiramos",
-        "Inspiramos e expiramos",
+        "Expiramos / inspiramos",
+        "Inspiramos / expiramos",
         "Respiramos e inspiramos",
-        "Inspiramos e espiramos"
+        "Inspiramos e respiramos"
       ],
       "answer": 1,
       "wrong": "A inspiração, ocorre pela contração da musculatura do diafragma e dos músculos intercostais. Já a expiração dá-se pelo relaxamento da musculatura do diafragma e dos músculos intercostais."
@@ -517,7 +517,7 @@ const questions = [
     {
     "Categoria": "anatomia",
       "Question" : "Questão 10",
-      "title": "A ____ é capaz de fechar a ____ impedindo a passagem de alimento",
+      "title": "A ____ é capaz de fechar a ____ impedindo a passagem de alimento para as vias respiratórias.",
       "alternatives": [
         "Epiglote, laringe",
         "Faringe, laringe",
@@ -525,20 +525,20 @@ const questions = [
         "Cavidade nasal, faringe"
       ],
       "answer": 0,
-      "wrong": "A epiglote está no início da laringe possuindo a função de uma lâmina que se encontra por detrás da língua e serve para fechar a ligação da faringe com a glote durante a deglutição."
+      "wrong": "A epiglote é uma placa de cartilagem em formato de folha e móvel. No processo de deglutição (ato de engolir) ela fecha a entrada da laringe e impede a passagem do bolo alimentar para a traqueia"
     },
     {
     "Categoria": "anatomia",
       "Question" : "Questão 11",
-      "title": "O pulmão é revestido por uma membrana dupla chamada:",
+      "title": "Os ossos são responsáveis pelo armazenamento de uma substância chamada:",
       "alternatives": [
-        "Neura",
-        "Pleura",
-        "Alvéolos",
-        "Brônquios"
+        "Nitrogênio",
+        "Cálcio",
+        "Oxigênio",
+        "Carbono"
       ],
       "answer": 1,
-      "wrong": "Os ossos possuem a função de sustentação e proteção dos órgãos, além de serem capazes de armazenar certos tipos de nutrientes e minerais importantes."
+      "wrong": "Os ossos possuem a função de sustentação e proteção dos órgãos, além de serem capazes de armazenar certos tipos de nutrientes e minerais importantes, como o cálcio e fósforo."
     },
     {
     "Categoria": "anatomia",
@@ -546,12 +546,12 @@ const questions = [
       "title": "O sangue considerado VENOSO é rico em qual gás?",
       "alternatives": [
         "Oxigênio(O2)",
-        "Gás carbônico(CO2)",
+        "Dióxido de carbono (CO2)",
         "Hidrogênio(H)",
         "O sangue não possui nenhum tipo de gás"
       ],
       "answer": 1,
-      "wrong": "Sangue venoso é o sangue pobre em oxigênio e rico em dióxido de carbono."
+      "wrong": "O sangue venoso é pobre em oxigênio e rico em dióxido de carbono (CO2)."
     },
     {
     "Categoria": "anatomia",
@@ -564,23 +564,23 @@ const questions = [
         "O sangue não possui nenhum tipo de gás"
       ],
       "answer": 0,
-      "wrong": "As artérias são canais de maior espessura, responsáveis pelo deslocamento do sangue do coração para o pulmão, retornando ao coração e seguindo para o corpo inteiro rico em oxigênio."
+      "wrong": "O sangue arterial é pobre em dióxido de carbono(CO2) e rico em oxigênio."
     },
     {
     "Categoria": "anatomia",
       "Question" : "Questão 14",
-      "title": "São consideradas artérias, os vasos sanguíneos que levam o sangue de volta ao coração",
+      "title": "São consideradas artérias, os vasos sanguíneos que levam o sangue de volta ao coração.",
       "alternatives": [
         "Verdadeiro",
         "Falso",
       ],
       "answer": 1,
-      "wrong": "As artérias são canais de maior espessura, responsáveis pelo deslocamento do sangue do coração para o pulmão, sendo as veias responsáveis por levarem o sangue de volta ao coração."
+      "wrong": "Os vasos sanguíneos responsáveis por levar o sangue de volta ao coração são as veias."
     },
     {
     "Categoria": "anatomia",
       "Question" : "Questão 15",
-      "title": "Qual a função do esqueleto no corpo humano?",
+      "title": "Qual é uma das funções do esqueleto no corpo humano?",
       "alternatives": [
         "Proteção dos órgãos",
         "Auxílio na respiração",
@@ -588,7 +588,7 @@ const questions = [
         "Circulação do sangue"
       ],
       "answer": 0,
-      "wrong": "O esqueleto humano é formado pelos ossos e tem como função principal a proteção de órgãos vitais para o ser vivo, como o as costelas que protegem alguns órgãos vitais como o coração e os pulmões assim como o crânio que protege o cérebro."
+      "wrong": "O esqueleto humano é formado pelos ossos e tem como função principal a proteção de órgãos vitais, sustentação do corpo, movimentação e reserva de minerais"
     },
     {
     "Categoria": "anatomia",
@@ -601,7 +601,7 @@ const questions = [
         "Sistema nervoso"
       ],
       "answer": 2,
-      "wrong": "O Sistema urinário é composto por dois rins e pelas vias urinárias, formada por dois ureteres, a bexiga urinária e a uretra. 17. Qual é a articulação presente no corpo humano que é considerada imóvel?"
+      "wrong": "O Sistema urinário é composto por dois rins, dois ureteres, a bexiga urinária e a uretra."
     },
     {
     "Categoria": "anatomia",
@@ -614,7 +614,7 @@ const questions = [
         "Ossos do joelho"
       ],
       "answer": 0,
-      "wrong": "As articulações imóveis são as articulações que que possuem tecido cartilaginoso e/ou fibroso, impedindo quase completamente o movimento."
+      "wrong": "As articulações imóveis ou fibrosas são as articulações onde as bordas articulares dos ossos estão ligadas por tecido conjutivo fibroso, impedindo quase completamente o movimento."
     },
     {
     "Categoria": "anatomia",
@@ -625,7 +625,7 @@ const questions = [
         "Falso"
       ],
       "answer": 0,
-      "wrong": "O sistema nervoso é responsável por funções voluntárias e involuntárias do ser vivo, como a locomoção, raciocínio, memória e funcionamento de órgãos vitais como o bombeamento do sangue e a respiração."
+      "wrong": "O sistema nervoso é responsável por funções voluntárias e involuntárias do ser vivo, como a locomoção, raciocínio, memória e funcionamento de órgãos vitais."
     },
     {
     "Categoria": "anatomia",
@@ -636,59 +636,59 @@ const questions = [
         "Falso"
       ],
       "answer": 0,
-      "wrong": "O sistema nervoso humano coordena e regula todas as atividades corporais, das mais simples as mais complexas como o bombeamento de sangue até mesmo o bocejar."
+      "wrong": "O sistema nervoso humano coordena e regula diversas atividades corporais, das mais simples as mais complexas, como a regulação dos batimentos cardíacos e os nossos próprios movimentos."
     },
     {
     "Categoria": "anatomia",
       "Question" : "Questão 20",
-      "title": "A célula animal é constituída fundamentalmente de:",
+      "title": "A célula animal ou eucarionte é constituída fundamentalmente de:",
       "alternatives": [
-        "Material genético, complexo golgiense e membrana plasmática.",
-        "Complexo golgiense, membrana plasmática e ribossomos.",
-        "Material genético, citoplasma e membrana plasmática.",
-        "Mitocôndrias, citoplasma e ribossomos."
+        "Material genético, complexo golgiense e flagelos",
+        "Nucleoide, membrana plasmática e citoplasma",
+        "Núcleo, citoplasma e membrana plasmática",
+        "Mitocôndrias, cílios e ribossomos"
       ],
       "answer": 2,
-      "wrong": "A célula animal é eucariótica e constituída basicamente de membrana celular, citoplasma e núcleo."
+      "wrong": "A célula animal eucariótica é constituída basicamente de membrana celular, citoplasma e núcleo"
     },
     {
     "Categoria": "anatomia",
       "Question" : "Questão 21",
-      "title": "Qual das alternativas abaixo representa uma função do centríolo?",
+      "title": "Qual das alternativas abaixo representa uma das funções do centríolo?",
       "alternatives": [
-        "É responsável pela respiração celular.",
-        "É responsável pelo processo de transporte celular.",
-        "É responsável pelos movimentos de flagelos e cílios.",
-        "É responsável pela digestão de substâncias orgânicas da célula."
+        "É responsável pela respiração celular",
+        "É responsável pelo processo de transporte celular",
+        "É responsável pelos movimentos de flagelos e cílios",
+        "É responsável pela digestão de substâncias orgânicas da célula"
       ],
       "answer": 2,
-      "wrong": "Os centríolos organelas responsáveis pela divisão celular possuem a capacidade de duplicação durante seu ciclo, organizando o fuso acromático."
+      "wrong": "Os centríolos são organelas importantes na divisão celular, pois organizam o fuso acromático e consequente divisão do material genético, além de atuarem também na formação de cílios e flagelos, estruturas envolvidas com a locomoção e revestimento de células especializadas."
     },
     {
     "Categoria": "anatomia",
       "Question" : "Questão 22",
       "title": "Qual das seguintes organelas abaixo não fazem parte da célula animal:",
       "alternatives": [
-        "Reticulo endoplasmático rugosos.",
-        "Centríolos.",
-        "Ribossomos.",
-        "Vacúolo."
+        "Reticulo endoplasmático rugoso",
+        "Mitocôndria",
+        "Ribossomos",
+        "Cloroplastos"
       ],
       "answer": 3,
-      "wrong": "Os vacúolos são estruturas celulares que podem ser facilmente encontradas nas células vegetais, entretanto não são tão facilmente encontradas nas células animais."
+      "wrong": " Os cloroplastos são estruturas celulares que são encontradas apenas em células vegetais e que são responsáveis pela produção de clorofila, pigmento de coloração esverdeada que pode ser facilmente visualizada nas plantas"
     },
     {
     "Categoria": "anatomia",
       "Question" : "Questão 23",
-      "title": "O ácido clorídrico somente é encontrado no:",
+      "title": "No processo digestório, ácido clorídrico (HCl) é encontrado no:",
       "alternatives": [
-        "Estômago.",
-        "Intestino grosso.",
-        "Intestino delgado.",
-        "Reto."
+        "Estômago",
+        "Intestino grosso",
+        "Intestino delgado",
+        "Reto"
       ],
       "answer": 0,
-      "wrong": "O ácido clorídrico ou suco gástrico é responsável pela digestão dos alimentos e diminuição de suas partículas para melhor absorção dos nutrientes."
+      "wrong": "O ácido clorídrico do suco gástrico é responsável por ativar enzimas que dependem de um pH ácido, como a pepsina, que atua na degradação de proteínas em partículas menores."
     },
     {
     "Categoria": "anatomia",
@@ -701,30 +701,30 @@ const questions = [
         "Auxilia no processo da quebra enzimática das proteínas."
       ],
       "answer": 3,
-      "wrong": "A pepsina possui a função de mudar a forma física das proteínas as transformando em partículas menores para serem melhores absorvidas pelo intestino."
+      "wrong": "A pepsina possui a função de degradar as grandes cadeias de proteínas em partículas menores para, posteriormente, serem absorvidas pelo intestino."
     },
     {
     "Categoria": "anatomia",
       "Question" : "Questão 25",
       "title": "Em relação à circulação humana, é incorreto afirmar:",
       "alternatives": [
-        "O sangue rico em oxigênio é o arterial.",
-        "Todo sangue que chega ao coração é considerado sangue arterial.",
-        "Todo vaso que chega ao coração é veia.",
-        "Todo vaso que sai do coração é artéria."
+        "O sangue rico em oxigênio é o arterial",
+        "Todo sangue que chega ao coração é considerado sangue arterial",
+        "Todo vaso que chega ao coração é veia",
+        "Todo vaso que sai do coração é artéria"
       ],
       "answer": 1,
-      "wrong": "Todo sangue que chega ao coração é sangue venoso. O sangue rico em oxigênio é o arterial. Todo vaso que chega ao coração é veia. Todo vaso que sai do coração é artéria."
+      "wrong": " Após a grande circulação, o sangue que chega ao coração após a oxigenação dos tecidos é o sangue venoso, que é pobre em oxigênio."
     },
     {
     "Categoria": "anatomia",
       "Question" : "Questão 26",
       "title": "O pâncreas participa de dois sistemas, quais são eles?",
       "alternatives": [
-        "Respiratório e endócrino.",
-        "Digestório e cardíaco.",
-        "Digestório e endócrino.",
-        "Digestório e respiratório."
+        "Respiratório e endócrino",
+        "Digestório e cardíaco",
+        "Digestório e endócrino",
+        "Digestório e respiratório"
       ],
       "answer": 2,
       "wrong": "O pâncreas é uma importante glândula do corpo humano, sendo responsável pela produção de hormônios e enzimas digestivas."
@@ -732,54 +732,54 @@ const questions = [
     {
     "Categoria": "anatomia",
       "Question" : "Questão 27",
-      "title": "A insulina somente é produzida por um órgão que é o:",
+      "title": "A insulina somente é produzida por um órgão, que é o:",
       "alternatives": [
-        "Coração.",
-        "Pulmão.",
-        "Pâncreas.",
-        "Rim."
+        "Coração",
+        "Pulmão",
+        "Pâncreas",
+        "Rim"
       ],
       "answer": 2,
-      "wrong": "A produção de insulina em humanos e em outros mamíferos ocorre em células betas que se localizam no pâncreas, sendo de suma importância para síntese de açucares."
+      "wrong": "A produção de insulina em humanos e em outros mamíferos ocorre em células betas localizadas no pâncreas, sendo de suma importância para regular o nível de glicose no sangue e contribuir com a entrada de glicose nas células para ser utilizada como fonte de energia."
     },
     {
     "Categoria": "anatomia",
       "Question" : "Questão 28",
       "title": "A cartilagem é responsável pelo impedimento do:",
       "alternatives": [
-        "Desgaste entre os órgãos e os ossos.",
-        "Desgaste e o atrito entre os ossos.",
-        "Atrito entre os órgãos.",
-        "Atrito entre os ossos."
+        "Desgaste entre os órgãos e os ossos",
+        "Desgaste e o atrito entre os ossos",
+        "Atrito entre os órgãos",
+        "Atrito entre os músculos"
       ],
       "answer": 1,
-      "wrong": "A cartilagem possui função essencial nas articulações ósseas, promovendo lubrificação e amortecimento dos ossos."
+      "wrong": "A cartilagem possui função essencial nas articulações ósseas, promovendo lubrificação, amortecimento e proteção dos ossos."
     },
     {
     "Categoria": "anatomia",
       "Question" : "Questão 29",
-      "title": "A formação da urina ocorre dentro da bexiga urinária para que ocorra a:",
+      "title": "A formação da urina ocorre nos rins e é responsável pela:",
       "alternatives": [
-        "Excreção da água presente no corpo humano.",
-        "Excreção da água presente na corrente sanguínea.",
-        "Excreção somente das substancias tóxicas no corpo humano.",
-        "Excreção de substâncias tóxicas e as que se encontram em excesso."
+        "Excreção somente da água presente no corpo humano",
+        "Excreção de sódio e potássio, apenas",
+        "Excreção somente das substancias tóxicas no corpo humano",
+        "Excreção de impurezas e substâncias que se encontram em excesso"
       ],
       "answer": 3,
-      "wrong": "Os rins são órgãos responsáveis pela filtração da água do nosso corpo, ou seja, através dele é repassado ao organismo os nutrientes necessários e quando detectado os excesso e componentes que são tóxicos ao corpo humano são excretados."
+      "wrong": "Os rins são órgãos responsáveis por filtrar o sangue e eliminar substâncias nocivas ao organismo, como amônia, ureia e ácido úrico, eliminar eletrólitos para ajudar na manutenção do equilíbrio eletrolítico e ácido-básico (relacionado ao pH) e também eliminação de substâncias exógenas, como medicamentos."
     },
     {
     "Categoria": "anatomia",
       "Question" : "Questão 30",
-      "title": "Marque abaixo a alternativa em que contém apenas órgãos do corpo humano:",
+      "title": "Marque abaixo a alternativa em que contém apenas órgãos do sistema digestório:",
       "alternatives": [
-        "Cérebro, artéria, coração e bexiga.",
-        "Encéfalo, pâncreas, traqueia e língua.",
-        "Sangue, pulmão, alvéolo e rins.",
-        "Intestino grosso, crânio, fígado e esôfago."
+        "Cérebro, artéria, coração e bexiga urinária",
+        "Boca, estômago, esôfago e faringe",
+        "Sangue, pulmão, alvéolo e artérias",
+        "Intestino grosso, estômago, pulmão e dentes"
       ],
       "answer": 1,
-      "wrong": "As demais alternativas não podem ser consideradas órgãos pois são outros componentes do corpo humano como veias, artérias e os ossos."
+      "wrong": "As demais alternativas não podem ser consideradas órgãos do sistema digestório. Os principais órgãos do sistema digestório são: boca, faringe, esôfago, estômago, intestino delgado, o intestino grosso e o ânus. Já as glândulas acessórias desse sistema são as glândulas salivares, o pâncreas e o fígado."
     },
     ],
     [
@@ -826,12 +826,12 @@ const questions = [
     {
       "Categoria": "Ecologia",
       "Question" : "Questão 4",
-      "title": "As queimadas são benéficas para apenas um bioma, qual?",
+      "title": "As queimadas naturais, ou seja, aquelas que ocorrem de forma espontânea sem interferência humana, são benéficas para apenas um bioma, qual?",
       "alternatives": [
         "Amazônia.",
-        "Mata atlântica.",
-        "Cerrado.",
-        "Caatinga."
+        "Mata atlântica.",        
+        "Caatinga.",
+        "Cerrado."
       ],
       "answer": 3,
       "wrong": "O cerrado tem um período médio de 6 meses de seca entre abril e agosto em que acontecem as queimadas naturais por conta da vegetação seca e dos raios solares fortes, contudo as queimadas são benéficas ao ambiente, pois permitem o processo de germinação de sementes que estão em dormência."
@@ -867,13 +867,13 @@ const questions = [
       "Question" : "Questão 7",
       "title": "Qual é a principal ameaça humana que ocorre no bioma Cerrado?",
       "alternatives": [
-        "Queimadas clandestinas.",
+        "Garimpo",        
         "Tráfico ilegal de plantas e animais.",
         "Destamatamento para criação de animais.",
         "Poluição de rios."
       ],
       "answer": 0,
-      "wrong": "O cerrado sofre drasticamente com queimadas criminosas provocadas por humanos, assim causando desequilíbrio na sua fauna e flora."
+      "wrong": "O Cerrado é o ecossistema brasileiro que mais alterações sofreu com a ocupação humana. Um dos impactos ambientais mais graves na região foi causado por garimpos, que contaminaram os rios com mercúrio e provocaram o assoreamento dos cursos de água."
     },
     {
       "Categoria": "Ecologia",
@@ -891,7 +891,7 @@ const questions = [
     {
       "Categoria": "Ecologia",
       "Question" : "Questão 9",
-      "title": "Qual dos biomas que é composto pela vegetação de outros biomas?",
+      "title": "Qual dos biomas é considerado um mosaico natural, por ser composto pela vegetação de outros biomas?",
       "alternatives": [
         "Floresta amazônica.",
         "Pantanal.",
@@ -930,7 +930,7 @@ const questions = [
     {
       "Categoria": "Ecologia",
       "Question" : "Questão 12",
-      "title": "Qual é o bioma que fica com sua vegetação esverdeada somente na epóca das chuvas?",
+      "title": ". Qual é o bioma que fica com sua vegetação aparentemente seca, mas na época das chuvas ocorre ficam com folhas mais verdes e um aspecto mais vívido?",
       "alternatives": [
         "Cerrado.",
         "Caatinga.",
@@ -938,7 +938,7 @@ const questions = [
         "Mata atlântica."
       ],
       "answer": 1,
-      "wrong": "Não chove na caatinga em maior parte do ano, o que mantém seu aspecto cinzento por causa das cascas de árvore e alaranjado pela terra seca."
+      "wrong": "Na maior parte do ano o bioma da caatinga não ocorre chuvas, assim fazendo com que seu índice pluviométrico seja bastante baixo. Desta forma as plantas se adaptaram a esse ambiente para diminuir a perca d’água."
     },
     {
       "Categoria": "Ecologia",
@@ -964,12 +964,12 @@ const questions = [
         "Fruto seco."
       ],
       "answer": 2,
-      "wrong": "Os espinhos presentes em algumas espécies de vegetais têm a função de reduzir a superfície de contato e, com isso, impedir que a folha perca água."
+      "wrong": "Os espinhos presentes em algumas espécies de vegetais é uma adaptação das folhas, por sua vez têm a função de reduzir a superfície de contato e, com isso, impedir que a folha perca água."
     },
     {
       "Categoria": "Ecologia",
       "Question" : "Questão 15",
-      "title": "A caatinga é um bioma que possui espécies que somente são encontradas lá. Qual destas plantas não é encontrado em nenhum outro bioma?",
+      "title": "A Caatinga é um bioma que possui espécies somente encontradas lá. Qual destas plantas abaixo pode ser encontrada no bioma Caatinga?",
       "alternatives": [
         "Mandacaru.",
         "Vitória-régia.",
@@ -999,9 +999,11 @@ const questions = [
       "alternatives": [
         "Impacto do turismo.",
         "Queimadas clandestinas.",
-        "Tráfico ilegal de plantas e animais."
+        "Tráfico ilegal de plantas e animais.",
+        "Pesca predatória"
+
       ],
-      "answer": 0,
+      "answer": 3,
       "wrong": "A principal ameaça que o Pantanal sofre é a pesca predatória, esta por sua vez acaba tirando a fonte de alimento dos jacarés e aves da região além de muitas vezes interferir diretamente na reprodução dos peixes."
     },
     {
@@ -1033,7 +1035,7 @@ const questions = [
     {
       "Categoria": "Ecologia",
       "Question" : "Questão 20",
-      "title": "O derramamento de petróleo no mar pode interferir diretamente na vida de outros animais de que forma?",
+      "title": "O derramamento de petróleo no mar pode interferir diretamente na vida de animais presentes nesse ambiente de que forma?",
       "alternatives": [
         "Causando a morte de todos os animais no ambiente marinho.",
         "Causando a morte apenas de peixes.",
@@ -1046,10 +1048,10 @@ const questions = [
     {
       "Categoria": "Ecologia",
       "Question" : "Questão 21",
-      "title": "As plantas dos manguezais, possuem estruturas bastante caracteristicas. Como é chamada as raízes dos manguezais?",
+      "title": "As plantas dos manguezais, possuem estruturas bastante caracteristicas. Como são chamadas as raízes dos manguezais?",
       "alternatives": [
         "Raízes tabulares.",
-        "Raízes de suporte.",
+        "Raízes respiratórias.",
         "Raízes aquáticas.",
         "Raízes sugadoras."
       ],
@@ -1059,12 +1061,12 @@ const questions = [
     {
       "Categoria": "Ecologia",
       "Question" : "Questão 22",
-      "title": "Uma das maiores ameaçadas dos ambientes aquáticos pode ser considerada:",
+      "title": "Podemos obter a água para beber através dos _____, poços ou lençóis freáticos, porém a maior concentração de água está nos _____ não sendo própria para o consumo por conter uma quantidade enorme de sal.",
       "alternatives": [
-        "O lixo descartado em locais incorretos.",
-        "Saneamento básico corrreto.",
-        "Descarte correto do lixo.",
-        "O ambiente aquático não sofre nenhuma ameaça."
+        "Mangue / oceano",
+        "Rios / oceano.",
+        "Rios / mangue.",
+        "Mares / oceano."
       ],
       "answer": 0,
       "wrong": "Podemos obtê-la para beber através dos rios, poços ou lençóis freáticos, porém a maior concentração de água está nos oceanos."
@@ -1111,12 +1113,12 @@ const questions = [
     {
       "Categoria": "Ecologia",
       "Question" : "Questão 26",
-      "title": "Vegetação típica das regiões costeiras onde ocorre o encontro do mar com orio, nesta veretação é comum a presença de carangueijo, a qual bioma serefere?",
+      "title": "O manguezal é um ecossistema de transição entre ______ e marinho localizados entre as margens dos rios e a ______.",
       "alternatives": [
-        "Pantanal.",
-        "Mangue.",
-        "Cerrado.",
-        "Caatinga."
+        "Pantanal / foz.",
+        "Terrestre. / foz",
+        "Caatinga / floresta.",
+        "Cerrado / mata."
       ],
       "answer": 1,
       "wrong": "O manguezal é um ecossistema de transição entre o ambiente terrestre e marinho, localizados entre as margens dos rios e a foz."
@@ -1210,7 +1212,7 @@ const questions = [
     {
       "Categoria": "zoologia",
       "Question" : "Questão 3",
-      "title": "Qual dos animais abaixo, pode ser considerado insetivoro:",
+      "title": "Qual dos animais abaixo, pode ser considerado insetívoro:",
       "alternatives": [
         "Sapo.",
         "Mosca.",
@@ -1255,9 +1257,9 @@ const questions = [
       "title": "Existe uma planta que além de produzir seu próprio alimento, ela pode obter outros nutrientes de outros seres vivos. Que planta é está?",
       "alternatives": [
         "Cacto.",
-        "b) Araúcária.",
-        "c) Planta carnívora.",
-        "d) Não existe uma planta que possa fazer isto."
+        "Araúcária.",
+        "Planta carnívora.",
+        "Não existe uma planta que possa fazer isto."
       ],
       "answer": 2,
       "wrong": "As plantas carnívoras são plantas especializadas na captura de presas, assim podendo atrair animais de pequeno porte como insetos, aracnídeos e anfíbios afim de complementar a sua dieta de nutrientes."
@@ -1294,11 +1296,11 @@ const questions = [
     {
       "Categoria": "zoologia",
       "Question" : "Questão 9",
-      "title": "São considerados animais frugívoros...",
+      "title": "São considerados animais frugívoros:",
       "alternatives": [
         "Animais que se alimentam apenas de folhas.",
         "Animais que se alimentam apenas de flores.",
-        "Animais que se alimentam apenas de frutas.",
+        "Animais que se alimentam parcialmente ou totalmente de frutas.",
         "Animais que se alimentam de todas as partes da planta."
       ],
       "answer": 2,
@@ -1309,15 +1311,15 @@ const questions = [
     {
       "Categoria": "zoologia",
       "Question" : "Questão 10",
-      "title": "São considerados animais granivoros...",
+      "title": "São considerados animais granívoros:",
       "alternatives": [
-        "Animais que se alimentam apenas de sementes.",
+        "Animais que se alimentam parcialmente ou totalmente de sementes.",
         "Animais que se alimentam de sementes e frutos.",
         "Animais que se alimentam de folhas e sementes.",
-        "d) Animais que se alimentam apenas de frutos."
+        "Animais que se alimentam apenas de frutos."
       ],
       "answer": 0,
-      "wrong": "Os animais granívoros são aqueles que tem como alimento principal ou exclusivo as sementes de plantas ou grãos."
+      "wrong": "Os animais granívoros são aqueles que tem como alimento principal ou parcial as sementes de plantas."
   
     },
     {
@@ -1336,9 +1338,9 @@ const questions = [
     {
       "Categoria": "zoologia",
       "Question" : "Questão 12",
-      "title": "Qual dos animais abaixo podem ser considerados herbivoros?",
+      "title": "Qual dos animais abaixo podem ser considerados herbívoros?",
       "alternatives": [
-        "a) Jabuti.",
+        "Jabuti.",
         "Mosca.",
         "Elefante.",
         "Leão."
@@ -1350,7 +1352,7 @@ const questions = [
     {
       "Categoria": "zoologia",
       "Question" : "Questão 13",
-      "title": "Os répteis são animais que não conseguem regular...",
+      "title": "Os répteis são animais que não conseguem regular:",
       "alternatives": [
         "A temperatura do seu corpo.",
         "A sua respiração.",
@@ -1377,15 +1379,15 @@ const questions = [
     {
       "Categoria": "zoologia",
       "Question" : "Questão 15",
-      "title": "Os mamiferos são animais que podem ser...",
+      "title": "Os mamiferos são animais que podem ser:",
       "alternatives": [
         "Somente terrestres.",
         "Somente aquáticos.",
-        "Aquáticos e terrestres.",
+        "Aquáticos, terrestres e aéreos.",
         "Aquáticos e aereos."
       ],
       "answer": 2,
-      "wrong": "Os mamíferos são animais vertebrados e endotérmicos, ou seja, possuem coluna vertebral e conseguem regular sua temperatura interna, sendo facilmente reconhecidos pelo seu revestimento corporal e glândulas mamárias nas fêmeas."
+      "wrong": "Os mamíferos são animais vertebrados pertencentes ao Domínio Eukaryota, Reino Animalia, Filo Chordata, Sub-filo Vertebrata e Classe Mammalia. Os mamíferos são altamente adaptavéis ocupando assim os mais diversos habitats."
     },
       
     {
@@ -1399,18 +1401,18 @@ const questions = [
         "Mamífero."
       ],
       "answer": 3,
-      "wrong": "Alguns mamíferos podem ser encontrados nos mais diferentes ambientes como o aquático, nele temos as baleias; também podemos encontrá-los no ambiente aéreo como os morcegos."
+      "wrong": "As baleias vivem nos mares, mesmo se parecendo bastante com os peixes, elas são consideradas mamíferos. Respiram ar oxigênio presente na atmosfera e produzem leite para os filhotes."
   
     },
     {
       "Categoria": "zoologia",
       "Question" : "Questão 17",
-      "title": "O grupo dos répteis é bastante diverso, qual característica é comum a todos?",
+      "title": "O grupo dos répteis é bastante diversos, qual característica é comum a todos?",
       "alternatives": [
-        "Todos os filhotes nascem de ovos.",
-        "Todos os filhoes possuem cuidado parental.",
-        "Todos os filhotes nascem do ventre das suas mães.",
-        "Todos os filhotes nascem em ovos liquidos que ficm na água."
+        "Dependem do ambiente para regular sua temperatura.",
+        "Os filhotes possuem cuidado parental.",
+        "Todos os répteis possuem escamas.",
+        "Os ovos dos répteis são líquidos e são depositados na água."
       ],
       "answer": 0,
       "wrong": "Os répteis representam o grupo que possui uma imensa diversidade de animais, assim ocorrendo uma subclassificação dos grupos sendo estes: quelônios, crocodilianos e escamados. Sendo uma característica comum a todos o nascimento por meio de ovos."
@@ -1418,7 +1420,7 @@ const questions = [
     {
       "Categoria": "zoologia",
       "Question" : "Questão 18",
-      "title": "A maioria dos anfíbios depositam seus ovos na _____ até que seus filhotes nasçam.",
+      "title": "A maioria dos anfíbios depositam seus ovos na _____ até que seus filhotes eclodem.",
       "alternatives": [
         "Água salgada.",
         "Água doce.",
@@ -1489,11 +1491,11 @@ const questions = [
     {
       "Categoria": "zoologia",
      "Question" : "Questão 24",
-     "title": "Em qual das alternativas abaixo expressa um consumidor primário?",
+     "title": "Qual das alternativas abaixo expressa um consumidor primário?",
      "alternatives": [
         "Plantas.",
         "Lagarta.",
-       "Leão.",
+        "Leão.",
         "Sapo."
     ],
     "answer": 1,
@@ -1502,12 +1504,12 @@ const questions = [
     {
       "Categoria": "zoologia",
       "Question" : "Questão 25",
-      "title": "Como é denominado os animais que conseguem regular sua temperatura interna sem auxílio do ambiente externo:",
+      "title": "Como são denominados os animais que conseguem regular sua temperatura interna sem auxílio do ambiente externo:",
      "alternatives": [
-       "Ectodérmicos",
+        "Ectodérmicos",
         "Endodérmicos"
     ],
-    "answer": 0,
+    "answer": 1,
     "wrong": "Os animais ectodérmicos como as cobras e jacarés não são capazes de regular a temperatura tampouco manter uma constância na sua temperatura assim necessitando fontes externas de calor para ajustar a temperatura corporal."
   
     },
@@ -1516,13 +1518,13 @@ const questions = [
      "Question" : "Questão 26",
      "title": "É considerado réptil escamado:",
       "alternatives": [
-       "Cobra.",
+        "Cobra.",
         "Jacaré.",
-       "Jabuti.",
-       "Crocodilo."
+        "Jabuti.",
+        "Crocodilo."
     ],
     "answer": 0,
-    "wrong": "Os escamados são animais que possuem escamas em todo seu corpo. Exemplo: Lagartos e serpentes."
+    "wrong": "São répteis que possuem sua pele coberta por escamas, dividindo-se em dois grupos os lacertílios e ofídios. Os lacertílios lagartos, camaleões e lagartixas, possuem corpo alongado, com a cabeça curta unida ao corpo pelo pescoço. Os ofídios são representados pelas cobras, onde em sua grande maioria possuem glândulas produtoras de veneno."
     },
     {
       "Categoria": "zoologia",
@@ -1558,9 +1560,9 @@ const questions = [
       "title": "Algumas aves possuem uma glândula que produz uma secreção óleosa, esta serve para:",
       "alternatives": [
         "Manter as penas hidratadas.",
-        "b) Apenas impermeabilizar as penas.",
-        "c) Impermeabilizar as penas, facilitando a flutuação e secagema.",
-        "d) Fortalece e ajuda no crescimento das penas, além de deixálas mais brilhosas."
+        "Apenas impermeabilizar as penas.",
+        "Impermeabilizar as penas, facilitando a flutuação e secagema.",
+        "Fortalece e ajuda no crescimento das penas, além de deixálas mais brilhosas."
     ],
     "answer": 2,
     "wrong": "As aves possuem diferentes adaptações aos meios onde vivem, assim as aves aquáticas possuem glândulas de secreção de óleo, que com o auxílio do seu bico impermeabilizam suas penas para facilitar a sua flutuação e secagem."
