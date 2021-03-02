@@ -122,19 +122,19 @@ form button{
     border-radius: 25px;
 }
 
-#imagens{
+#Form_Register-Google{
     display: flex;
     align-items: center;
     flex-direction: column;
     margin: 2rem 1rem;
 }
 
-#imagens img{
+#Form_Register-Google img{
     height: 50px;
     margin-top: 10px;
 }
 
-#imagens button{
+#Form_Register-Google button{
     border: 0px;
     background-color: #8bd6fe;
 }
