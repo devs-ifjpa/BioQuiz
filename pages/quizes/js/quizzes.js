@@ -161,9 +161,9 @@ const questions = [
     {
       "Categoria": "botanica",
       "Question" : "Questão 13",
-      "title": "Qual dos frutos abaixo pode NÃO possuir semente",
+      "title": "Qual dos frutos abaixo pode NÃO possuir semente?",
       "alternatives": [
-        "Maçã",
+        "Maçã.",
         "Abacate.",
         "Morango.",
         "Banana."
@@ -177,7 +177,7 @@ const questions = [
       "title": "Qual dos frutos abaixos é considerado FRUTO SECO?",
       "alternatives": [
         "Maçã.",
-        "Noz .",
+        "Noz.",
         "Uva.",
         "Marácuja."
       ],
@@ -214,7 +214,7 @@ const questions = [
     {
       "Categoria": "botanica",
       "Question" : "Questão 17",
-      "title": "Os frutos além de protegerem a semente também...",
+      "title": "Os frutos além de protegerem a semente também:",
       "alternatives": [
         "Auxiliam na sua dispersão.",
         "Auxilia na fixação da semente no solo.",
@@ -361,10 +361,10 @@ const questions = [
       "Question" : "Questão 28",
       "title": "Qual etapa da quimiosíntese que não ultiliza a água (H2O)?",
       "alternatives": [
-        "Fase I",
-        "Fase II",
-        "Fase I e II",
-        "Fase I, II e na fotossíntese"
+        "Fase I.",
+        "Fase II.",
+        "Fase I e II.",
+        "Fase I, II e na fotossíntese."
       ],
       "answer": 1,
       "wrong": "Fase 2: A segunda etapa pode ser entendida pela seguinte equação: O gás carbônico (CO2) + água H2O + Energia Química resultando em → Compostos Orgânicos + Oxigênio O2."
@@ -374,10 +374,10 @@ const questions = [
       "Question" : "Questão 29",
       "title": "Qual é o nome do processo que as plantas passam e que não utiliza a luz solar?",
       "alternatives": [
-        "Fotossíntese",
-        "Quimiossíntese",
-        "Glutação",
-        "Todas as alternativas"
+        "Fotossíntese.",
+        "Quimiossíntese.",
+        "Glutação.",
+        "Todas as alternativas."
       ],
       "answer": 1,
       "wrong": "A quimiossíntese é a produção de energia através da oxidação de matéria orgânica geralmente ocasionada por ação bacteriana, sem recorrer à luz solar."
@@ -387,10 +387,10 @@ const questions = [
       "Question" : "Questão 30",
       "title": "Que tipo de estrutura da planta é a gavinha?",
       "alternatives": [
-        "Caule",
-        "Folha",
-        "Fruto",
-        "Raíz"
+        "Caule.",
+        "Folha.",
+        "Fruto.",
+        "Raíz."
       ],
       "answer": 1,
       "wrong": "Gavinha é um órgão presente nas plantas trepadeiras. São estruturas simples ou bifurcadas na extremidade com a função de agarrar ramos, galhos, folhas, ou qualquer outro objeto que sirva de apoio para a planta em crescimento."
@@ -402,10 +402,10 @@ const questions = [
       "Question" : "Questão 1",
       "title": "Qual a principal função do pulmão para o corpo humano?",
       "alternatives": [
-        "Realizar as trocas gasosas;",
-        "Digestão",
-        "Circulação do sangue",
-        "Envio de informações",
+        "Realizar as trocas gasosas.",
+        "Digestão.",
+        "Circulação do sangue.",
+        "Envio de informações.",
       ],
       "answer": 0,
       "wrong": "O pulmão é um órgão que compõe o sistema respiratório, sendo responsável pelas trocas gasosas entre o ambiente e o sangue. A sua principal função é oxigenar o sangue e eliminar o dióxido de carbono (CO2)."
@@ -415,10 +415,10 @@ const questions = [
       "Question" : "Questão 2",
       "title": "O pulmão participa de qual sistema do corpo humano?",
       "alternatives": [
-        "Sistema cardíaco",
-        "Sistema digestório",
-        "Sistema nervoso",
-        "Sistema respiratório",
+        "Sistema cardíaco.",
+        "Sistema digestório.",
+        "Sistema nervoso.",
+        "Sistema respiratório.",
       ],
       "answer": 3,
       "wrong": "O sistema respiratório é composto dos pulmões e pleura e das passagens aéreas que levam aos pulmões, incluindo as narinas, as cavidades nasais, a faringe, a laringe, a traqueia, os brônquios e os bronquíolos."
@@ -428,10 +428,10 @@ const questions = [
       "Question" : "Questão 3",
       "title": "Qual é o nome da membrana que reveste o pulmão?",
       "alternatives": [
-        "Neurônios",
-        "Pleura",
-        "Alvéolo",
-        "Faringe",
+        "Neurônios.",
+        "Pleura.",
+        "Alvéolo.",
+        "Faringe.",
       ],
       "answer": 1,
       "wrong": "A pleura é uma membrana fina e transparente que reveste o pulmão, cuja principal função é facilitar o movimento dos pulmões durante a respiração e diminuir o atrito entre pulmões, caixa torácica e cavidade torácica."
@@ -441,10 +441,10 @@ const questions = [
       "Question" : "Questão 4",
       "title": "Qual a função da epiglote?",
       "alternatives": [
-        "Impede que o alimento passe para as vias respiratórias",
-        "Impede que o alimento siga para o estômago",
-        "Permite que os nutrientes sigam para a corrente sanguínea",
-        "Permite que o alimento siga para o intestino grosso"
+        "Impede que o alimento passe para as vias respiratórias.",
+        "Impede que o alimento siga para o estômago.",
+        "Permite que os nutrientes sigam para a corrente sanguínea.",
+        "Permite que o alimento siga para o intestino grosso."
       ],
       "answer": 0,
       "wrong": "A epiglote é uma placa de cartilagem em formato de folha e móvel. No processo de deglutição (ato de engolir) ela fecha a entrada da laringe e impede a passagem do bolo alimentar para a traqueia."
@@ -454,10 +454,10 @@ const questions = [
       "Question" : "Questão 5",
       "title": "Qual o nome da estrutura que permite a produção da fala?",
       "alternatives": [
-        "Traqueia",
-        "Faringe",
-        "Laringe",
-        "Cordas Vocais"
+        "Traqueia.",
+        "Faringe.",
+        "Laringe.",
+        "Cordas Vocais."
       ],
       "answer": 3,
       "wrong": "As cordas vocais são estruturas localizadas na laringe e são as responsáveis pela produção da emissão de sons de acordo com o ar que é expelido pelos pulmões e passam por elas. Com seu fechamento ou abertura e também com as suas vibrações, elas modulam os sons que saem de nossa boca, os quais são moldados pela língua, boca e lábios para formar as letras e sílabas."
@@ -480,10 +480,10 @@ const questions = [
       "Question" : "Questão 7",
       "title": "O que é bolo alimentar?",
       "alternatives": [
-        "É o alimento mastigado e misturado a saliva",
-        "É o alimento antes de ser consumido",
-        "É o alimento quando chega ao intestino",
-        "É o ácido presente no estômago"
+        "É o alimento mastigado e misturado a saliva.",
+        "É o alimento antes de ser consumido.",
+        "É o alimento quando chega ao intestino.",
+        "É o ácido presente no estômago."
       ],
       "answer": 0,
       "wrong": "O bolo alimentar é o nome dado ao alimento mastigado e misturado a saliva."
@@ -493,10 +493,10 @@ const questions = [
       "Question" : "Questão 8",
       "title": "Qual a função do pâncreas?",
       "alternatives": [
-        "Produzir ácidos para o corpo humano",
-        "Produzir bactérias para o estômago",
-        "Produzir enzimas ligados a digestão",
-        "Produzir anticorpos para o corpo humano"
+        "Produzir ácidos para o corpo humano.",
+        "Produzir bactérias para o estômago.",
+        "Produzir enzimas ligados a digestão.",
+        "Produzir anticorpos para o corpo humano."
       ],
       "answer": 2,
       "wrong": "O pâncreas é uma glândula participante do sistema digestório e endócrino, responsável pela produção e liberação de enzimas digestivas e produção de hormônios de suma importância, como a insulina."
@@ -506,10 +506,10 @@ const questions = [
       "Question" : "Questão 9",
       "title": "Quando _____ o ar entra no nosso corpo e quando _____ o ar sai do nosso corpo.",
       "alternatives": [
-        "Expiramos / inspiramos",
-        "Inspiramos / expiramos",
-        "Respiramos e inspiramos",
-        "Inspiramos e respiramos"
+        "Expiramos / inspiramos.",
+        "Inspiramos / expiramos.",
+        "Respiramos e inspiramos.",
+        "Inspiramos e respiramos."
       ],
       "answer": 1,
       "wrong": "A inspiração, ocorre pela contração da musculatura do diafragma e dos músculos intercostais. Já a expiração dá-se pelo relaxamento da musculatura do diafragma e dos músculos intercostais."
@@ -519,10 +519,10 @@ const questions = [
       "Question" : "Questão 10",
       "title": "A ____ é capaz de fechar a ____ impedindo a passagem de alimento para as vias respiratórias.",
       "alternatives": [
-        "Epiglote, laringe",
-        "Faringe, laringe",
-        "Traqueia, Faringe",
-        "Cavidade nasal, faringe"
+        "Epiglote, laringe.",
+        "Faringe, laringe.",
+        "Traqueia, faringe.",
+        "Cavidade nasal, faringe."
       ],
       "answer": 0,
       "wrong": "A epiglote é uma placa de cartilagem em formato de folha e móvel. No processo de deglutição (ato de engolir) ela fecha a entrada da laringe e impede a passagem do bolo alimentar para a traqueia"
@@ -532,10 +532,10 @@ const questions = [
       "Question" : "Questão 11",
       "title": "Os ossos são responsáveis pelo armazenamento de uma substância chamada:",
       "alternatives": [
-        "Nitrogênio",
-        "Cálcio",
-        "Oxigênio",
-        "Carbono"
+        "Nitrogênio.",
+        "Cálcio.",
+        "Oxigênio.",
+        "Carbono."
       ],
       "answer": 1,
       "wrong": "Os ossos possuem a função de sustentação e proteção dos órgãos, além de serem capazes de armazenar certos tipos de nutrientes e minerais importantes, como o cálcio e fósforo."
@@ -545,10 +545,10 @@ const questions = [
       "Question" : "Questão 12",
       "title": "O sangue considerado VENOSO é rico em qual gás?",
       "alternatives": [
-        "Oxigênio(O2)",
-        "Dióxido de carbono (CO2)",
-        "Hidrogênio(H)",
-        "O sangue não possui nenhum tipo de gás"
+        "Oxigênio (O2).",
+        "Dióxido de carbono (CO2).",
+        "Hidrogênio (H).",
+        "O sangue não possui nenhum tipo de gás."
       ],
       "answer": 1,
       "wrong": "O sangue venoso é pobre em oxigênio e rico em dióxido de carbono (CO2)."
@@ -558,10 +558,10 @@ const questions = [
       "Question" : "Questão 13",
       "title": "O sangue considerado ARTERIAL é rico em qual gás?",
       "alternatives": [
-        "Oxigênio(O2)",
-        "Gás carbônico(CO2)",
-        "Hidrogênio(H)",
-        "O sangue não possui nenhum tipo de gás"
+        "Oxigênio (O2).",
+        "Gás carbônico (CO2).",
+        "Hidrogênio (H).",
+        "O sangue não possui nenhum tipo de gás."
       ],
       "answer": 0,
       "wrong": "O sangue arterial é pobre em dióxido de carbono(CO2) e rico em oxigênio."
@@ -571,8 +571,8 @@ const questions = [
       "Question" : "Questão 14",
       "title": "São consideradas artérias, os vasos sanguíneos que levam o sangue de volta ao coração.",
       "alternatives": [
-        "Verdadeiro",
-        "Falso",
+        "Verdadeiro.",
+        "Falso.",
       ],
       "answer": 1,
       "wrong": "Os vasos sanguíneos responsáveis por levar o sangue de volta ao coração são as veias."
@@ -582,10 +582,10 @@ const questions = [
       "Question" : "Questão 15",
       "title": "Qual é uma das funções do esqueleto no corpo humano?",
       "alternatives": [
-        "Proteção dos órgãos",
-        "Auxílio na respiração",
-        "Repasse de informações",
-        "Circulação do sangue"
+        "Proteção dos órgãos.",
+        "Auxílio na respiração.",
+        "Repasse de informações.",
+        "Circulação do sangue."
       ],
       "answer": 0,
       "wrong": "O esqueleto humano é formado pelos ossos e tem como função principal a proteção de órgãos vitais, sustentação do corpo, movimentação e reserva de minerais"
@@ -595,10 +595,10 @@ const questions = [
       "Question" : "Questão 16",
       "title": "Os rins fazem parte de qual sistema do corpo humano?",
       "alternatives": [
-        "Sistema disgestório",
-        "Sistema respiratório",
-        "Sistema urinário",
-        "Sistema nervoso"
+        "Sistema disgestório.",
+        "Sistema respiratório.",
+        "Sistema urinário.",
+        "Sistema nervoso."
       ],
       "answer": 2,
       "wrong": "O Sistema urinário é composto por dois rins, dois ureteres, a bexiga urinária e a uretra."
@@ -608,10 +608,10 @@ const questions = [
       "Question" : "Questão 17",
       "title": "Qual é a articulação presente no corpo humano que é considerada imóvel?",
       "alternatives": [
-        "Ossos do crânio",
-        "Ossos dos dedos",
-        "Ossos das vertebras",
-        "Ossos do joelho"
+        "Ossos do crânio.",
+        "Ossos dos dedos.",
+        "Ossos das vertebras.",
+        "Ossos do joelho."
       ],
       "answer": 0,
       "wrong": "As articulações imóveis ou fibrosas são as articulações onde as bordas articulares dos ossos estão ligadas por tecido conjutivo fibroso, impedindo quase completamente o movimento."
@@ -621,8 +621,8 @@ const questions = [
       "Question" : "Questão 18",
       "title": "O sistema nervoso está diretamente ligado a nossa percepção",
       "alternatives": [
-        "Verdadeiro",
-        "Falso"
+        "Verdadeiro.",
+        "Falso."
       ],
       "answer": 0,
       "wrong": "O sistema nervoso é responsável por funções voluntárias e involuntárias do ser vivo, como a locomoção, raciocínio, memória e funcionamento de órgãos vitais."
@@ -632,8 +632,8 @@ const questions = [
       "Question" : "Questão 19",
       "title": "O sistema nervoso pode desempenhar inúmeras funções ao mesmo tempo",
       "alternatives": [
-        "Verdadeiro",
-        "Falso"
+        "Verdadeiro.",
+        "Falso."
       ],
       "answer": 0,
       "wrong": "O sistema nervoso humano coordena e regula diversas atividades corporais, das mais simples as mais complexas, como a regulação dos batimentos cardíacos e os nossos próprios movimentos."
@@ -643,10 +643,10 @@ const questions = [
       "Question" : "Questão 20",
       "title": "A célula animal ou eucarionte é constituída fundamentalmente de:",
       "alternatives": [
-        "Material genético, complexo golgiense e flagelos",
-        "Nucleoide, membrana plasmática e citoplasma",
-        "Núcleo, citoplasma e membrana plasmática",
-        "Mitocôndrias, cílios e ribossomos"
+        "Material genético, complexo golgiense e flagelos.",
+        "Nucleoide, membrana plasmática e citoplasma.",
+        "Núcleo, citoplasma e membrana plasmática.",
+        "Mitocôndrias, cílios e ribossomos."
       ],
       "answer": 2,
       "wrong": "A célula animal eucariótica é constituída basicamente de membrana celular, citoplasma e núcleo"
@@ -656,10 +656,10 @@ const questions = [
       "Question" : "Questão 21",
       "title": "Qual das alternativas abaixo representa uma das funções do centríolo?",
       "alternatives": [
-        "É responsável pela respiração celular",
-        "É responsável pelo processo de transporte celular",
-        "É responsável pelos movimentos de flagelos e cílios",
-        "É responsável pela digestão de substâncias orgânicas da célula"
+        "É responsável pela respiração celular.",
+        "É responsável pelo processo de transporte celular.",
+        "É responsável pelos movimentos de flagelos e cílios.",
+        "É responsável pela digestão de substâncias orgânicas da célula."
       ],
       "answer": 2,
       "wrong": "Os centríolos são organelas importantes na divisão celular, pois organizam o fuso acromático e consequente divisão do material genético, além de atuarem também na formação de cílios e flagelos, estruturas envolvidas com a locomoção e revestimento de células especializadas."
@@ -669,10 +669,10 @@ const questions = [
       "Question" : "Questão 22",
       "title": "Qual das seguintes organelas abaixo não fazem parte da célula animal:",
       "alternatives": [
-        "Reticulo endoplasmático rugoso",
-        "Mitocôndria",
-        "Ribossomos",
-        "Cloroplastos"
+        "Reticulo endoplasmático rugoso.",
+        "Mitocôndria.",
+        "Ribossomos.",
+        "Cloroplastos."
       ],
       "answer": 3,
       "wrong": " Os cloroplastos são estruturas celulares que são encontradas apenas em células vegetais e que são responsáveis pela produção de clorofila, pigmento de coloração esverdeada que pode ser facilmente visualizada nas plantas"
@@ -682,10 +682,10 @@ const questions = [
       "Question" : "Questão 23",
       "title": "No processo digestório, ácido clorídrico (HCl) é encontrado no:",
       "alternatives": [
-        "Estômago",
-        "Intestino grosso",
-        "Intestino delgado",
-        "Reto"
+        "Estômago.",
+        "Intestino grosso.",
+        "Intestino delgado.",
+        "Reto."
       ],
       "answer": 0,
       "wrong": "O ácido clorídrico do suco gástrico é responsável por ativar enzimas que dependem de um pH ácido, como a pepsina, que atua na degradação de proteínas em partículas menores."
@@ -708,10 +708,10 @@ const questions = [
       "Question" : "Questão 25",
       "title": "Em relação à circulação humana, é incorreto afirmar:",
       "alternatives": [
-        "O sangue rico em oxigênio é o arterial",
-        "Todo sangue que chega ao coração é considerado sangue arterial",
-        "Todo vaso que chega ao coração é veia",
-        "Todo vaso que sai do coração é artéria"
+        "O sangue rico em oxigênio é o arterial.",
+        "Todo sangue que chega ao coração é considerado sangue arterial.",
+        "Todo vaso que chega ao coração é veia.",
+        "Todo vaso que sai do coração é artéria."
       ],
       "answer": 1,
       "wrong": " Após a grande circulação, o sangue que chega ao coração após a oxigenação dos tecidos é o sangue venoso, que é pobre em oxigênio."
@@ -721,10 +721,10 @@ const questions = [
       "Question" : "Questão 26",
       "title": "O pâncreas participa de dois sistemas, quais são eles?",
       "alternatives": [
-        "Respiratório e endócrino",
-        "Digestório e cardíaco",
-        "Digestório e endócrino",
-        "Digestório e respiratório"
+        "Respiratório e endócrino.",
+        "Digestório e cardíaco.",
+        "Digestório e endócrino.",
+        "Digestório e respiratório."
       ],
       "answer": 2,
       "wrong": "O pâncreas é uma importante glândula do corpo humano, sendo responsável pela produção de hormônios e enzimas digestivas."
@@ -734,10 +734,10 @@ const questions = [
       "Question" : "Questão 27",
       "title": "A insulina somente é produzida por um órgão, que é o:",
       "alternatives": [
-        "Coração",
-        "Pulmão",
-        "Pâncreas",
-        "Rim"
+        "Coração.",
+        "Pulmão.",
+        "Pâncreas.",
+        "Rim."
       ],
       "answer": 2,
       "wrong": "A produção de insulina em humanos e em outros mamíferos ocorre em células betas localizadas no pâncreas, sendo de suma importância para regular o nível de glicose no sangue e contribuir com a entrada de glicose nas células para ser utilizada como fonte de energia."
@@ -747,10 +747,10 @@ const questions = [
       "Question" : "Questão 28",
       "title": "A cartilagem é responsável pelo impedimento do:",
       "alternatives": [
-        "Desgaste entre os órgãos e os ossos",
-        "Desgaste e o atrito entre os ossos",
-        "Atrito entre os órgãos",
-        "Atrito entre os músculos"
+        "Desgaste entre os órgãos e os ossos.",
+        "Desgaste e o atrito entre os ossos.",
+        "Atrito entre os órgãos.",
+        "Atrito entre os músculos."
       ],
       "answer": 1,
       "wrong": "A cartilagem possui função essencial nas articulações ósseas, promovendo lubrificação, amortecimento e proteção dos ossos."
@@ -760,10 +760,10 @@ const questions = [
       "Question" : "Questão 29",
       "title": "A formação da urina ocorre nos rins e é responsável pela:",
       "alternatives": [
-        "Excreção somente da água presente no corpo humano",
-        "Excreção de sódio e potássio, apenas",
-        "Excreção somente das substancias tóxicas no corpo humano",
-        "Excreção de impurezas e substâncias que se encontram em excesso"
+        "Excreção somente da água presente no corpo humano.",
+        "Excreção de sódio e potássio, apenas.",
+        "Excreção somente das substancias tóxicas no corpo humano.",
+        "Excreção de impurezas e substâncias que se encontram em excesso."
       ],
       "answer": 3,
       "wrong": "Os rins são órgãos responsáveis por filtrar o sangue e eliminar substâncias nocivas ao organismo, como amônia, ureia e ácido úrico, eliminar eletrólitos para ajudar na manutenção do equilíbrio eletrolítico e ácido-básico (relacionado ao pH) e também eliminação de substâncias exógenas, como medicamentos."
@@ -773,10 +773,10 @@ const questions = [
       "Question" : "Questão 30",
       "title": "Marque abaixo a alternativa em que contém apenas órgãos do sistema digestório:",
       "alternatives": [
-        "Cérebro, artéria, coração e bexiga urinária",
-        "Boca, estômago, esôfago e faringe",
-        "Sangue, pulmão, alvéolo e artérias",
-        "Intestino grosso, estômago, pulmão e dentes"
+        "Cérebro, artéria, coração e bexiga urinária.",
+        "Boca, estômago, esôfago e faringe.",
+        "Sangue, pulmão, alvéolo e artérias.",
+        "Intestino grosso, estômago, pulmão e dentes."
       ],
       "answer": 1,
       "wrong": "As demais alternativas não podem ser consideradas órgãos do sistema digestório. Os principais órgãos do sistema digestório são: boca, faringe, esôfago, estômago, intestino delgado, o intestino grosso e o ânus. Já as glândulas acessórias desse sistema são as glândulas salivares, o pâncreas e o fígado."
@@ -867,7 +867,7 @@ const questions = [
       "Question" : "Questão 7",
       "title": "Qual é a principal ameaça humana que ocorre no bioma Cerrado?",
       "alternatives": [
-        "Garimpo",        
+        "Garimpo.",        
         "Tráfico ilegal de plantas e animais.",
         "Destamatamento para criação de animais.",
         "Poluição de rios."
@@ -1000,7 +1000,7 @@ const questions = [
         "Impacto do turismo.",
         "Queimadas clandestinas.",
         "Tráfico ilegal de plantas e animais.",
-        "Pesca predatória"
+        "Pesca predatória."
 
       ],
       "answer": 3,
@@ -1063,7 +1063,7 @@ const questions = [
       "Question" : "Questão 22",
       "title": "Podemos obter a água para beber através dos _____, poços ou lençóis freáticos, porém a maior concentração de água está nos _____ não sendo própria para o consumo por conter uma quantidade enorme de sal.",
       "alternatives": [
-        "Mangue / oceano",
+        "Mangue / oceano.",
         "Rios / oceano.",
         "Rios / mangue.",
         "Mares / oceano."
@@ -1131,7 +1131,7 @@ const questions = [
         "O meio ambiente possui recursos renováveis e ilimitados, portanto em nada se modifica.",
         "A vida marinha tal como a conhecemos, também é fruto de componentespresentes no petróleo, pois o mesmo é extraído do mar.",
         "O derramamento de óleo que atingiu o litoral brasileiro não impactoudiretamente o meio ambiente, pois o mesmo já foi recolhido.",
-        "O derramento de óleo bruto e o descarte de lixo impactam diretamente navida marinha e destóem o equilíbrio do ecossistema."
+        "O derramamento de óleo bruto e o descarte incorreto de lixo impactam diretamente na vida marinha e causam o desequilíbrio do ecossistema."
       ],
       "answer": 3,
       "wrong": "O petróleo derramado em alto mar é facilmente fixado nas mais diversas superfícies, podendo causar contaminação por ser um agente tóxico, e interferir na fotossíntese de algumas espécies."
@@ -1287,7 +1287,7 @@ const questions = [
       "alternatives": [
         "Mamífero.",
         "Anfíbio.",
-        "Réptil",
+        "Réptil.",
         "Ave."
       ],
       "answer": 1,
@@ -1325,7 +1325,7 @@ const questions = [
     {
       "Categoria": "zoologia",
       "Question" : "Questão 11",
-      "title": "O que são animais dentritívoros:",
+      "title": "O que são animais dentritívoros?",
       "alternatives": [
         "São animais que se alimentam de matéria orgânica em decomposição de origem animal ou vegetal.",
         "São animais que se alimentam APENAS de matéria orgânica animal em decomposição.",
@@ -1506,8 +1506,8 @@ const questions = [
       "Question" : "Questão 25",
       "title": "Como são denominados os animais que conseguem regular sua temperatura interna sem auxílio do ambiente externo:",
      "alternatives": [
-        "Ectodérmicos",
-        "Endodérmicos"
+        "Ectodérmicos.",
+        "Endodérmicos."
     ],
     "answer": 1,
     "wrong": "Os animais ectodérmicos como as cobras e jacarés não são capazes de regular a temperatura tampouco manter uma constância na sua temperatura assim necessitando fontes externas de calor para ajustar a temperatura corporal."
