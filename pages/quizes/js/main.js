@@ -27,7 +27,8 @@ while (randomics.length < filterArray.length) {
 
 }
 function showQuestion() {
-  document.getElementById("trophy").innerHTML = `${questionId + 1}/${filterArray.length}`;
+  document.getElementById("trophy").innerHTML = `${questionId + 1}/${filterArray.length}`;// trocar por localStorage.getItem("questionId")
+  //document.getElementById("trophy").innerHTML = `${Number(localStorage.getItem("questionId")) + 1}/${filterArray.length}`; 
   document.querySelector('.title').innerHTML = filterArray[randomics[questionId]].title
   document.querySelector('.balao').innerHTML = filterArray[randomics[questionId]].wrong  
   const alternatives = filterArray[randomics[questionId]].alternatives;
@@ -142,6 +143,7 @@ function ButtonClick(){
     document.querySelector("button").style.opacity = 0;
     document.querySelector(".balao").style.opacity = 0;
     questionId++;
+    //localStorage.setItem("questionId" , Number(localStorage.getItem("questionId"))+1)
     document.getElementById("tempo").textContent = 0;
     count = 0;
     alternativeclick = 0;
@@ -153,7 +155,11 @@ function ButtonClick(){
   // })
 }
 
-
+/*if (!localStorage.getItem("questionId")){
+  Visitar pagina: https://developer.mozilla.org/pt-BR/docs/Web/API/Storage/setItem
+  localStorage.setItem("questionId" , 0)
+  localStorage.setItem("coin" , 0)
+}*/
 showQuestion();
 
 /*
