@@ -39,17 +39,18 @@ firebase.firestore().enablePersistence();
 // $LOGOUT
 
     if(document.getElementById("Form_Login-Google") != null){
-        document.getElementById("Form_Login-Google").addEventListener("submit", () => {
+        document.getElementById("Form_Login-Google").addEventListener("submit", (e) => {
+            e.preventDefault();
             Firebase_AlternativeLogin();
         });
     }
 
-    function Firebase_AlternativeLogin(data = undefined){
+    function Firebase_AlternativeLogin(){
         const provider = new firebase.auth.GoogleAuthProvider();
-        firebase.auth().signInWithPopup(provider).then(function(result) {
+        firebase.auth().signInWithPopup(provider).then((result) => {
             var token = result.credential.accessToken;
             var user = result.user;
-        }).catch(function(error) {
+        }).catch((error) => {
             var errorCode = error.code;
             var errorMessage = error.message;
             var email = error.email;
@@ -60,13 +61,14 @@ firebase.firestore().enablePersistence();
     document.getElementById('Form_Register-Google') != null ? (
         document.getElementById("Form_Register-Google").addEventListener("submit", () => {
             event.preventDefault();
-            let voce = SelectChecked(document.getElementById("voce"),"option").value;
-            let day = SelectChecked(document.getElementById("day"),"option").textContent;
-            let month = SelectChecked(document.getElementById("month"),"option").textContent;
-            let year = SelectChecked(document.getElementById("year"),"option").textContent;
-            let date = `${day}/${month}/${year}`;
-            voce != "you" ? (
-                Firebase_RegisterDatabase(['',date,voce],"Google")
+            const name = document.querySelector("#name").value.trim();
+            const date = document.querySelector("#nascimento").value.trim();
+            const email = document.querySelector("#email").value.trim();
+            const emailConfirm = document.querySelector("#confirm-email").value.trim();
+            const password = document.querySelector("#password").value.trim();
+            const passwordConfirm = document.querySelector("#confirm").value.trim();
+            email === emailConfirm && password === passwordConfirm ? (
+                Firebase_RegisterDatabase([name,date,email,password],"Google")
             ) :
             alert("Selecione sua profissão");
         })
@@ -135,7 +137,6 @@ firebase.firestore().enablePersistence();
 
 firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
-        console.log("entrou");
         if(window.location.toString().indexOf('login.html') != -1){
             window.location = window.location.toString().split('/pages')[0] + '/index.html';
         }

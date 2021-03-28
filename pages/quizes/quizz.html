@@ -58,5 +58,10 @@
     </script>
     <script src="../../js/firebase.js"></script>
     <script src="./js/main.js"></script>
+    <script>
+      if(!localStorage.getItem("random")){
+        localStorage.setItem("random",randomics);
+      }
+    </script>
   </body>
 </html>

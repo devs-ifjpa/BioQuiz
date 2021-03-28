@@ -24,8 +24,8 @@ var randomics = [];
 while (randomics.length < filterArray.length) {
     var rand = Math.floor(Math.random() * filterArray.length);
     randomics.indexOf(rand) == -1 ? randomics.push(rand) : false;
-
 }
+
 function showQuestion() {
   document.getElementById("trophy").innerHTML = `${questionId + 1}/${filterArray.length}`;// trocar por localStorage.getItem("questionId")
   //document.getElementById("trophy").innerHTML = `${Number(localStorage.getItem("questionId")) + 1}/${filterArray.length}`; 
