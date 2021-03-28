@@ -203,7 +203,7 @@ const questions = [
       "title": "Qual a função dos pelos absorventes das raízes?",
       "alternatives": [
         "Retira a água do solo.",
-        "Fixa a plata ao solo.",
+        "Fixa a planta ao solo.",
         "Devolve ao solo água em excesso.",
         "Retira a água e sais minerais do solo."
       ],
@@ -269,7 +269,7 @@ const questions = [
       "title": "O que é a “dormência” nas sementes?",
       "alternatives": [
         "Período que ela aguarda as condições ideias para germinação.",
-        "Periodo que ela esta se maturando para germinação.",
+        "Período que ela esta se maturando para germinação.",
         "Período que ela ainda será dispersada no ambiente.",
         "Período que ela esta dentro do fruto."
       ],
@@ -695,7 +695,7 @@ const questions = [
       "Question" : "Questão 24",
       "title": "Qual a função da pepsina dentro no processo digestivo?",
       "alternatives": [
-        "É responsável pelo armazenamento da Bile.",
+        "É responsável pelo armazenamento da bile.",
         "É responsável pela produção de hormônios.",
         "É responsável pelo controle de agentes patógenos.",
         "Auxilia no processo da quebra enzimática das proteínas."
@@ -1026,7 +1026,7 @@ const questions = [
       "alternatives": [
         "Água suja.",
         "Água salobra.",
-        "Água translucida.",
+        "Água translúcida.",
         "Água agridoce."
       ],
       "answer": 1,
@@ -1246,7 +1246,7 @@ const questions = [
         "Girafa.",
         "Sapo.",
         "Jabuti.",
-        "Pinguin."
+        "Pinguim."
       ],
       "answer": 1,
       "wrong": "A cadeia alimentar é uma representação de uma sequência unilateral onde um ser vivo serve de alimento para outro, através disso é repassada matéria orgânica e energia para todo o ecossistema, além de manter as relações harmônicas populacionais."
