@@ -1,4 +1,5 @@
 let questionId = 0;
+let tempTotal = 0;
 let total = 0;
 let coin = 0;
 var count= 0;
@@ -15,15 +16,38 @@ let alternativeclick = 0;
 
 
 var url = window.location;
-temaselect = url.toString().split("=")[1];
-temas = ["botanica","anatomia","ecologia","zoologia"]
+let temaselect = url.toString().split("=")[1];
+let temas = ["botanica","anatomia","ecologia","zoologia"]
 let filterArray = questions[temas.indexOf(temaselect)];
 
 var randomics = [];
 
+
+
+if(localStorage.getItem("questionId" + temaselect))
+  questionId = parseInt(localStorage.getItem("questionId" + temaselect));
+else
+  localStorage.setItem("questionId" + temaselect, questionId);
+
+
+if(localStorage.getItem("tempTotal" + temaselect)){
+  tempTotal = parseInt(localStorage.getItem("tempTotal" + temaselect));
+  total += tempTotal;
+}else
+  localStorage.setItem("tempTotal" + temaselect, tempTotal);
+
+
+if(localStorage.getItem("random" + temaselect)){
+  randomics = localStorage.getItem("random" + temaselect).split(",");
+}
+
 while (randomics.length < filterArray.length) {
     var rand = Math.floor(Math.random() * filterArray.length);
     randomics.indexOf(rand) == -1 ? randomics.push(rand) : false;
+}
+
+if(!localStorage.getItem("random" + temaselect)){
+  localStorage.setItem("random" + temaselect,randomics);
 }
 
 function showQuestion() {
@@ -67,6 +91,8 @@ function showQuestion() {
 
 function AddMedal(x){
   total += x;
+  tempTotal += x;
+  localStorage.setItem("tempTotal" + temaselect, tempTotal);
   document.getElementById("thor").textContent = total;
 }
 
@@ -143,12 +169,15 @@ function ButtonClick(){
     document.querySelector("button").style.opacity = 0;
     document.querySelector(".balao").style.opacity = 0;
     questionId++;
-    //localStorage.setItem("questionId" , Number(localStorage.getItem("questionId"))+1)
+    localStorage.setItem("questionId" + temaselect, questionId);
     document.getElementById("tempo").textContent = 0;
     count = 0;
     alternativeclick = 0;
     if(questionId > 29){
       FirebaseUpdateMedal();
+      ['questionId', 'tempTotal', 'random'].map(item => {
+        localStorage.removeItem(item + temaselect);
+      });
     }else{
       showQuestion();
     }
