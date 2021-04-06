@@ -115,6 +115,17 @@ form img{
     margin-left: -10px;
 }
 
+.google-button {
+    padding: 0;
+    width: fit-content;
+    height: 0;
+    background-color: transparent;
+}
+
+.google-button img {
+    margin: 0;
+}
+
 form button{
     border: 0px;
     background-color: lightcoral;
