@@ -49,9 +49,10 @@ main{
 }
 #miscellaneous{
     width: 100%;
-    margin-top: 25px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+    margin-top: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     height: 80px;
 }
 #empty{
@@ -70,10 +71,7 @@ img#medal{
     width: 28px;
     z-index: 2;
 }
-#loki{
-    position: absolute;
-    z-index: 1;
-}
+
 img#coin{
     position: absolute;
     left: calc(50% - (25px + 21px));
@@ -99,14 +97,13 @@ img#coin{
     z-index: 2;
 }
 
-#clock{
+#miscellaneous #clockbox{
     position: absolute;
-    z-index: 1;
-}
-
-#clockbox{
-    transition: all .5;
+    top: 8px;
+    right: 8px;
+    transition: all .5s;
     opacity: 0;
+    margin: 0;
 }
 
 #trophy-icon{
@@ -115,11 +112,6 @@ img#coin{
     margin-left: -10px;
     left: calc(50% - (25px + 22.5px));
     z-index: 2;
-}
-
-#trophy{
-    position: absolute;
-    z-index: 1;
 }
 
 #miscellaneous div{
@@ -387,7 +379,7 @@ input, #facebook-button, #google-button{
     /* TEMAS */
 
     #miscellaneous{
-        margin-top: 5.208333333vh;
+        margin-top: 9.375vh;
         height: 16.666666667vh;
     }
     img#medal{
@@ -508,7 +500,7 @@ input, #facebook-button, #google-button{
     /* TEMAS */
 
     #miscellaneous{
-        margin-top: 7.8125vw;
+        margin-top: 14.0625vw;
         height: 25vw;
     }
     img#medal{

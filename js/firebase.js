@@ -45,11 +45,43 @@ firebase.firestore().enablePersistence();
         });
     }
 
+    async function birthPopUp (user) {
+        const inputDate = document.createElement("input");
+        inputDate.type = "date";
+        
+        swal({
+            text:"Digite o seu Aniversário:",
+            content: inputDate,
+            button: { text: "Enviar" }
+        }).then(async value => {
+            if (value && inputDate.value)
+                db.collection('users').doc(user.uid).set({
+                    nascimento: inputDate.value
+                }, { merge: true }).then(async () => {
+                    window.location = window.location.toString().split('/pages')[0] + '/index.html';
+                });
+            else
+                await birthPopUp(user);
+        })
+    }
+
     function Firebase_AlternativeLogin(){
         const provider = new firebase.auth.GoogleAuthProvider();
-        firebase.auth().signInWithPopup(provider).then((result) => {
-            var token = result.credential.accessToken;
-            var user = result.user;
+        firebase.auth().signInWithPopup(provider).then(async result => {
+            const user = result.user;
+            
+            db.collection("users").doc(user.uid).get().then( async doc => {
+                if ( !doc.data() ) {
+                    db.collection('users').doc(user.uid).set({
+                        nome: user.displayName,
+                        medal: 0
+                    });
+
+                    await birthPopUp(user);
+                } else
+                    window.location = window.location.toString().split('/pages')[0] + '/index.html';
+            });
+
         }).catch((error) => {
             var errorCode = error.code;
             var errorMessage = error.message;
@@ -58,7 +90,7 @@ firebase.firestore().enablePersistence();
         });
     }
 
-    document.getElementById('Form_Register-Google') != null ? (
+    if( document.getElementById('Form_Register-Google') ) {
         document.getElementById("Form_Register-Google").addEventListener("submit", () => {
             event.preventDefault();
             const name = document.querySelector("#name").value.trim();
@@ -72,7 +104,7 @@ firebase.firestore().enablePersistence();
             ) :
             alert("Selecione sua profissão");
         })
-    ) : false;
+    }
 
 
 // $LOGIN FACEBOOK
@@ -137,21 +169,21 @@ firebase.firestore().enablePersistence();
 
 firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
-        if(window.location.toString().indexOf('login.html') != -1){
-            window.location = window.location.toString().split('/pages')[0] + '/index.html';
-        }
-        if(document.getElementById('LoginLinkButton') != undefined){
+        if(document.getElementById('LoginLinkButton') != undefined)
             document.getElementById('LoginLinkButton').removeAttribute('href');
-        }
+        
         let user = firebase.auth().currentUser;
-        if(document.getElementById("thor") != undefined){
-            db.collection("users").doc(user.uid).get().then((doc) => {
-                if(typeof total !== "undefined"){
-                    total += parseInt(doc.data().medal);
-                    document.getElementById("thor").textContent = total;
-                }else{
-                    document.getElementById("thor").textContent = parseInt(doc.data().medal)
-                }
+        if(document.getElementById("thor") != undefined) {
+            db.collection("users").doc(user.uid).get().then( async doc => {
+                if(doc.data()) {
+                    if(typeof total !== "undefined"){
+                        total += parseInt(doc.data().medal);
+                        document.getElementById("thor").textContent = total;
+                    } else {
+                        document.getElementById("thor").textContent = parseInt(doc.data().medal);
+                    }    
+                } else
+                    await birthPopUp(user);
             });
         }
     } else{

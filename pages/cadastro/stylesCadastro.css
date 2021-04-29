@@ -6,7 +6,7 @@
 body{
     background-color: #eadc83;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0px;
     font-family: 'tahoma';
     display: flex;
@@ -44,7 +44,7 @@ main{
     height: 50px;
     background-color: #2e5d15;
     align-self: flex-start;
-    margin-top: 3rem;
+    margin-top: 48px;
 }
 
 #titulo-login{
@@ -61,7 +61,7 @@ main{
 }
 
 #logo img{
-    width: 8rem;
+    width: 128px;
 }
 
 #formulario{
@@ -71,7 +71,7 @@ main{
     background-color: #8bd6fe;
     border: 0px;
     border-radius: 60px;
-    margin: auto 70px;
+    margin: auto 70px 20px 70px;
     width: 76vw;
 }
 
@@ -82,18 +82,19 @@ main{
 #avancar{
     margin-left: 20vw;
     padding-right: 5vw;
-    padding-left: 5vw;    
+    padding-left: 5vw;
+    font-size: 13.3333px;
 }
 
-
-input{
+input {
     border: 0px;
     border-bottom: 1px solid black;
     background-color: #8bd6fe;
     margin: 10px;
     text-align: center;
     box-sizing: border-box;
-    width: 100%;
+    width: 141px;
+    font-size: 13.3333px;
 }
 
 input::placeholder{
@@ -107,7 +108,7 @@ form{
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 2.5rem;
+    margin: 40px;
     position: relative;
 }
 
@@ -121,10 +122,8 @@ form{
 }
 
 form img{
-    height: 1.5rem;
-    z-index: 999;
-    margin-bottom: -32px;
-    margin-left: -10px;
+    width: 24px;
+    height: 24px;
 }
 
 form button{
@@ -138,15 +137,172 @@ form button{
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 2rem 1rem;
+    margin: 0 16px 8px 16px;
 }
 
 #Form_Register-Google img{
-    height: 50px;
+    height: 30px;
+    width: unset;
     margin-top: 10px;
 }
 
 #Form_Register-Google button{
     border: 0px;
     background-color: #8bd6fe;
+}
+
+#Form_Register div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* vh - 480 / vw 320  */
+
+/* @media screen and (min-height: 480px) { */ 
+@media screen {
+    #voltar a{
+        top: 1.6666666666666667vh;
+        left: 1.6666666666666667vh;
+        padding: 0.8333333333333334vh 2.0833333333333335vh;
+        border-radius: 6.25vh;
+        font-size: 4.166666666666667vh;
+    }
+    
+    #titulo{
+        height: 10.416666666666666vh;
+        margin-top: 10vh;
+    }
+    
+    #titulo-login{
+        font: bold 6.25vh 'tahoma';
+        margin: 12.5vh auto;
+    }
+    
+    #logo img{
+        width: 26.666666666666668vh;
+    }
+    
+    #formulario{
+        border-radius: 12.5vh;
+        margin: auto 14.583333333333334vh 4.166666666666667vh 14.583333333333334vh;
+        width: 50.666666666666664vh;
+    }
+    
+    #avancar{
+        margin-left: 13.333333333333334vh;
+        padding-right: 3.3333333333333335vh;
+        padding-left: 3.3333333333333335vh;
+        font-size: 2.7777708333333333vh;
+    }
+    
+    input {
+        border-bottom: 0.20833333333333334vh solid black;
+        margin: 2.0833333333333335vh;
+        width: 29.375vh;
+        font-size: 2.7777708333333333vh;
+    }
+    
+    form{
+        margin: 8.333333333333334vh;
+    }
+    
+    #formulario a{
+        margin-right: 10.416666666666666vh;
+        margin-top: -4.166666666666667vh;
+        font-size: 2.5vh;
+    }
+    
+    form img{
+        width: 5vh;
+        height: 5vh;
+    }
+    
+    form button{
+        padding: 2.0833333333333335vh;
+        border-radius: 5.208333333333333vh; 
+    }
+    
+    #Form_Register-Google{
+        margin: 0 3.3333333333333335vh 1.6666666666666667vh 3.3333333333333335vh;
+    }
+    
+    #Form_Register-Google img{
+        height: 6.25vh;
+        margin-top: 2.0833333333333335vh;
+    }
+}
+
+/* @media screen and (min-height: 480px) and (max-aspect-ratio: 320/480){ */
+@media screen and (max-aspect-ratio: 320/480) {
+    #voltar a{
+        top: 2.5vw;
+        left: 2.5vw;
+        padding: 1.25vw 3.125vw;
+        border-radius: 9.375vw;
+        font-size: 6.25vw;
+    }
+    
+    #titulo{
+        height: 15.625vw;
+        margin-top: 15vw;
+    }
+    
+    #titulo-login{
+        font: bold 9.375vw 'tahoma';
+        margin: 18.75vw auto;
+    }
+    
+    #logo img{
+        width: 40vw;
+    }
+    
+    #formulario{
+        border-radius: 18.75vw;
+        margin: auto 21.875vw 6.25vw 21.875vw;
+        width: 76vw;
+    }
+    
+    #avancar{
+        margin-left: 20vw;
+        padding-right: 5vw;
+        padding-left: 5vw;
+        font-size: 4.16665625vw;
+    }
+    
+    input {
+        border-bottom: 0.3125vw solid black;
+        margin: 3.125vw;
+        width: 44.0625vw;
+        font-size: 4.16665625vw;
+    }
+    
+    form{
+        margin: 12.5vw;
+    }
+    
+    #formulario a{
+        margin-right: 15.625vw;
+        margin-top: -6.25vw;
+        font-size: 3.75vw;
+    }
+    
+    form img{
+        width: 7.5vw;
+        height: 7.5vw;
+    }
+    
+    form button{
+        padding: 3.125vw;
+        border-radius: 7.8125vw; 
+    }
+    
+    #Form_Register-Google{
+        margin: 0 5vw 2.5vw 5vw;
+    }
+    
+    #Form_Register-Google img{
+        height: 9.375vw;
+        margin-top: 3.125vw;
+    }
 }

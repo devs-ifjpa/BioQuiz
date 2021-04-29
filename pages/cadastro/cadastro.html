@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../../js/sweetalert.min.js"></script>
         <title>Login</title>
         <link rel="stylesheet" href="./stylesCadastro.css">
     </head>
@@ -23,18 +24,30 @@
             </div>
             <div id="formulario">
                 <form id="Form_Register">
-                    <img src="../../img/login-email.png" alt="nomeCadastro">
-                    <input type="text" name="Nome" id="name" placeholder="Nome" required>
-                    <img src="../../img/cadastro-calendario.png" alt="Nascimento">
-                    <input type="date" name="Nascimento" id="nascimento" placeholder="Data de nascimento" required>
-                    <img src="../../img/cadastro-email.png" alt="emailCadastro">
-                    <input type="email" name="" id="email" placeholder="E-mail" required>
-                    <img src="../../img/cadastro-email.png" alt="ConfirmeEmailCadastro">
-                    <input type="email" name="ConfirmeEmail" id="confirm-email" placeholder="Confirme seu E-mail" required>                    
-                    <img src="../../img/login-senha.png" alt="Senha">
-                    <input type="password" name="senha" id="password" placeholder="Senha" minlength='8' required>
-                    <img src="../../img/login-senha.png" alt="ConfirmeSenha">
-                    <input type="password" name="ConfirmeSenha" id="confirm" placeholder="Confirme sua senha" minlength='8' required>
+                    <div>
+                        <img src="../../img/login-email.png" alt="nomeCadastro">
+                        <input type="text" name="Nome" id="name" placeholder="Nome" required>    
+                    </div>
+                    <div>
+                        <img src="../../img/cadastro-calendario.png" alt="Nascimento">
+                        <input type="date" name="Nascimento" id="nascimento" placeholder="Data de nascimento" required>
+                    </div>
+                    <div>
+                        <img src="../../img/cadastro-email.png" alt="emailCadastro">
+                        <input type="email" name="" id="email" placeholder="E-mail" required>
+                    </div>
+                    <div>
+                        <img src="../../img/cadastro-email.png" alt="ConfirmeEmailCadastro">
+                        <input type="email" name="ConfirmeEmail" id="confirm-email" placeholder="Confirme seu E-mail" required>
+                    </div>
+                    <div>
+                        <img src="../../img/login-senha.png" alt="Senha">
+                        <input type="password" name="senha" id="password" placeholder="Senha" minlength='8' required>
+                    </div>
+                    <div>
+                        <img src="../../img/login-senha.png" alt="ConfirmeSenha">    
+                        <input type="password" name="ConfirmeSenha" id="confirm" placeholder="Confirme sua senha" minlength='8' required>
+                    </div>
                     <button id="avancar" type="submit">Avançar</button>
                 </form>
                 

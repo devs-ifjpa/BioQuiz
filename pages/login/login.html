@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../../js/sweetalert.min.js"></script>
         <title>Login</title>
         <link rel="stylesheet" href="./stylesLogin.css">
     </head>
@@ -29,7 +30,7 @@
                     <input type="password" name="" id="DefaultLoginPassword" placeholder="Senha" minlength='8'>
                     <button type="submit">Login</button>
                 </form>
-                <a href="#">Esqueci a senha</a>
+                <a href="javascript:recoverPassword()">Esqueci a senha</a>
                 <form id="Form_Login-Google">
                     <button class="google-button" type="submit"><img src="../../img/google-logn.png" alt="Google Login"></button>
                     <!-- <input type="image" src="../../img/google-logn.png" alt="submit" name="submit"></input> -->
@@ -56,5 +57,29 @@
             firebase.analytics();
         </script>
         <script src="../../js/firebase.js"></script>
+        <script>
+            async function recoverPassword () {
+                const content = document.createElement("input");
+                content.type = "email";
+
+                swal({
+                    text: "Digite seu email:",
+                    content
+                }).then(value => {
+                    if(value) {
+                        if ( content.value.trim() !== "" ) {
+                            var auth = firebase.auth();
+                            auth.sendPasswordResetEmail( content.value.trim() ).then(function() {
+                                swal({ text: "Email de recuperação enviado com sucesso" });
+                            }).catch(function(error) {
+                                if(error.message = "There is no user record corresponding to this identifier. The user may have been deleted.")
+                                   swal({ text: "Email não cadastrado no sistema, tente verificar se você digitou o email corretamente."});
+                            });
+                        } else
+                            swal("Informe o email com senha a ser recuperado.")
+                    }
+                });
+            }
+        </script>
     </body>
 </html>
