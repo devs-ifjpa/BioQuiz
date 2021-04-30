@@ -9,11 +9,9 @@
         <link rel="shortcut icon" href="img/icon-3.png">
     </head>
     <body>
-        <nav>
-            <a style="display: none;" href="#">
-                <img src="img/gear.svg" alt="gear">
-            </a>
-        </nav>
+        <nav id="voltar" class="hide">
+            <a href="javascript:Firebase_Logout()">Sair</a>
+        </nav>            
         <main>
             <div class="logo">
                 <img src="img/lacinho1.png" alt="laço" id="lacinho">
@@ -57,5 +55,17 @@
             firebase.analytics();
         </script>
         <script src="./js/firebase.js"></script>
+        <script>
+            var logout;
+            firebase.auth().onAuthStateChanged(function(user) {
+                if(user) {
+                    document.getElementById("voltar").classList.remove("hide");
+                    logout = true;
+                } else {
+                    if(logout)
+                        window.location.reload();
+                }
+            });
+        </script>
     </body>
 </html>

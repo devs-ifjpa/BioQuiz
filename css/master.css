@@ -7,6 +7,11 @@ html {
     scroll-behavior: smooth;
 }
 
+.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
 body{
     background-color: #eadc83;
     width: 100vw;
@@ -108,8 +113,29 @@ footer a{
     width: 20vw;     
 }
 
+#voltar a{
+    top: 8px;
+    left: 8px;
+    position: absolute;
+    color: #f6f9f4;
+    background-color: #8bd6fe;
+    padding: 4px 10px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 /* @media screen and (min-height: 480px) { */
 @media screen{
+    #voltar a{
+        top: 1.666666667vh;
+        left: 1.666666667vh;
+        padding: 0.833333333vh 2.083333333vh;
+        border-radius: 6.25vh;
+        font-size: 4.166666667vh;
+    }
+
     #lacinho{
         width: 6.875vh;
         height: 8.125vh;
@@ -157,6 +183,14 @@ footer a{
 
 /* @media screen and (min-height: 480px) and (max-aspect-ratio: 320/480){ */
 @media screen and (max-aspect-ratio: 320/480){
+    #voltar a{
+        top: 2.5vw;
+        left: 2.5vw;
+        padding: 1.25vw 3.125vw;
+        border-radius: 9.375vw;
+        font-size: 6.25vw;
+    }
+
     #lacinho{
         width: 10vw;
         height: 12.1875vw;
