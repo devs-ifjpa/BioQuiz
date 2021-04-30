@@ -2,15 +2,21 @@
     font-family: 'Tahoma';
     src: url('../../../fonts/Tahoma.ttf');
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: #eadc83;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0px;
     font-family: 'tahoma';
     display: flex;
     flex-direction: column;
 }
+
 .content{
     margin: auto;
 }
@@ -49,20 +55,34 @@ main{
 }
 #miscellaneous{
     width: 100%;
-    margin-top: 45px;
+    margin-top: 25px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     height: 80px;
 }
+
+#miscellaneous.quizz-menu {
+    justify-content: space-evenly;
+}
+
 #empty{
     height: 20px;
     width: 100%;
 }
 #thor{
-    /* position: absolute; */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 224px;
     z-index: 1;
 }
+
+#clockbox #clock {
+    height: 24px;
+    padding: 4px 16px 4px 40px;
+}
+
 img#medal{
     position: absolute;
     /* margin-left: -10px; */
@@ -379,9 +399,16 @@ input, #facebook-button, #google-button{
     /* TEMAS */
 
     #miscellaneous{
-        margin-top: 9.375vh;
+        margin-top: 5.208333333333333vh;
         height: 16.666666667vh;
     }
+    #thor{
+        max-width: 46.666666666666664vh;
+    }  
+    #clockbox #clock {
+        height: 5vh;
+        padding: 0.8333333333333334vh 3.3333333333333335vh 0.8333333333333334vh 8.333333333333334vh;
+    }    
     img#medal{
         /* margin-left: -2.083333333vh; */
         /* left: calc(50% - (5.208333333vh + 2.916666667vh)); */
@@ -500,8 +527,15 @@ input, #facebook-button, #google-button{
     /* TEMAS */
 
     #miscellaneous{
-        margin-top: 14.0625vw;
+        margin-top: 7.8125vw;
         height: 25vw;
+    }
+    #thor{
+        max-width: 70vw;
+    }  
+    #clockbox #clock {
+        height: 7.5vw;
+        padding: 1.25vw 5vw 1.25vw 12.5vw;
     }
     img#medal{
         /* margin-left: -3.125vw; */
@@ -571,7 +605,7 @@ input, #facebook-button, #google-button{
     font-size: 1em;
     line-height: 1.6em;  
     border-radius: 35px;
-    width: 300px;
+    width: 240px;
     height: auto;
     color: #000;
     font-weight: bolder;

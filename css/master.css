@@ -3,6 +3,10 @@
     src: url('../fonts/Tahoma.ttf');
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: #eadc83;
     width: 100vw;

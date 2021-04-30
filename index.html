@@ -21,7 +21,7 @@
             </div>
             <div class="menu">
                 <ul>
-                    <a id="jogar-button" href="javascript:swal('Realize o Login antes de jogar.')">
+                    <a id="jogar-button">
                         <li>JOGAR</li>
                     </a>
                     <a href="pages/sobre/sobre.html">
@@ -64,6 +64,8 @@
             firebase.auth().onAuthStateChanged(function(user) {
                 if (user)
                     document.querySelector("#jogar-button").href = "pages/temas/temas.html";
+                else
+                    document.querySelector("#jogar-button").href = `javascript:swal('Realize o Login antes de jogar.')`;
             });
         </script>
     </body>
