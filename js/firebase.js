@@ -6,23 +6,26 @@ firebase.firestore().enablePersistence();
     if(document.getElementById('DefaultLogin') != undefined){
         document.getElementById('DefaultLogin').addEventListener('submit', (event) => {
             event.preventDefault();
-            let email = document.getElementById('DefaultLoginEmail')
-            let password = document.getElementById('DefaultLoginPassword');
-            Firebase_Login(email,password);
+            const email = document.getElementById('DefaultLoginEmail')
+            const password = document.getElementById('DefaultLoginPassword');
+            const location = window.location.toString().split('/pages')[0] + '/index.html';
+            Firebase_Login(email,password,location);
         });
     }
 
-    function Firebase_Login(userEmail,userPass){
+    function Firebase_Login(userEmail,userPass, location = null){
         userEmail = userEmail.value;
         userPass = userPass.value;
-        firebase.auth().signInWithEmailAndPassword(userEmail, userPass).catch(function(error) {
+        firebase.auth().signInWithEmailAndPassword(userEmail, userPass).then(value => {
+            if(value) window.location = location;
+        }).catch(function(error) {
             // Handle Errors here.
             var errorMessage = error.message;
             if(errorMessage == "The password is invalid or the user does not have a password."){
-                window.alert("Senha inválida ou usuário não cadastrado.")
+                swal("Senha inválida ou usuário não cadastrado.")
             }
             else if(errorMessage == "The email address is badly formatted."){
-                window.alert("O endereço de email está mal formatado ou não foi preenchido.")
+                swal("O endereço de email está mal formatado ou não foi preenchido.")
             }
             // ...
         });
@@ -91,7 +94,7 @@ firebase.firestore().enablePersistence();
     }
 
     if( document.getElementById('Form_Register-Google') ) {
-        document.getElementById("Form_Register-Google").addEventListener("submit", () => {
+        document.getElementById("Form_Register-Google").addEventListener("submit", event => {
             event.preventDefault();
             const name = document.querySelector("#name").value.trim();
             const date = document.querySelector("#nascimento").value.trim();
@@ -99,10 +102,10 @@ firebase.firestore().enablePersistence();
             const emailConfirm = document.querySelector("#confirm-email").value.trim();
             const password = document.querySelector("#password").value.trim();
             const passwordConfirm = document.querySelector("#confirm").value.trim();
-            email === emailConfirm && password === passwordConfirm ? (
-                Firebase_RegisterDatabase([name,date,email,password],"Google")
-            ) :
-            alert("Selecione sua profissão");
+            if( email === emailConfirm && password === passwordConfirm )
+                Firebase_RegisterDatabase([name,date,email,password],"Google");
+            else
+                swal("Selecione sua profissão");
         })
     }
 
