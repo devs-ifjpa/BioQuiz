@@ -395,6 +395,10 @@ input, #facebook-button, #google-button{
     right: -20px;
 }
 
+.swal-footer {
+    display: flex;
+}
+
 .swal-button--seguir {
     background-color: #A0A0A0;
 }
