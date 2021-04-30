@@ -21,15 +21,12 @@
             </div>
             <div class="menu">
                 <ul>
-                    <a id="jogar-button">
+                    <a id="jogar-button" href="pages/temas/temas.html">
                         <li>JOGAR</li>
                     </a>
                     <a href="pages/sobre/sobre.html">
                         <li>SOBRE</li>
                     </a>
-                   <!-- <a href="/pages/Temp/Loja/loja.html">
-                        <li>LOJA</li>
-                    </a> -->
                     <a href="pages/Referencia/referencia.html">
                         <li>REFERÊNCIAS</li>
                     </a>    
@@ -38,7 +35,7 @@
         </main>
         <footer>
             <a id='LoginLinkButton' href="./pages/login/login.html">Login</a>
-            <a href="./pages/cadastro/cadastro.html">Cadastro</a>
+            <a id="CadastroLinkButton" href="./pages/cadastro/cadastro.html">Cadastro</a>
         </footer>
         <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
@@ -60,13 +57,5 @@
             firebase.analytics();
         </script>
         <script src="./js/firebase.js"></script>
-        <script>
-            firebase.auth().onAuthStateChanged(function(user) {
-                if (user)
-                    document.querySelector("#jogar-button").href = "pages/temas/temas.html";
-                else
-                    document.querySelector("#jogar-button").href = `javascript:swal('Realize o Login antes de jogar.')`;
-            });
-        </script>
     </body>
 </html>

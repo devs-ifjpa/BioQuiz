@@ -15,7 +15,7 @@
     </nav>
     <div id="miscellaneous">
         <div id="mer">
-            <img src="img/jogo-03.png" id="medal">
+            <img src="img/jogo-03.png" id="medal" alt="">
             <p id="thor">0</p>
         </div>
     </div>
@@ -26,8 +26,8 @@
             </p>
         </div>
         <div class="medio">
-                <a href="#" id="aumenta">Quiz</a>
-                <a href="#" id="consulta">Você Sabia?</a>
+            <a href="#" id="aumenta">Quiz</a>
+            <a href="#" id="consulta">Você Sabia?</a>
         </div>
     </div>
     <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
@@ -51,6 +51,22 @@
     </script>
     <script src="../../js/firebase.js"></script>
     <script>
+        function alertInSigned (tema) {
+            const text = `Você não esta logado, se deseja salvar o progresso siga para a tela inicial`;
+
+            const seguir = `Jogar sem Salvar`;
+            const voltar = `Vá para Tela Inicial`;
+
+            swal({ text, buttons: { seguir, voltar }, closeModal: false }).then(value => {
+                if (value){
+                    if (value === "seguir")
+                        window.location = window.location.origin + `/pages/quizes/quizz.html?tema=${tema}`;
+                    else
+                        window.location = window.location.origin;
+                }
+            });
+        }
+
         const temaselect = window.location.href.toString().split("=")[1];
         const temas = ["botanica","anatomia","ecologia","zoologia"];
         let title = "";
@@ -59,8 +75,17 @@
         temas.indexOf(temaselect) == 2 ? title = "Ecologia" :
         temas.indexOf(temaselect) == 3 ? title = "Zoologia" : false;
         document.getElementById("tema").innerHTML = title;
-        document.getElementById("aumenta").href = `../quizes/quizz.html?tema=${temaselect}`
-        document.getElementById("consulta").href = `../voceSabia/${temaselect}.html`
+
+        firebase.auth().onAuthStateChanged(function(user) {
+            if (user)
+                document.getElementById("aumenta").href = `../quizes/quizz.html?tema=${temaselect}`;
+            else {
+                // document.getElementById("aumenta").href = `../quizes/quizz.html?tema=${temaselect}`;
+                document.getElementById("aumenta").href = `javascript:alertInSigned('${temaselect}')`;
+            }
+        });
+
+        document.getElementById("consulta").href = `../voceSabia/${temaselect}.html`;
     </script>
 </body>
 </html>

@@ -127,6 +127,12 @@
   /* transition: all .5s; */
 /* } */
 
+.swal-content input[type="date"] {
+  height: 30px;
+  border-radius: 5px;
+  border-bottom-color: transparent;
+}
+
 @media screen and (min-height: 320px){
   .voltar{
     top: 2.5vh;
@@ -175,7 +181,11 @@
   #pointtemp{
     top: 8.4375vh;
     right: 2.5vh;
-  }  
+  }
+  .swal-content input[type="date"] {
+    height: 6.25vh;
+    border-radius: 1.0416666666666667vh;
+  }
 }
 @media screen and (min-height: 320px) and (max-aspect-ratio: 208/320){
   .voltar{
@@ -225,5 +235,10 @@
   #pointtemp{
     top: 11.25vw;
     right: 3.333333333vw;
-  }  
+  }
+  
+  .swal-content input[type="date"] {
+    height: 9.375vw;
+    border-radius: 1.5625vw;
+  }
 }

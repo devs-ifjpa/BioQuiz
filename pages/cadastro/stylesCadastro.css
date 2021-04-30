@@ -157,6 +157,12 @@ form button{
     align-items: center;
 }
 
+.swal-content input[type="date"] {
+    height: 30px;
+    border-radius: 5px;
+    border-bottom-color: transparent;
+}
+
 /* vh - 480 / vw 320  */
 
 /* @media screen and (min-height: 480px) { */ 
@@ -231,6 +237,11 @@ form button{
         height: 6.25vh;
         margin-top: 2.0833333333333335vh;
     }
+
+    .swal-content input[type="date"] {
+        height: 6.25vh;
+        border-radius: 1.0416666666666667vh;
+    }
 }
 
 /* @media screen and (min-height: 480px) and (max-aspect-ratio: 320/480){ */
@@ -304,5 +315,10 @@ form button{
     #Form_Register-Google img{
         height: 9.375vw;
         margin-top: 3.125vw;
+    }
+
+    .swal-content input[type="date"] {
+        height: 9.375vw;
+        border-radius: 1.5625vw;
     }
 }

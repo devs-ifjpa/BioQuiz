@@ -190,9 +190,9 @@ function ButtonClick(){
 }*/
 if(questionId > 29){
   document.getElementById("button").classList.add("disable-click")
-  FirebaseUpdateMedal();
   const tempData = ['questionId', 'tempTotal', 'random'];
   tempData.map(item => localStorage.removeItem(item + temaselect));
+  FirebaseUpdateMedal();
 } else {
   showQuestion();
 }

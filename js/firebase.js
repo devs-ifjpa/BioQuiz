@@ -1,6 +1,5 @@
 var db = firebase.firestore();
 firebase.firestore().enablePersistence();
-
 // LOGIN DEFAULT
 
     if(document.getElementById('DefaultLogin') != undefined){
@@ -86,27 +85,18 @@ firebase.firestore().enablePersistence();
             });
 
         }).catch((error) => {
-            var errorCode = error.code;
-            var errorMessage = error.message;
-            var email = error.email;
-            var credential = error.credential;
+            // const errorCode = error.code;
+            // const errorMessage = error.message;
+            // const email = error.email;
+            // const credential = error.credential;
         });
     }
 
     if( document.getElementById('Form_Register-Google') ) {
         document.getElementById("Form_Register-Google").addEventListener("submit", event => {
             event.preventDefault();
-            const name = document.querySelector("#name").value.trim();
-            const date = document.querySelector("#nascimento").value.trim();
-            const email = document.querySelector("#email").value.trim();
-            const emailConfirm = document.querySelector("#confirm-email").value.trim();
-            const password = document.querySelector("#password").value.trim();
-            const passwordConfirm = document.querySelector("#confirm").value.trim();
-            if( email === emailConfirm && password === passwordConfirm )
-                Firebase_RegisterDatabase([name,date,email,password],"Google");
-            else
-                swal("Selecione sua profissão");
-        })
+            Firebase_AlternativeLogin();
+        });
     }
 
 
@@ -137,23 +127,26 @@ firebase.firestore().enablePersistence();
         if(email != "" && password != ""){
             var errorcont = 0;
             firebase.auth().createUserWithEmailAndPassword(email, password).then(() => {
-                data.length > 0 ? Firebase_RegisterDatabase(email,password,data) : false;
+                if( data.length > 0 )
+                    Firebase_RegisterDatabase(email,password,data);
             }).catch(function(error) {
                 errorcont ++;
                 // Handle Errors here.
-                var errorCode = error.code;
-                var errorMessage = error.message;
-                errorMessage == "The email address is already in use by another account." ?
-                    alert('O endereço de email já está sendo usado por outra conta.') : false;
+                // const errorCode = error.code;
+                const errorMessage = error.message;
+                if( errorMessage == "The email address is already in use by another account.")
+                    swal('O endereço de email já está sendo usado por outra conta.');
             })
         }
     }
   
     function Firebase_RegisterDatabase(email,password,data){
-        firebase.auth().signInWithEmailAndPassword(email, password);
+        firebase.auth().signInWithEmailAndPassword(email, password).then(value => {
+            if(value) swal("Cadastro Realizado com Sucesso");
+        });
         firebase.auth().onAuthStateChanged(function(user) {
             if (user) {
-                var user = firebase.auth().currentUser;
+                user = firebase.auth().currentUser;
                 db.collection('users').doc(user.uid).set({
                     nome: data[0],
                     nascimento: data[1],
@@ -163,7 +156,6 @@ firebase.firestore().enablePersistence();
                 });
             }
         });
-        alert("Cadastro Realizado com Sucesso");
     }
   
 // $REGISTER
@@ -172,10 +164,12 @@ firebase.firestore().enablePersistence();
 
 firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
-        if(document.getElementById('LoginLinkButton') != undefined)
+        if( document.getElementById('LoginLinkButton') )
             document.getElementById('LoginLinkButton').removeAttribute('href');
+        if( document.getElementById("CadastroLinkButton") )
+            document.getElementById("CadastroLinkButton").removeAttribute('href');
         
-        let user = firebase.auth().currentUser;
+        user = firebase.auth().currentUser;
         if(document.getElementById("thor") != undefined) {
             db.collection("users").doc(user.uid).get().then( async doc => {
                 if(doc.data()) {
@@ -202,13 +196,16 @@ firebase.auth().onAuthStateChanged(function(user) {
         const medalValue = document.getElementById("thor").textContent;
         firebase.auth().onAuthStateChanged(function(user) {
             if (user) {
-                var user = firebase.auth().currentUser;
+                user = firebase.auth().currentUser;
                 db.collection('users').doc(user.uid).set({
                     medal: medalValue,
                 },{ merge: true }).then(() => {
                     const temp = url.href.split("pages")[0];
                     url.href = temp + "pages/telaFinal/parabens.html"    
                 });
+            } else {
+                const temp = url.href.split("pages")[0];
+                url.href = temp + "pages/telaFinal/parabens.html"
             }
         });
     }

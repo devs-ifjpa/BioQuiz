@@ -9,3 +9,93 @@ h1,h3{
 p{
     margin-left: 50px;
 }
+
+.referencia {
+    margin-top: 50px;
+}
+
+#voltar a{
+    top: 8px;
+    left: 8px;
+    position: absolute;
+    color: #f6f9f4;
+    background-color: #8bd6fe;
+    padding: 4px 10px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 32px;
+    margin: 21.44px 0;
+}
+
+h3 {
+    font-size: 18.72px;
+    margin: 18.72px 0;
+}
+
+p {
+    font-size: 16px;
+    margin: 16px auto 16px 50px;
+}
+
+@media screen{
+    #voltar a{
+        top: 1.666666667vh;
+        left: 1.666666667vh;
+        padding: 0.833333333vh 2.083333333vh;
+        border-radius: 6.25vh;
+        font-size: 4.166666667vh;
+    }
+
+    .referencia {
+        margin-top: 10.416666666666666vh;
+    }
+
+    h1 {
+        font-size: 6.666666666666667vh;
+        margin: 4.466666666666667vh 0;
+    }
+    
+    h3 {
+        font-size: 3.9vh;
+        margin: 3.9vh 0;
+    }
+    
+    p {
+        font-size: 3.3333333333333335vh;
+        margin: 3.3333333333333335vh auto 3.3333333333333335vh 10.416666666666666vh;
+    }
+}
+
+@media screen and (max-aspect-ratio: 320/480){
+    #voltar a{
+        top: 2.5vw;
+        left: 2.5vw;
+        padding: 1.25vw 3.125vw;
+        border-radius: 9.375vw;
+        font-size: 6.25vw;
+    }
+
+    .referencia {
+        margin-top: 15.625vw;
+    }
+
+    h1 {
+        font-size: 10vw;
+        margin: 6.7vw 0px;
+    }
+    
+    h3 {
+        font-size: 5.85vw;
+        margin: 5.85vw 0px;
+    }
+    
+    p {
+        font-size: 5vw;
+        margin: 5vw auto 5vw 15.625vw;
+    }
+}
