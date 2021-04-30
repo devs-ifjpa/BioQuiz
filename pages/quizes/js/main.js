@@ -152,33 +152,35 @@ function answerCorrect(x){
     }
     else{
       alternativeclick == 0 ? bAudio.play() : false;
-      document.querySelector(".balao").style.opacity = 1;     
+      document.querySelector(".balao").classList.remove("hide");     
     }
 }
 
 function ButtonClick(){
-  document.documentElement.scrollTop = 0;
-  document.querySelector('button').removeAttribute("onclick");
-  document.getElementById("clock").textContent = "";
-  document.getElementById("clockbox").style.opacity = 0;
-  document.querySelector(".green").setAttribute("class", "hidden");
-  let contred = document.querySelectorAll("div.red");
-  for (var x = 1; x <= contred.length; x++){
-    document.querySelector(".red").setAttribute("class", "hidden");
-  }
-  document.querySelector("button").style.opacity = 0;
-  document.querySelector(".balao").style.opacity = 0;
   questionId++;
-  localStorage.setItem("questionId" + temaselect, questionId);
-  document.getElementById("tempo").textContent = 0;
-  count = 0;
-  alternativeclick = 0;
   if(questionId > 29){
     FirebaseUpdateMedal();
     const tempData = ['questionId', 'tempTotal', 'random'];
     tempData.map(item => localStorage.removeItem(item + temaselect));
-  } else
+  } else {
+    document.documentElement.scrollTop = 0;
+    document.querySelector('button').removeAttribute("onclick");
+    document.getElementById("clock").textContent = "";
+    document.getElementById("clockbox").style.opacity = 0;
+    document.querySelector(".green").setAttribute("class", "hidden");
+    let contred = document.querySelectorAll("div.red");
+    for (var x = 1; x <= contred.length; x++){
+      document.querySelector(".red").setAttribute("class", "hidden");
+    }
+    document.querySelector("button").style.opacity = 0;
+    document.querySelector(".balao").classList.add("hide");
+    localStorage.setItem("questionId" + temaselect, questionId);
+    document.getElementById("tempo").textContent = 0;
+    count = 0;
+    alternativeclick = 0;
+
     showQuestion();
+  }
 }
 
 /*if (!localStorage.getItem("questionId")){
@@ -186,7 +188,14 @@ function ButtonClick(){
   localStorage.setItem("questionId" , 0)
   localStorage.setItem("coin" , 0)
 }*/
-showQuestion();
+if(questionId > 29){
+  document.getElementById("button").classList.add("disable-click")
+  FirebaseUpdateMedal();
+  const tempData = ['questionId', 'tempTotal', 'random'];
+  tempData.map(item => localStorage.removeItem(item + temaselect));
+} else {
+  showQuestion();
+}
 
 /*
 document.querySelector(".balao").setAttribute("class", "show");
