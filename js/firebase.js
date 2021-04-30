@@ -201,7 +201,7 @@ firebase.auth().onAuthStateChanged(function(user) {
                     medal: medalValue,
                 },{ merge: true }).then(() => {
                     const temp = url.href.split("pages")[0];
-                    url.href = temp + "pages/telaFinal/parabens.html"    
+                    url.href = temp + "pages/telaFinal/parabens.html"
                 });
             } else {
                 const temp = url.href.split("pages")[0];

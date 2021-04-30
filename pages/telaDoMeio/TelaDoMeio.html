@@ -59,10 +59,13 @@
 
             swal({ text, buttons: { seguir, voltar }, closeModal: false }).then(value => {
                 if (value){
-                    if (value === "seguir")
-                        window.location = window.location.origin + `/pages/quizes/quizz.html?tema=${tema}`;
-                    else
-                        window.location = window.location.origin;
+                    if (value === "seguir") {
+                        const temp = window.location.href.split("pages")[0];
+                        window.location.href = temp + `pages/quizes/quizz.html?tema=${tema}`;
+                    } else {
+                        const temp = window.location.href.split("/pages")[0];
+                        window.location.href = temp;
+                    }
                 }
             });
         }
