@@ -7,6 +7,14 @@ html {
     scroll-behavior: smooth;
 }
 
+.disable-click {
+    pointer-events: none;
+}
+
+.hide {
+    display: none;
+}
+
 body{
     background-color: #eadc83;
     width: 100vw;
@@ -25,7 +33,7 @@ main{
 }
 
 .logo img, .para img{
-    width: 62.5vw;
+    width: 200px;
 }
 
 .contentPara{
@@ -37,7 +45,8 @@ main{
 .contentPara p{
     background-color: #FFB225;
     color: #FCF9F9;
-    padding: 2.083333333333333vw 7.291666666666667vw;
+    font-size: 16px;
+    padding: 6.666px 23.333px;
     border-radius: 20px;
 }
 
@@ -290,7 +299,7 @@ input, #facebook-button, #google-button{
 }
 
 .alternatives{
-    width: 100vw;
+    width: 320px;
 }
 
 .alternatives-item, .red, .green{
@@ -301,9 +310,9 @@ input, #facebook-button, #google-button{
     margin: auto 9.5px;
 }
 .title{
-    width: calc(100vw - 19px - 38.4px);
+    width: 262px;
     background-color: #ffb226;
-    margin: 12px 9.5px;
+    margin: 12px auto;
 }
 .alternatives-item, .green, .red{
     margin-bottom: 10px;
@@ -344,6 +353,7 @@ input, #facebook-button, #google-button{
     border: 0;
     margin: 0;
 }
+
 #button-box{
     height: 30px;
     margin: 10px auto;
@@ -351,6 +361,41 @@ input, #facebook-button, #google-button{
 }
 
 /* $QUIZ */
+
+/*CSS do balão*/
+
+.balao {
+    margin: 0 auto; 
+    background: #BCEBE4;
+    font-family: 'Tahoma';
+    font-size: 13px;
+    line-height: 25px;  
+    border-radius: 35px;
+    width: 240px;
+    height: auto;
+    color: #000;
+    font-weight: bolder;
+    padding: 20px;
+    position: relative;
+    margin-top: 30px;
+}
+
+.balao:after { /*Triangulo*/
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    /*Faz seta "apontar para baixo. Definir o valor como 'top' fará ela "apontar para cima" */
+    /*Aqui entra a cor da "aba" do balão */
+    border-bottom: 20px solid #BCEBE4;
+    bottom: 10%; /*localização. Experimente alterar para 'bottom'*/
+    right: -20px;
+    
+}
+
+/*Fim CSS do balão*/
 
 /* @media screen and (min-height: 480px){ */
 @media screen{
@@ -402,6 +447,12 @@ input, #facebook-button, #google-button{
         margin-top: 5.208333333333333vh;
         height: 16.666666667vh;
     }
+
+    #miscellaneous #clockbox{
+        top: 1.6666666666666667vh;
+        right: 1.6666666666666667vh;
+    }
+
     #thor{
         max-width: 46.666666666666664vh;
     }  
@@ -424,7 +475,7 @@ input, #facebook-button, #google-button{
     }
     #miscellaneous div{
         margin: 2.083333333vh;
-        margin-left: 20px;
+        margin-left: 4.166666666666667vh;
     }
     #miscellaneous p{
         border-radius: 7.291666667vh;
@@ -465,8 +516,78 @@ input, #facebook-button, #google-button{
         left: calc(50% - (5.208333333vh + 4.6875vh));
     }
     #empty{
-        height: 4.166666667;
+        height: 4.166666667vh;
     }
+
+    .title, #button{
+        padding: 1.3333333333333333vh 4vh;
+        border-radius: 5.208333333333333vh;
+        font-size: 2.9166666666666665vh;
+        margin: auto 1.9791666666666667vh;
+    }
+    
+    .alternatives{
+        width: 66.66666666666667vh;
+    }
+    
+    .alternatives-item, .red, .green{
+        padding: 1.3333333333333333vh 2vh;
+        border-radius: 5.208333333333333vh;
+        font-size: 2.7083333333333335vh;
+        margin: auto 1.9791666666666667vh;
+    }
+    .title{
+        width: 54.583333333333336vh;
+        margin: 2.5vh auto;
+    }
+
+    .alternatives-item, .green, .red{
+        margin-bottom: 2.0833333333333335vh;
+    }
+    
+    #button{
+        border-radius: 5.208333333333333vh;
+        padding: 1.25vh 5vh;
+        font-size: 2.7083333333333335vh;
+    }
+    
+    #button-box{
+        height: 6.25vh;
+        margin: 2.0833333333333335vh auto;
+        margin-right: 2.0833333333333335vh;
+    }
+    
+    /* $QUIZ */
+    
+    /*CSS do balão*/
+    
+    .balao {
+        font-size: 2.7083333333333335vh;
+        line-height: 5.208333333333333vh;
+        border-radius: 7.291666666666667vh;
+        width: 50vh;
+        padding: 4.166666666666667vh;
+        margin-top: 6.25vh;
+    }
+    
+    .balao:after { /*Triangulo*/
+        border-left: 4.166666666666667vh solid transparent;
+        border-right: 4.166666666666667vh solid transparent;
+        /*Faz seta "apontar para baixo. Definir o valor como 'top' fará ela "apontar para cima" */
+        /*Aqui entra a cor da "aba" do balão */
+        border-bottom: 4.166666666666667vh solid #BCEBE4;
+        right: -4.166666666666667vh;
+    }
+
+    .logo img, .para img{
+        width: 41.666666666666664vh;
+    }
+
+    .contentPara p{
+        font-size: 3.3333333333333335vh;
+        padding: 1.3887500000000002vh 4.861041666666666vh;
+        border-radius: 4.166666666666667vh;
+    }    
 }
 
 @media screen and (max-aspect-ratio: 320/480){
@@ -530,6 +651,12 @@ input, #facebook-button, #google-button{
         margin-top: 7.8125vw;
         height: 25vw;
     }
+
+    #miscellaneous #clockbox{
+        top: 2.5vw;
+        right: 2.5vw;
+    }
+
     #thor{
         max-width: 70vw;
     }  
@@ -552,7 +679,7 @@ input, #facebook-button, #google-button{
     }
     #miscellaneous div{
         margin: 3.125vw;
-        margin-left: 20px;
+        margin-left: 6.25vw;
     }
     #miscellaneous p{
         border-radius: 10.9375vw;
@@ -595,38 +722,74 @@ input, #facebook-button, #google-button{
     #empty{
         height: 6.25vw;
     }
-}
 
-/*CSS do balão*/
-.balao{
-    margin: 0 auto; 
-    background: #BCEBE4;
-    font-family: 'Tahoma';
-    font-size: 1em;
-    line-height: 1.6em;  
-    border-radius: 35px;
-    width: 240px;
-    height: auto;
-    color: #000;
-    font-weight: bolder;
-    padding: 20px;
-    position: relative;
-    margin-top: 30px;
-    opacity: 0;
-}
-.balao:after{ /*Triangulo*/
-    content: "";
-    width: 0;
-    height: 0;
-    position: absolute;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    /*Faz seta "apontar para baixo. Definir o valor como 'top' fará ela "apontar para cima" */
-    /*Aqui entra a cor da "aba" do balão */
-    border-bottom: 20px solid #BCEBE4;
-    bottom: 10%; /*localização. Experimente alterar para 'bottom'*/
-    right: -20px;
+    .title, #button{
+        padding: 2vw 6vw;
+        border-radius: 7.8125vw;
+        font-size: 4.375vw;
+        margin: auto 2.96875vw;
+    }
     
-}
+    .alternatives{
+        width: 100vw;
+    }
+    
+    .alternatives-item, .red, .green{
+        padding: 2vw 3vw;
+        border-radius: 7.8125vw;
+        font-size: 4.0625vw;
+        margin: auto 2.96875vw;
+    }
+    .title{
+        width: 81.875vw;
+        margin: 3.75vw auto;
+    }
 
-/*Fim CSS do balão*/
+    .alternatives-item, .green, .red{
+        margin-bottom: 3.125vw;
+    }
+    
+    #button{
+        border-radius: 7.8125vw;
+        padding: 1.875vw 7.5vw;
+        font-size: 4.0625vw;
+    }
+    
+    #button-box{
+        height: 9.375vw;
+        margin: 3.125vw auto;
+        margin-right: 3.125vw;
+    }
+    
+    /* $QUIZ */
+    
+    /*CSS do balão*/
+    
+    .balao {
+        font-size: 4.0625vw;
+        line-height: 7.8125vw;  
+        border-radius: 10.9375vw;
+        width: 75vw;
+        padding: 6.25vw;
+        margin-top: 9.375vw;
+    }
+    
+    .balao:after { /*Triangulo*/
+        border-left: 6.25vw solid transparent;
+        border-right: 6.25vw solid transparent;
+        /*Faz seta "apontar para baixo. Definir o valor como 'top' fará ela "apontar para cima" */
+        /*Aqui entra a cor da "aba" do balão */
+        border-bottom: 6.25vw solid #BCEBE4;
+        right: -6.25vw;
+    }
+
+    .logo img, .para img{
+        width: 62.5vw;
+    }
+
+    .contentPara p{
+        font-size: 5vw;
+        padding: 2.0831250000000003vw 7.2915624999999995vw;
+        border-radius: 6.25vw;
+    }    
+}
