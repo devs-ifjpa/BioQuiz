@@ -54,8 +54,8 @@
         function alertInSigned (tema) {
             const text = `Você não esta logado, se deseja salvar o progresso siga para a tela inicial`;
 
-            const seguir = `Jogar sem Salvar`;
-            const voltar = `Vá para Tela Inicial`;
+            const seguir = `Jogar sem salvar o progresso.`;
+            const voltar = `Voltar para tela inicial.`;
 
             swal({ text, buttons: { seguir, voltar }, closeModal: false }).then(value => {
                 if (value){
